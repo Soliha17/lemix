@@ -1,3 +1,121 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Bold.eot');
+    src: url('./assets/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Inter-Bold.woff') format('woff'),
+        url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Light.eot');
+    src: url('./assets/fonts/Inter-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Inter-Light.woff') format('woff'),
+        url('./assets/fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Medium.eot');
+    src: url('./assets/fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Inter-Medium.woff') format('woff'),
+        url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Regular.eot');
+    src: url('./assets/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Inter-Regular.woff') format('woff'),
+        url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-SemiBold.eot');
+    src: url('./assets/fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Inter-SemiBold.woff') format('woff'),
+        url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+h1 {
+  font-size: 61px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 49px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 39px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 35px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.p1 {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.p2 {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.p3 {
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 400;
+}
