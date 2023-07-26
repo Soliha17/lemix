@@ -52,7 +52,7 @@ const callsToAction = [
 const Propover = ({ title }) => {
   return (
     <Popover className="relative">
-      <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-black-75">
+      <Popover.Button className="flex items-center gap-x-1 text-sm font-normal leading-6 text-black-75">
         {title}
         <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
       </Popover.Button>
@@ -80,7 +80,7 @@ const Propover = ({ title }) => {
                   />
                 </div>
                 <div className="flex-auto">
-                  <a href={item.href} className="block font-semibold text-gray-900">
+                  <a href={item.href} className="block font-normal text-gray-900">
                     {item.name}
                     <span className="absolute inset-0" />
                   </a>

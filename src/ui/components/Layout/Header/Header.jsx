@@ -31,8 +31,8 @@ function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-6">
-          <a href="#" className="text-sm font-semibold leading-normal text-black-75">
+        <Popover.Group className="hidden items-center lg:flex lg:gap-x-6">
+          <a href="#" className="text-sm font-normal leading-normal text-black-75">
             Bosh sahifasi
           </a>
           <Propover title="Mahsulotlar" />
