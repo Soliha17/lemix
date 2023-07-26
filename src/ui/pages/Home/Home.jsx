@@ -1,10 +1,17 @@
-import { useTranslation } from "react-i18next"
+// import { useTranslation } from "react-i18next"
+
+import Header from "src/ui/components/Layout/Header/Header";
+
+// import Header from "../../components/Layout/Header/Header";
+
 
 const Home = () => {
-  const {t} = useTranslation()
+  // const {t} = useTranslation()
   return (
-    <div>Home <h1>{ t("resumeConstructor")}</h1></div>
-  )
-}
+    <div>
+      <Header />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
