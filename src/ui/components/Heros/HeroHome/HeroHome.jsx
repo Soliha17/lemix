@@ -1,5 +1,5 @@
-import rightArrow from 'src/assets/images/right-black-arrow.svg';
 import HeroImg from './HeroimgCard';
+import rightArrow from 'src/assets/images/right-blue-arrow.svg';
 
 import dashboard from 'src/assets/images/dashboard-img__home-hero.png';
 import student from 'src/assets/images/student.png';

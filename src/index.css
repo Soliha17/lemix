@@ -131,6 +131,16 @@ h6 {
   top: 60px;
   right: -70px;
 }
+
+.nft-img__product-card {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .card-group__hero-home {
   position: absolute;
   top: 100px;
@@ -166,11 +176,16 @@ h6 {
     bottom: 32px;
   }
 
+  .nft-img__product-card {
+    max-width: 470px;
+  }
+
   .card-group__hero-home {
     top: 50px;
     left: 30%;
   }
-  .hero-home {
+  .hero-home,
+  .product-card {
     min-height: 900px;
   }
 
@@ -179,6 +194,17 @@ h6 {
     left: 36px;
     right: 0;
     bottom: 0;
+  }
+
+  .info-col__product-card {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: 32px;
+  }
+
+  .product-card .info-col__hero-home {
+    top: 0;
   }
 }
 
@@ -233,7 +259,12 @@ h6 {
     display: none;
   }
 
-  .img-card--second{
+  .product-card,
+  .hero-home {
+    min-height: 850px;
+  }
+
+  .img-card--second {
     right: 20px;
   }
 }
