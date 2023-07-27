@@ -3,6 +3,7 @@
 import HeroHome from 'src/ui/components/Heros/HeroHome/HeroHome';
 import Header from 'src/ui/components/Layout/Header/Header';
 import ProductHome from 'src/ui/components/Sections/ProductHome';
+import Statistics from 'src/ui/components/Sections/Statistics';
 
 const Home = () => {
   // const {t} = useTranslation()
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <HeroHome />
       <ProductHome />
+      <Statistics />
     </div>
   );
 };
