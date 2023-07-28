@@ -23,6 +23,7 @@ export const warning = {
 };
 
 export const black = {
+  0: '#000000',
   100: '#1C1917',
   75: '#555351',
   50: '#8D8C8B',

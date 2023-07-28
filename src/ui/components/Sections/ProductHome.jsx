@@ -5,7 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import PropTypes from 'prop-types';
 
 import SectionName from './SectionName';
-import ProductCard from '../Cards/ProductCard/ProductCard';
+import ProductCard from '../Cards/ProductCard';
 
 const ProductHome = () => {
   function CustomTabPanel(props) {
