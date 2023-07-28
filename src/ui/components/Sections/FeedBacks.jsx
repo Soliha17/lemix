@@ -60,19 +60,28 @@ const feedBackDatas = [
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1600 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1600, min: 700 },
+    breakpoint: { max: 1600, min: 1024 },
     items: 2,
     slidesToSlide: 2, // optional, default to 1.
+    partialVisibilityGutter: 100, // this is needed to tell the amount of px that should be visible.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+    partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },
   mobile: {
+    breakpoint: { max: 800, min: 700 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+    partialVisibilityGutter: 100, // this is needed to tell the amount of px that should be visible.
+  },
+  small: {
     breakpoint: { max: 700, min: 0 },
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
+    partialVisibilityGutter: 0, // this is needed to tell the amount of px that should be visible.
   },
 };
 
@@ -119,7 +128,7 @@ const FeedBacks = () => {
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          partialVisible={false}
+          partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}
           // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
