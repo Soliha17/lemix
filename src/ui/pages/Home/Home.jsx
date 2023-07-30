@@ -3,6 +3,7 @@
 import HeroHome from 'src/ui/components/Heros/HeroHome/HeroHome';
 import Header from 'src/ui/components/Layout/Header/Header';
 import FeedBacks from 'src/ui/components/Sections/FeedBacks';
+import OpportunityHome from 'src/ui/components/Sections/OpportunityHome';
 import ProductHome from 'src/ui/components/Sections/ProductHome';
 import Statistics from 'src/ui/components/Sections/Statistics';
 
@@ -15,6 +16,7 @@ const Home = () => {
       <ProductHome />
       <Statistics />
       <FeedBacks />
+      <OpportunityHome />
     </div>
   );
 };

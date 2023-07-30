@@ -119,6 +119,38 @@ h6 {
 
 /* CHANGE LIBRARY STYLES */
 
+.opportunity-dots {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -50px !important;
+  top: 0;
+  background-color: rgb(17, 217, 60);
+}
+
+.react-multi-carousel-dot button {
+  background: #e0f9e7;
+  border: none !important;
+}
+
+.opportunity-dots .react-multi-carousel-dot--active button {
+  background: #0177fb;
+}
+
+.react-multi-carousel-dot--active button {
+  border: none !important;
+}
+
+@media (max-width: 1400px) {
+  .opportunity-dots {
+    left: 50% !important;
+    top: 100%;
+    bottom: 0 !important;
+    flex-direction: row;
+  }
+}
+
 .react-multi-carousel-track li {
   display: flex !important;
 }
