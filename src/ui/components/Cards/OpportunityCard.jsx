@@ -5,7 +5,7 @@ import opportunityTable from 'src/assets/images/opportunity-table.png';
 const OpportunityCard = () => {
   return (
     <div
-      className="flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center"
+      className="opportunity-card flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center"
       style={{
         backgroundImage:
           'url("src/assets/images/top-line__product.png"), url("src/assets/images/bottom-line__product.png")',

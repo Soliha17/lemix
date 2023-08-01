@@ -1,5 +1,6 @@
 // import { useTranslation } from "react-i18next"
 
+import AboutCard from 'src/ui/components/Cards/AboutCard';
 import HeroHome from 'src/ui/components/Heros/HeroHome/HeroHome';
 import Header from 'src/ui/components/Layout/Header/Header';
 import FeedBacks from 'src/ui/components/Sections/FeedBacks';
@@ -17,6 +18,7 @@ const Home = () => {
       <Statistics />
       <FeedBacks />
       <OpportunityHome />
+      <AboutCard />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import BlackOutlineBtn from '../atoms/BlackOutlineBtn';
 const ProductCard = () => {
   return (
     <div
-      className="product-card relative mt-6 flex justify-start rounded-3xl bg-primary-25 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16"
+      className="relative mt-6 flex justify-start rounded-3xl bg-primary-25 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16"
       style={{
         backgroundImage: 'url("src/assets/images/line-product-home.png")',
         backgroundPosition: 'top right',
@@ -25,7 +25,7 @@ const ProductCard = () => {
         </div>
         <div className="flex flex-col gap-6 sm:flex-row">
           <WhiteButton text={'Bepul foydalanish'} />
-         <BlackOutlineBtn text="Batafsil" />
+          <BlackOutlineBtn text="Batafsil" />
         </div>
       </div>
     </div>
