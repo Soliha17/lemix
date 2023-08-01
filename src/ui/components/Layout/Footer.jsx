@@ -6,7 +6,7 @@ import facebook from 'src/assets/images/facebook.svg';
 const Footer = () => {
   return (
     <div
-      className="bg-black-100 bg-no-repeat pb-6 pt-8 md:pb-8 md:pt-14"
+      className="mt-16 bg-black-100 bg-no-repeat pb-6 pt-8 md:mt-20 md:pb-8 md:pt-14 xl:mt-24"
       style={{
         backgroundImage: 'url("src/assets/images/line__footer.png")',
         backgroundPosition: 'top right',
