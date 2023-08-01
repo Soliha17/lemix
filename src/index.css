@@ -268,10 +268,6 @@ h6 {
     left: 32px;
     right: 32px;
   }
-
-  .product-card .info-col__hero-home {
-    top: 0;
-  }
 }
 
 @media (max-width: 824px) {
