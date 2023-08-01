@@ -1,6 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import SectionName from './SectionName';
+
+import SectionName from '../atoms/SectionName';
+import OpportunityCard from 'src/ui/components/Cards/OpportunityCard';
 
 const responsive = {
   desktop: {
@@ -47,7 +49,7 @@ const OpportunityHome = () => {
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"
         >
-          <div className="h-40 w-full bg-red-500">Item 1</div>
+          <OpportunityCard />
           <div className="h-40 w-full bg-yellow-500">Item 2</div>
           <div className="h-40 w-full bg-pink-500">Item 3</div>
           <div className="h-40 w-full bg-blue-500">Item 4</div>

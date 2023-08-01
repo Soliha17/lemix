@@ -1,4 +1,4 @@
-import HeroImg from './HeroimgCard';
+import HeroImg from '../../Cards/HeroimgCard';
 import rightArrow from 'src/assets/images/right-blue-arrow.svg';
 
 import dashboard from 'src/assets/images/dashboard-img__home-hero.png';

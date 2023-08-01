@@ -122,11 +122,11 @@ h6 {
 .opportunity-dots {
   width: 30px;
   display: flex;
+  gap: 32px;
   flex-direction: column;
   position: absolute;
   left: -50px !important;
   top: 0;
-  background-color: rgb(17, 217, 60);
 }
 
 .react-multi-carousel-dot button {
@@ -144,10 +144,12 @@ h6 {
 
 @media (max-width: 1400px) {
   .opportunity-dots {
+    margin-top: 20px !important;
     left: 50% !important;
     top: 100%;
     bottom: 0 !important;
     flex-direction: row;
+    gap: 25px;
   }
 }
 

@@ -1,5 +1,6 @@
 import nft from 'src/assets/images/nft-marketplace.png';
-import rightArrow from 'src/assets/images/right-black-arrow.svg';
+import WhiteButton from '../atoms/WhiteButton';
+import BlackOutlineBtn from '../atoms/BlackOutlineBtn';
 
 const ProductCard = () => {
   return (
@@ -23,12 +24,8 @@ const ProductCard = () => {
           </p>
         </div>
         <div className="flex flex-col gap-6 sm:flex-row">
-          <button className="flex gap-4 rounded-2xl bg-white-main px-9 py-4 text-black-100 hover:bg-neo-100">
-            Bepul foydalanish <img src={rightArrow} alt="right arrow" />
-          </button>
-          <button className="rounded-2xl border border-black-100 px-9 py-4 text-black-100 hover:bg-black-100 hover:text-white-main">
-            Batafsil
-          </button>
+          <WhiteButton text={'Bepul foydalanish'} />
+         <BlackOutlineBtn text="Batafsil" />
         </div>
       </div>
     </div>
