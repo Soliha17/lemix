@@ -4,13 +4,7 @@ import BlackOutlineBtn from '../atoms/BlackOutlineBtn';
 
 const ProductCard = () => {
   return (
-    <div
-      className="product-card relative mt-6 flex justify-start rounded-3xl bg-primary-25 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16"
-      style={{
-        backgroundImage: 'url("src/assets/images/line-product-home.png")',
-        backgroundPosition: 'top right',
-      }}
-    >
+    <div className="product-card relative mt-6 flex justify-start rounded-3xl bg-primary-25 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16">
       <div className="info-col__product-card flex flex-col gap-12 sm:gap-28">
         <div className="title-group__hero-home">
           <h1 className="text-3xl font-semibold text-black-100 lg:text-5xl">

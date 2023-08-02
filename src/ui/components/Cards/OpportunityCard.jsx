@@ -4,14 +4,7 @@ import opportunityTable from 'src/assets/images/opportunity-table.png';
 
 const OpportunityCard = () => {
   return (
-    <div
-      className="opportunity-card flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center"
-      style={{
-        backgroundImage:
-          'url("src/assets/images/top-line__product.png"), url("src/assets/images/bottom-line__product.png")',
-        backgroundPosition: 'top right, bottom right',
-      }}
-    >
+    <div className="opportunity-card flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center">
       <div className="p-6 sm:p-9 lg:pr-0 xl:p-16">
         <div className="mb-16 md:mb-24 lg:mb-48">
           <h2 className="mb-4 text-2xl font-semibold md:text-3xl lg:mb-6 lg:text-4xl">

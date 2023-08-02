@@ -117,6 +117,44 @@ h6 {
   font-size: 12px;
 }
 
+/* CARDS WITH BG LINE IMAGES STYLES */
+
+.hero-home {
+  background-image: url('src/assets/images/top-line__home-hero.png'),
+    url('src/assets/images/bottom-line__home-hero.png');
+  background-position:
+    top right,
+    bottom left;
+}
+
+.product-card {
+  background-image: url('src/assets/images/line-product-home.png');
+  background-position: top right;
+}
+
+.statistic-card {
+  background-image: url('src/assets/images/line__statistic-card.svg');
+  background-position: top right;
+}
+
+.opportunity-card {
+  background-image: url('src/assets/images/top-line__product.png'),
+    url('src/assets/images/bottom-line__product.png');
+  background-position:
+    top right,
+    bottom right;
+}
+
+.about-card {
+  background-image: url('src/assets/images/line__about-home.png');
+  background-position: bottom right;
+}
+
+.footer {
+  background-image: url('src/assets/images/line__footer.png');
+  background-position: top right;
+}
+
 /* ABOUT CARD */
 @media (max-width: 1024px) {
   .about-card {

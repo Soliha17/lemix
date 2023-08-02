@@ -5,13 +5,7 @@ import aboutVideo from 'src/assets/images/about-video.png';
 const AboutCard = () => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
-      <div
-        className="about-card flex w-full flex-col items-end rounded-3xl bg-neo-100 bg-no-repeat lg:flex-row lg:items-center"
-        style={{
-          backgroundImage: 'url("src/assets/images/line__about-home.png")',
-          backgroundPosition: 'bottom right',
-        }}
-      >
+      <div className="about-card flex w-full flex-col items-end rounded-3xl bg-neo-100 bg-no-repeat lg:flex-row lg:items-center">
         <div className="p-6 sm:p-9 lg:pr-0 xl:p-16">
           <div className="mb-16 md:mb-24 lg:mb-48">
             <h2 className="mb-4 text-2xl font-semibold md:text-3xl lg:mb-6 lg:text-4xl">

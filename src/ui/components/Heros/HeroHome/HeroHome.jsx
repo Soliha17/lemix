@@ -7,14 +7,7 @@ import students from 'src/assets/images/students.png';
 
 const HeroHome = () => {
   return (
-    <div
-      className="hero-home relative mt-6 flex justify-start rounded-3xl bg-primary-100 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16"
-      style={{
-        backgroundImage:
-          'url("src/assets/images/top-line__home-hero.png"), url("src/assets/images/bottom-line__home-hero.png")',
-        backgroundPosition: 'top right, bottom left',
-      }}
-    >
+    <div className="hero-home relative mt-6 flex justify-start rounded-3xl bg-primary-100 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16">
       <div className="card-group__hero-home">
         <HeroImg classname="img-card--first" img={student} title="O'quv markazlar" />
         <HeroImg classname="img-card--second" img={students} title="Maktablar" />
