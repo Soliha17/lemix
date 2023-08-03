@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 
 import StatisticCard from '../Cards/StatisticCard';
-import SectionName from '../atoms/SectionName';
+import SectionName from '../Atoms/SectionName';
 
 const statisticDatas = [
   {
