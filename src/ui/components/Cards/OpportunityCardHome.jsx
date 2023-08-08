@@ -2,7 +2,7 @@ import BlackOutlineBtn from '../Atoms/BlackOutlineBtn';
 import WhiteButton from '../Atoms/WhiteButton';
 import opportunityTable from 'src/assets/images/opportunity-table.png';
 
-const OpportunityCard = () => {
+const OpportunityCardHome = () => {
   return (
     <div className="opportunity-card flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center">
       <div className="p-6 sm:p-9 lg:pr-0 xl:p-16">
@@ -30,4 +30,4 @@ const OpportunityCard = () => {
   );
 };
 
-export default OpportunityCard;
+export default OpportunityCardHome;

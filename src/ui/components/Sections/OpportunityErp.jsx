@@ -1,8 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-import SectionName from '../Atoms/SectionName';
-import OpportunityCardHome from 'src/ui/components/Cards/OpportunityCardHome';
+import OpportunityCardErp from '../Cards/OpportunityCardErp';
 
 const responsive = {
   desktop: {
@@ -22,10 +20,9 @@ const responsive = {
   },
 };
 
-const OpportunityHome = () => {
+const OpportunityErp = () => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Tizimimiz imkoniyatlari" />
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           swipeable={false}
@@ -49,7 +46,7 @@ const OpportunityHome = () => {
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"
         >
-          <OpportunityCardHome />
+          <OpportunityCardErp />
           <div className="h-40 w-full bg-yellow-500">Item 2</div>
           <div className="h-40 w-full bg-pink-500">Item 3</div>
           <div className="h-40 w-full bg-blue-500">Item 4</div>
@@ -61,4 +58,4 @@ const OpportunityHome = () => {
   );
 };
 
-export default OpportunityHome;
+export default OpportunityErp;
