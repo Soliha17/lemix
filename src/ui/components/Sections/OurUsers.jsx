@@ -89,8 +89,8 @@ const OurUsers = () => {
           autoPlay={true}
           autoPlaySpeed={3000}
           keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
+          customTransition="all .3"
+          transitionDuration={300}
           containerClass="carousel-container"
           partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}

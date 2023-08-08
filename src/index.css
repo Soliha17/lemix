@@ -172,6 +172,47 @@ h6 {
   }
 }
 
+/* ALL IN ONE CARD STYLES */
+
+.all-one-card,
+.all-in-one-container {
+  position: relative;
+}
+
+.all-one-card {
+  flex-basis: calc(33.33% - 24px);
+}
+
+.all-in-one-container::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  height: 820px;
+  width: 100%;
+  border-top: 1px solid #555351;
+}
+
+.all-one-card::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  height: 24px;
+  border: 1px solid #555351;
+}
+
+@media (max-width: 1024px) {
+  .all-one-card {
+    flex-basis: calc(50% - 24px);
+  }
+}
+
+@media (max-width: 600px) {
+  .all-one-card {
+    flex-basis: 100%;
+  }
+}
+
 /* OPPORTUNITY CARD */
 @media (max-width: 1024px) {
   .opportunity-card {
