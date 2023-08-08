@@ -76,7 +76,7 @@ const OurUsers = () => {
   return (
     <div className="mt-16 w-full md:mt-24 lg:mt-20">
       <SectionName name="Foydalanuvchilarimiz" />
-      <div className="mt-6 rounded-2xl bg-primary-12 py-10 md:mt-8 lg:mt-10">
+      <div className="our-users-card mt-6 rounded-2xl bg-primary-12 bg-no-repeat py-10 md:mt-8 lg:mt-10">
         <Carousel
           renderButtonGroupOutside={true}
           swipeable={true}

@@ -155,6 +155,11 @@ h6 {
   background-position: bottom left;
 }
 
+.our-users-card {
+  background-image: url('src/assets/images/line__our-users.png');
+  background-position: bottom left;
+}
+
 .footer {
   background-image: url('src/assets/images/line__footer.png');
   background-position: top right;
