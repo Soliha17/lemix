@@ -247,17 +247,33 @@ h6 {
   top: 0;
 }
 
+.feedback-bg-dots {
+  width: 30px;
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  left: 50% !important;
+  transform: translateX(-50%);
+  bottom: 0px !important;
+}
+
 .react-multi-carousel-dot button {
   background: #e0f9e7;
   border: none !important;
 }
 
-.opportunity-dots .react-multi-carousel-dot--active button {
-  background: #0177fb;
+
+.opportunity-dots .react-multi-carousel-dot--active button,
+.feedback-bg-dots .react-multi-carousel-dot--active button {
+  background: #0177fb !important;
 }
 
 .react-multi-carousel-dot--active button {
   border: none !important;
+}
+
+.feedback-bg-dots .react-multi-carousel-dot button {
+  background: #ffffff;
 }
 
 @media (max-width: 1400px) {
