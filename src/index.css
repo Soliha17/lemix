@@ -150,6 +150,11 @@ h6 {
   background-position: bottom right;
 }
 
+.hero-erp {
+  background-image: url('src/assets/images/line__hero-erp.png');
+  background-position: bottom left;
+}
+
 .footer {
   background-image: url('src/assets/images/line__footer.png');
   background-position: top right;
