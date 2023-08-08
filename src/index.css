@@ -235,6 +235,17 @@ h6 {
   }
 }
 
+/* PRICING TABS */
+.pricing-tabs button {
+  width: 169px;
+}
+
+@media (max-width: 800px) {
+  .pricing-tabs button {
+    width: auto;
+  }
+}
+
 /* CHANGE LIBRARY STYLES */
 
 .opportunity-dots {
@@ -261,7 +272,6 @@ h6 {
   background: #e0f9e7;
   border: none !important;
 }
-
 
 .opportunity-dots .react-multi-carousel-dot--active button,
 .feedback-bg-dots .react-multi-carousel-dot--active button {
@@ -298,6 +308,10 @@ h6 {
 @media (max-width: 700px) {
   .carousel-item-padding-40-px {
     padding-right: 0;
+  }
+
+  .feedback-bg-dots {
+    display: none !important;
   }
 }
 
