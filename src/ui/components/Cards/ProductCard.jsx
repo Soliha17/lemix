@@ -1,6 +1,6 @@
 import nft from 'src/assets/images/nft-marketplace.png';
-import WhiteButton from '../Atoms/WhiteButton';
-import BlackOutlineBtn from '../Atoms/BlackOutlineBtn';
+import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
+import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
 
 const ProductCard = () => {
   return (

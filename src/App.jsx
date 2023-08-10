@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './ui/pages/Home/Home';
-import NotFound from './ui/pages/NotFound/NotFound';
-import Auth from './ui/pages/Auth/Auth';
-import Erp from './ui/pages/Erp/Erp';
+import Home from 'src/ui/pages/Home/Home';
+import NotFound from 'src/ui/pages/NotFound/NotFound';
+import Auth from 'src/ui/pages/Auth/Auth';
+import Erp from 'src/ui/pages/Erp/Erp';
 
 function App() {
   return (

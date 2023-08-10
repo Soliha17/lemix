@@ -1,5 +1,5 @@
-import SectionName from '../Atoms/SectionName';
-import AllOneCard from '../Cards/AllOneCard';
+import SectionName from 'src/ui/components/Atoms/SectionName';
+import AllOneCard from 'src/ui/components/Cards/AllOneCard';
 
 const allOneErp = [
   {

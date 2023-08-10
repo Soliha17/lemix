@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import OpportunityCardErp from '../Cards/OpportunityCardErp';
+import OpportunityCardErp from 'src/ui/components/Cards/OpportunityCardErp';
 
 const responsive = {
   desktop: {

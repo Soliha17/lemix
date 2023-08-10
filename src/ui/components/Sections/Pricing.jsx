@@ -1,7 +1,7 @@
-import PricingTabs from '../Atoms/PricingTabs';
-import SectionName from '../Atoms/SectionName';
-import PricingFilledCard from '../Cards/PricingFilledCard';
-import PricingOutlinedCard from '../Cards/PricingOutlinedCard';
+import PricingTabs from 'src/ui/components/Atoms/PricingTabs';
+import SectionName from 'src/ui/components/Atoms/SectionName';
+import PricingFilledCard from 'src/ui/components/Cards/PricingFilledCard';
+import PricingOutlinedCard from 'src/ui/components/Cards/PricingOutlinedCard';
 
 const basicDatas = [
   {
