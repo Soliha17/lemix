@@ -1,4 +1,4 @@
-import BlackOutlineBtn from '../Atoms/BlackOutlineBtn';
+import BlackOutlineBtn from '../Atoms/BlackButton';
 import WhiteButton from '../Atoms/WhiteButton';
 import opportunityTable from 'src/assets/images/opportunity-table.png';
 

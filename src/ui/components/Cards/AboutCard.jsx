@@ -1,5 +1,6 @@
-import BlackOutlineBtn from '../Atoms/BlackOutlineBtn';
+import BlackOutlineBtn from '../Atoms/BlackButton';
 import WhiteButton from '../Atoms/WhiteButton';
+
 import aboutVideo from 'src/assets/images/about-video.png';
 
 const AboutCard = () => {
