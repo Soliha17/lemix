@@ -1,5 +1,5 @@
 import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
-import WhiteButton from '../Atoms/WhiteButton';
+import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
 
 import aboutVideo from 'src/assets/images/about-video.png';
 
