@@ -1,5 +1,5 @@
 import whiteCheckIcon from 'src/assets/images/white-check-icon.svg';
-import wrongIcon from 'src/assets/images/wrong-icon-pricing.svg';
+import wrongIcon from 'src/assets/images/white-wrong-icon.svg';
 
 const PricingFilledCard = ({ plan, price, data }) => {
   return (

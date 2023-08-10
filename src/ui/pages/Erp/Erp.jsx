@@ -6,6 +6,7 @@ import FeedBacksBg from 'src/ui/components/Sections/FeedBacksBg';
 import OpportunityErp from 'src/ui/components/Sections/OpportunityErp';
 import OurAdvantages from 'src/ui/components/Sections/OurAdvantages';
 import OurUsers from 'src/ui/components/Sections/OurUsers';
+import PriceComparison from 'src/ui/components/Sections/PriceComparison';
 import Pricing from 'src/ui/components/Sections/Pricing';
 import Statistics from 'src/ui/components/Sections/Statistics';
 
@@ -26,6 +27,7 @@ const Erp = () => {
       <FeedBacksBg />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Pricing />
+        <PriceComparison />
       </div>
       <Footer />
     </>
