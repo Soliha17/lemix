@@ -1,3 +1,4 @@
+import React from 'react';
 import blueCheckIcon from 'src/assets/images/blue-check-icon.svg';
 import wrongIcon from 'src/assets/images/wrong-icon-pricing.svg';
 
@@ -11,7 +12,7 @@ const PricingOutlinedCard = ({ plan, price, data }) => {
       </div>
       <div className="flex flex-col gap-6 ">
         {data.map((item) => (
-          <>
+          <React.Fragment key={item.id}>
             {item.plus && (
               <span className="flex items-start gap-2 text-base text-black-75">
                 <img src={blueCheckIcon} alt="blueCheckIcon" />
@@ -24,7 +25,7 @@ const PricingOutlinedCard = ({ plan, price, data }) => {
                 {item.minus}
               </span>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
       <button className="w-full rounded-2xl bg-primary-100 py-4 text-base text-white-main hover:bg-primary-75">
