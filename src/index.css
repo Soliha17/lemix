@@ -145,6 +145,15 @@ h6 {
     bottom right;
 }
 
+.contact-card {
+  background-image: url('src/assets/images/top-line__contact-card.svg'),
+    url('src/assets/images/bottom-line__contact-card.svg');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat;
+}
+
 .about-card {
   background-image: url('src/assets/images/line__about-home.png');
   background-position: bottom right;
@@ -163,6 +172,100 @@ h6 {
 .footer {
   background-image: url('src/assets/images/line__footer.png');
   background-position: top right;
+}
+
+/* CONTACT CARD */
+
+.p__contact-card {
+  min-width: 220px;
+  background: rgba(1, 119, 251, 0.32);
+  backdrop-filter: blur(16px);
+  z-index: 99;
+  position: absolute;
+}
+
+.p__contact-card--top {
+  top: 90px;
+  right: 24px;
+}
+
+.p__contact-card--bottom {
+  left: 55px;
+  bottom: 60px;
+}
+
+.circle__contact-card {
+  width: 114px;
+  height: 114px;
+  background: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+@media (max-width: 824px) {
+  .circle__contact-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle__contact-card img {
+    width: 50px;
+  }
+
+  .p__contact-card--top {
+    top: 70px;
+  }
+}
+
+@media (max-width: 424px) {
+  .p__contact-card--top {
+    top: 30px;
+    right: 50px;
+  }
+
+  .p__contact-card--bottom {
+    bottom: 30px;
+  }
+
+  .p__contact-card {
+    font-size: 13px;
+    min-width: 180px;
+  }
+}
+
+/* FORM CONTACT CARD */
+.form__contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form__contact-card input {
+  padding: 10px 16px;
+  border-radius: 12px;
+  outline: none;
+  border: 0.5px solid var(--primary-12, #e0f1ff);
+  background: #fff;
+  color: #555351;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+}
+
+.form__contact-card button {
+  padding: 10px 0;
+  border-radius: 12px;
+  background: #40dd6c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.form__contact-card button:hover {
+  opacity: 0.9;
 }
 
 /* ABOUT CARD */

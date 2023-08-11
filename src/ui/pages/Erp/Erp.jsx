@@ -9,6 +9,7 @@ import OurUsers from 'src/ui/components/Sections/OurUsers';
 import PriceComparison from 'src/ui/components/Sections/PriceComparison';
 import Pricing from 'src/ui/components/Sections/Pricing';
 import Statistics from 'src/ui/components/Sections/Statistics';
+import ContactCard from '../../components/Cards/ContactCard';
 
 const Erp = () => {
   return (
@@ -28,6 +29,7 @@ const Erp = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Pricing />
         <PriceComparison />
+        <ContactCard />
       </div>
       <Footer />
     </>
