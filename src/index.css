@@ -158,6 +158,17 @@ h6 {
   background-image: url('src/assets/images/line__about-home.png');
   background-position: bottom right;
 }
+.advantage-card__lms {
+  background-image: url('src/assets/images/line__lms-ad-card.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.advantage-second-card__lms {
+  background-image: url('src/assets/images/line-2__ad-card-lms.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 
 .hero-erp {
   background-image: url('src/assets/images/line__hero-erp.png');
@@ -338,16 +349,29 @@ h6 {
   }
 }
 
+.biznesmen-img__erp {
+  max-width: 272px;
+}
+
 /* OPPORTUNITY CARD OF ERP PAGE STYLES */
 @media (max-width: 1024px) {
-  .support-img__erp {
+  .support-img__erp,
+  .biznesmen-img__erp {
     max-width: 180px;
   }
 }
 
 @media (max-width: 500px) {
-  .support-img__erp {
+  .support-img__erp,
+  .biznesmen-img__erp {
     max-width: 160px;
+  }
+
+  .advantage-card__lms {
+    background-position: top left !important;
+  }
+  .advantage-second-card__lms {
+    background-position: top left !important;
   }
 }
 

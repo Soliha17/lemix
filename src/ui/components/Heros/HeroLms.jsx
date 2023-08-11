@@ -1,4 +1,4 @@
-import heroImg from 'src/assets/images/hero-erp-img.png';
+import heroImg from 'src/assets/images/hero-img__lms.png';
 import done from 'src/assets/images/done-icon__contact.svg';
 
 const HeroLms = () => {

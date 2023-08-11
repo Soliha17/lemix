@@ -1,9 +1,9 @@
-import supportImg from 'src/assets/images/support-img__erp.png';
-import tableImg from 'src/assets/images/opportunity-table__erp.png';
+import supportImg from 'src/assets/images/img__lms-opp-card.png';
+import tableImg from 'src/assets/images/table__opp-lms.png';
 
 const OpportunityCardLms = () => {
   return (
-    <div className="flex w-full flex-col-reverse items-center gap-10 rounded-3xl bg-primary-12 p-6 sm:p-9 md:flex-row xl:p-20">
+    <div className="flex w-full flex-col-reverse items-center gap-10 rounded-3xl bg-primary-12 p-6 sm:p-9 md:flex-row xl:p-16">
       <div className="w-full md:w-1/2">
         <h3 className="mb-4 text-xl font-semibold text-black-100 sm:text-4xl md:mb-6">
           Ta&apos;lim tizimini raqamlarda boshqaring
@@ -20,7 +20,7 @@ const OpportunityCardLms = () => {
         </p>
         <img src={tableImg} alt="tableImg" />
         <img
-          className="support-img__erp absolute -bottom-8 -left-4"
+          className="biznesmen-img__erp absolute -bottom-8 -left-4 sm:-left-8 md:-left-12"
           src={supportImg}
           alt="supportImg"
         />

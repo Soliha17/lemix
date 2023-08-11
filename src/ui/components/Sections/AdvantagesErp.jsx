@@ -4,7 +4,7 @@ import AdvantagesCard from 'src/ui/components/Cards/AdvantagesCard';
 import dashboard from 'src/assets/images/advantages-dashboard.png';
 import table from 'src/assets/images/table-advantages.png';
 
-const OurAdvantages = () => {
+const AdvantagesErp = () => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Afzalliklarimiz" />
@@ -37,4 +37,4 @@ const OurAdvantages = () => {
   );
 };
 
-export default OurAdvantages;
+export default AdvantagesErp;
