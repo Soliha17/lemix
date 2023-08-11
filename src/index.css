@@ -117,6 +117,37 @@ h6 {
   font-size: 12px;
 }
 
+.phone-img__easy-app img {
+  width: 800px;
+}
+
+@media (max-width: 1024px) {
+  .phone-img__easy-app img {
+    width: 300px;
+    margin-top: 350px;
+  }
+
+  .easy-app-card__lms {
+    background-position: top left !important;
+  }
+
+  .phone-img__easy-app {
+    align-self: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .phone-img__easy-app img {
+    margin-top: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .phone-img__easy-app img {
+    margin-top: 450px;
+  }
+}
+
 /* CARDS WITH BG LINE IMAGES STYLES */
 
 .hero-home {
@@ -172,6 +203,11 @@ h6 {
 
 .hero-erp {
   background-image: url('src/assets/images/line__hero-erp.png');
+  background-position: bottom left;
+}
+
+.easy-app-card__lms {
+  background-image: url('src/assets/images/line__easy-app-lms.png');
   background-position: bottom left;
 }
 
@@ -396,6 +432,10 @@ h6 {
   position: absolute;
   left: -50px !important;
   top: 0;
+}
+
+.easy-app-dots {
+  left: 102% !important;
 }
 
 .feedback-bg-dots,
