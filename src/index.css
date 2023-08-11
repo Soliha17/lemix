@@ -174,6 +174,12 @@ h6 {
   background-position: top right;
 }
 
+/* -------------- */
+.p__opp-lms {
+  background: rgba(65, 153, 252, 0.24);
+  backdrop-filter: blur(3px);
+}
+
 /* CONTACT CARD */
 
 .p__contact-card {
@@ -194,7 +200,8 @@ h6 {
   bottom: 60px;
 }
 
-.circle__contact-card {
+.circle__contact-card,
+.circle__hero-lms {
   width: 114px;
   height: 114px;
   background: rgba(255, 255, 255, 0.32);
@@ -206,12 +213,14 @@ h6 {
 }
 
 @media (max-width: 824px) {
-  .circle__contact-card {
+  .circle__contact-card,
+  .circle__hero-lms {
     width: 90px;
     height: 90px;
   }
 
-  .circle__contact-card img {
+  .circle__contact-card img,
+  .circle__hero-lms img {
     width: 50px;
   }
 
@@ -224,6 +233,10 @@ h6 {
   .p__contact-card--top {
     top: 30px;
     right: 50px;
+  }
+
+  .opp-lms-dots {
+    display: none !important;
   }
 
   .p__contact-card--bottom {
@@ -361,7 +374,8 @@ h6 {
   top: 0;
 }
 
-.feedback-bg-dots {
+.feedback-bg-dots,
+.opp-lms-dots {
   width: 30px;
   display: flex;
   gap: 32px;
@@ -377,6 +391,7 @@ h6 {
 }
 
 .opportunity-dots .react-multi-carousel-dot--active button,
+.opp-lms-dots .react-multi-carousel-dot--active button,
 .feedback-bg-dots .react-multi-carousel-dot--active button {
   background: #0177fb !important;
 }
@@ -387,6 +402,10 @@ h6 {
 
 .feedback-bg-dots .react-multi-carousel-dot button {
   background: #ffffff;
+}
+
+.opp-lms-dots .react-multi-carousel-dot button {
+  background: #e0eefe;
 }
 
 @media (max-width: 1400px) {

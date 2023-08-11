@@ -113,12 +113,12 @@ const FeedBacksBg = () => {
       <SectionName name="Mijozlarimiz fikrlari" />
       <div className="relative mx-auto mt-6 max-w-7xl px-5 md:mt-8 md:px-10 lg:mt-10">
         <Carousel
-          renderButtonGroupOutside={true}
-          renderDotsOutside={true}
           swipeable={true}
           draggable={true}
           showDots={true}
           arrows={false}
+          renderButtonGroupOutside={true}
+          renderDotsOutside={true}
           customButtonGroup={<ButtonGroup bgColor="bg-white-main" />}
           responsive={responsive}
           ssr={false} // means to render carousel on server-side.

@@ -1,4 +1,3 @@
-import HeroErp from 'src/ui/components/Heros/HeroErp/HeroErp';
 import Footer from 'src/ui/components/Layout/Footer';
 import Header from 'src/ui/components/Layout/Header/Header';
 import AllOneErp from 'src/ui/components/Sections/AllOneErp';
@@ -10,6 +9,7 @@ import PriceComparison from 'src/ui/components/Sections/PriceComparison';
 import Pricing from 'src/ui/components/Sections/Pricing';
 import Statistics from 'src/ui/components/Sections/Statistics';
 import ContactCard from '../../components/Cards/ContactCard';
+import HeroErp from 'src/ui/components/Heros/HeroErp';
 
 const Erp = () => {
   return (
