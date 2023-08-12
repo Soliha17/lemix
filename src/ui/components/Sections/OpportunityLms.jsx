@@ -48,7 +48,7 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
 
 const OpportunityLms = () => {
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
+    <div id="opportunities" className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Imkoniyatlar" />
 
       <div className="relative mt-6 md:mt-8 lg:mt-10">

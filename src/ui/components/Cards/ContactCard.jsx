@@ -4,7 +4,7 @@ import goodFilled from 'src/assets/images/good-filled__contact.svg';
 
 const ContactCard = () => {
   return (
-    <div className="contact-card mt-16 flex flex-col items-center gap-6 rounded-3xl bg-primary-100 p-6 sm:p-9 md:mt-24 md:gap-12 lg:mt-20 lg:flex-row xl:gap-20 xl:p-16 xl:pt-8">
+    <div id="contact" className="contact-card mt-16 flex flex-col items-center gap-6 rounded-3xl bg-primary-100 p-6 sm:p-9 md:mt-24 md:gap-12 lg:mt-20 lg:flex-row xl:gap-20 xl:p-16 xl:pt-8">
       <div className="relative ml-0 flex flex-col items-start lg:ml-8">
         <div className="circle__contact-card z-10 -mb-16 -mr-7 self-end">
           <img src={done} alt="done" />

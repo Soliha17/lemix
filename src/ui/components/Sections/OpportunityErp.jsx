@@ -22,7 +22,7 @@ const responsive = {
 
 const OpportunityErp = () => {
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
+    <div id="opportunities" className="mt-16 md:mt-24 lg:mt-20">
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           swipeable={false}

@@ -6,7 +6,7 @@ import table from 'src/assets/images/table-advantages.png';
 
 const AdvantagesErp = () => {
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
+    <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Afzalliklarimiz" />
 
       <div className="mt-6 flex flex-col gap-8 sm:flex-row md:mt-10">

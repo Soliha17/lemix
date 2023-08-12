@@ -121,6 +121,10 @@ h6 {
   width: 800px;
 }
 
+.navbar-tabs {
+  transition: top 3s ease; /* Add transition property */
+}
+
 .navbar-tabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   text-transform: capitalize;
 }

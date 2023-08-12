@@ -8,7 +8,7 @@ import thirdCardImg from 'src/assets/images/second-img__ad-lms.png';
 
 const AdvantagesLms = () => {
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
+    <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Afzalliklarimiz" />
       <div>
         <AdvantageCardLms

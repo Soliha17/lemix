@@ -109,7 +109,7 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
 
 const FeedBacksBg = ({ bgColor }) => {
   return (
-    <div className={`mt-16 w-full ${bgColor} py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20`}>
+    <div id='feedbacks' className={`mt-16 w-full ${bgColor} py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20`}>
       <SectionName name="Mijozlarimiz fikrlari" />
       <div className="relative mx-auto mt-6 max-w-7xl px-5 md:mt-8 md:px-10 lg:mt-10">
         <Carousel

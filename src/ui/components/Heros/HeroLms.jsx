@@ -3,7 +3,7 @@ import done from 'src/assets/images/done-icon__contact.svg';
 
 const HeroLms = () => {
   return (
-    <div className="hero-erp bg-neo-75 bg-no-repeat py-6 md:py-14 xl:py-20">
+    <div id='general' className="hero-erp bg-neo-75 bg-no-repeat py-6 md:py-14 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-9 px-5 sm:flex-row md:px-10">
         <div className="flex w-full flex-col items-start gap-6 sm:w-9/12 lg:w-1/2">
           <h1 className="text-5xl font-semibold text-black-100 lg:text-6xl">Lemix LMS</h1>
