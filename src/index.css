@@ -512,6 +512,10 @@ h6 {
   background: #0177fb !important;
 }
 
+.opp-exam-dots .react-multi-carousel-dot--active button {
+  background: #00d23b !important;
+}
+
 .react-multi-carousel-dot--active button {
   border: none !important;
 }
@@ -522,6 +526,10 @@ h6 {
 
 .opp-lms-dots .react-multi-carousel-dot button {
   background: #e0eefe;
+}
+
+.opp-exam-dots .react-multi-carousel-dot button {
+  background: #E0F9E7;
 }
 
 @media (max-width: 1400px) {

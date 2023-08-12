@@ -12,7 +12,7 @@ const HeroLms = () => {
             tizimlari o&apos;quv jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv
             materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi.
           </p>
-          <button className="w-auto w-full rounded-2xl bg-primary-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75">
+          <button className="w-full rounded-2xl bg-primary-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto">
             Bepul foydalanish
           </button>
         </div>
