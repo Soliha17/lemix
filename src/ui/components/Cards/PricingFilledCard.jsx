@@ -2,9 +2,9 @@ import React from 'react';
 import whiteCheckIcon from 'src/assets/images/white-check-icon.svg';
 import wrongIcon from 'src/assets/images/white-wrong-icon.svg';
 
-const PricingFilledCard = ({ plan, price, data }) => {
+const PricingFilledCard = ({ plan, price, data, bgColor }) => {
   return (
-    <div className="col flex flex-col gap-10 rounded-3xl bg-primary-100 p-6 xl:gap-12 xl:p-8">
+    <div className={`col flex flex-col gap-10 rounded-3xl ${bgColor} p-6 xl:gap-12 xl:p-8`}>
       <div>
         <p className="w-fit rounded-3xl bg-white-main px-6 py-3 text-xl text-black-100">{plan}</p>
         <h2 className="mb-3 mt-4 text-3xl font-semibold text-white-main xl:text-5xl">{price}</h2>
@@ -28,7 +28,11 @@ const PricingFilledCard = ({ plan, price, data }) => {
           </React.Fragment>
         ))}
       </div>
-      <button className="w-full rounded-2xl bg-white-main py-4 text-base text-primary-100 hover:bg-neo-100">
+      <button
+        className={`w-full rounded-2xl bg-white-main py-4 text-base ${
+          bgColor === 'bg-success-100' ? 'text-success-100' : ' text-primary-100'
+        } hover:bg-neo-100`}
+      >
         Ulanish
       </button>
     </div>

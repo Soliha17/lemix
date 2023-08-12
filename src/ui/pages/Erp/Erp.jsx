@@ -27,7 +27,7 @@ const Erp = () => {
       </div>
       <FeedBacksBg bgColor="bg-primary-12" />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <Pricing />
+        <Pricing bgColor={'bg-primary-100'} borderColor={'border-primary-100'} />
         <PriceComparison />
         <ContactCard />
       </div>

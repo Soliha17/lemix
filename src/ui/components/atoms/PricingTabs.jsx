@@ -2,7 +2,9 @@ import Tabs from '@mui/joy/Tabs';
 import TabList from '@mui/joy/TabList';
 import Tab, { tabClasses } from '@mui/joy/Tab';
 
-export default function PricingTabs() {
+export default function PricingTabs({ bgColor }) {
+  const selectedTabStyle = bgColor === 'bg-success-100' ? '#40DD6C' : '#40AAFF';
+
   return (
     <Tabs
       aria-label="tabs"
@@ -20,7 +22,7 @@ export default function PricingTabs() {
           color: '#8D8C8B',
           [`& .${tabClasses.root}[aria-selected="true"]`]: {
             boxShadow: 'sm',
-            bgcolor: '#40AAFF',
+            bgcolor: selectedTabStyle,
             color: '#ffffff',
           },
         }}

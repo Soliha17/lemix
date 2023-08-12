@@ -112,20 +112,38 @@ const biznesDatas = [
   },
 ];
 
-const Pricing = () => {
+const Pricing = ({ bgColor, borderColor }) => {
   return (
     <div className="mt-6 md:mt-10 xl:mt-24">
       <SectionName name="Tariflar" />
       <div className="mx-auto my-10 w-fit">
-        <PricingTabs />
+        <PricingTabs bgColor={bgColor} />
       </div>
       <div className="mt-6 flex flex-col gap-6 md:mt-10 md:flex-row">
         <div className="mt-0 md:mt-12">
-          <PricingOutlinedCard plan="Oddiy" price="199 000" data={basicDatas} />
+          <PricingOutlinedCard
+            plan="Oddiy"
+            bgColor={bgColor}
+            borderColor={borderColor}
+            price="199 000"
+            data={basicDatas}
+          />
         </div>
-        <PricingFilledCard plan="Ommabop" price="399 000" data={generalDatas} />
+        <PricingFilledCard
+          plan="Ommabop"
+          borderColor={borderColor}
+          bgColor={bgColor}
+          price="399 000"
+          data={generalDatas}
+        />
         <div className="mt-0 md:mt-12">
-          <PricingOutlinedCard plan="Biznes" price="599 000" data={biznesDatas} />
+          <PricingOutlinedCard
+            plan="Biznes"
+            borderColor={borderColor}
+            bgColor={bgColor}
+            price="599 000"
+            data={biznesDatas}
+          />
         </div>
       </div>
     </div>
