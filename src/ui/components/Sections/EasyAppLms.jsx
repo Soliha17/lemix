@@ -26,7 +26,7 @@ const EasyAppLms = () => {
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           swipeable={false}
-          draggable={false}
+          draggable={true}
           showDots={true}
           arrows={false}
           dotListClass="opportunity-dots easy-app-dots"
