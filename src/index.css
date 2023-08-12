@@ -512,6 +512,7 @@ h6 {
   background: #0177fb !important;
 }
 
+.advantages-dots__exam .react-multi-carousel-dot--active button,
 .opp-exam-dots .react-multi-carousel-dot--active button {
   background: #00d23b !important;
 }
@@ -568,10 +569,12 @@ h6 {
   background: #ffffff;
 }
 
+.opportunity-dots .react-multi-carousel-dot button,
 .opp-lms-dots .react-multi-carousel-dot button {
   background: #e0eefe;
 }
 
+.advantages-dots__exam .react-multi-carousel-dot button,
 .opp-exam-dots .react-multi-carousel-dot button {
   background: #e0f9e7;
 }
