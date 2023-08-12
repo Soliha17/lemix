@@ -11,7 +11,7 @@ export const success = {
   75: '#40DD6C',
   50: '#7FE89C',
   25: '#BFF3CE',
-  12: '#F3FCE6',
+  12: '#E0F9E7',
 };
 
 export const warning = {

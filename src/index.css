@@ -206,6 +206,27 @@ h6 {
   background-position: bottom left;
 }
 
+.hero-exam {
+  background-image: url('src/assets/images/line__hero-exam.png');
+  background-position: bottom left;
+}
+
+.men-img__hero-exam {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 388px;
+  height: 287px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('src/assets/images/man__hero-exam.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: bottom left; */
+}
+
 .easy-app-card__lms {
   background-image: url('src/assets/images/line__easy-app-lms.png');
   background-position: bottom left;
@@ -259,15 +280,36 @@ h6 {
   border-radius: 50%;
 }
 
+.circle__hero-exam {
+  position: absolute;
+  top: -50px;
+  right: -44px;
+  width: 114px;
+  height: 114px;
+  background: rgba(64, 221, 108, 0.56);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
 @media (max-width: 824px) {
   .circle__contact-card,
-  .circle__hero-lms {
+  .circle__hero-lms,
+  .circle__hero-exam {
     width: 90px;
     height: 90px;
   }
 
+  .circle__hero-exam {
+    right: -10px;
+    top: -5px;
+  }
+
   .circle__contact-card img,
-  .circle__hero-lms img {
+  .circle__hero-lms img,
+  .circle__hero-exam img {
     width: 50px;
   }
 
@@ -280,6 +322,11 @@ h6 {
   .p__contact-card--top {
     top: 30px;
     right: 50px;
+  }
+
+  .men-img__hero-exam {
+    width: 268px !important;
+    height: 198px !important;
   }
 
   .opp-lms-dots {
@@ -332,6 +379,11 @@ h6 {
 @media (max-width: 1024px) {
   .about-card {
     background-position: top left !important;
+  }
+
+  .men-img__hero-exam {
+    width: 277.865px;
+    height: 205.115px;
   }
 }
 

@@ -11,7 +11,7 @@ const HeroErp = () => {
             tizimlari o&apos;quv jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv
             materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi.
           </p>
-          <button className="rounded-2xl bg-white-main px-9 py-4 font-semibold text-primary-100 hover:bg-neo-100">
+          <button className="w-full rounded-2xl bg-white-main px-9 py-4 font-semibold text-primary-100 hover:bg-neo-100 sm:w-auto">
             Bepul foydalanish
           </button>
         </div>
