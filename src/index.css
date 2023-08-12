@@ -125,7 +125,7 @@ h6 {
   text-transform: capitalize;
 }
 
-.navbar-tabs .css-11eugco-MuiTabs-root{
+.navbar-tabs .css-11eugco-MuiTabs-root {
   min-height: 41px !important;
 }
 
@@ -428,11 +428,15 @@ h6 {
   .all-one-card {
     flex-basis: calc(50% - 24px);
   }
+
+  .all-in-one-container::before {
+    left: 0;
+  }
 }
 
 @media (max-width: 600px) {
   .all-one-card {
-    flex-basis: 100%;
+    flex-basis: calc(100% - 20px) !important;
   }
 }
 

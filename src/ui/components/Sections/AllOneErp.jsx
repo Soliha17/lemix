@@ -38,9 +38,8 @@ const AllOneErp = () => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Lemix ERP barchasi bittada" />
-      <div className="mt-16 flex flex-col items-center md:mt-24 lg:mt-20">
-        {/* <img src={mapVector} alt="mapVector" /> */}
-        <div className="all-in-one-container flex flex-wrap justify-between gap-6">
+      <div className="mt-16 md:mt-24 lg:mt-20">
+        <div className="all-in-one-container flex flex-wrap justify-center gap-6">
           {allOneErp.map((card) => (
             <AllOneCard key={card.id} id={card.id} title={card.title} text={card.text} />
           ))}
