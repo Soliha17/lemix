@@ -6,6 +6,7 @@ import FeedBacksBg from 'src/ui/components/Sections/FeedBacksBg';
 import ForWhoExam from 'src/ui/components/Sections/ForWhoExam';
 import OpportunityExam from 'src/ui/components/Sections/OpportunityExam';
 import OurUsers from 'src/ui/components/Sections/OurUsers';
+import PriceComparison from 'src/ui/components/Sections/PriceComparison';
 import Pricing from 'src/ui/components/Sections/Pricing';
 import StatisticsExam from 'src/ui/components/Sections/StatisticExam';
 
@@ -26,6 +27,7 @@ const Exam = () => {
       <FeedBacksBg bgColor="bg-success-12" />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Pricing bgColor="bg-success-100" borderColor="border-success-100" />
+        <PriceComparison bgColor="#E0F9E7" />
       </div>
       <Footer />
     </>

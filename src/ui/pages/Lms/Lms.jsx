@@ -28,7 +28,7 @@ const Lms = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <EasyAppLms />
         <Pricing bgColor={'bg-primary-100'} borderColor={'border-primary-100'} />
-        <PriceComparison />
+        <PriceComparison bgColor="#E0EEFE" />
         <ContactCard />
       </div>
       <Footer />

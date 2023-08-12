@@ -1,7 +1,7 @@
 import CustomizedAccordions from 'src/ui/components/Moleculas/PriceAccordion';
 import SectionName from 'src/ui/components/Atoms/SectionName';
 
-const PriceComparison = () => {
+const PriceComparison = ({ bgColor }) => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <div className="mb-8 flex flex-col items-center gap-8 xl:flex-row xl:justify-between xl:gap-0">
@@ -27,7 +27,7 @@ const PriceComparison = () => {
           </span>
         </div>
       </div>
-      <CustomizedAccordions />
+      <CustomizedAccordions bgColor={bgColor} />
     </div>
   );
 };
