@@ -520,6 +520,50 @@ h6 {
   border: none !important;
 }
 
+.opp-card__erp {
+  position: relative;
+  /* box-shadow:
+    0px -35px 0px -16px #f8f9fc,
+    0px -80px 0px -40px #f3f6fc,
+    0px -120px 0px -60px #edf3fc; */
+}
+
+.opp-card__erp:before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  height: 24px;
+  width: 95%;
+  background: #f8f9fc;
+}
+
+.opp-card__erp:after {
+  content: '';
+  position: absolute;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  height: 24px;
+  width: 90%;
+  background: #f3f6fc;
+}
+
+@media (max-width: 700px) {
+  .opp-card__erp:before {
+    width: 90%;
+  }
+
+  .opp-card__erp:after {
+    width: 80%;
+  }
+}
+
 .feedback-bg-dots .react-multi-carousel-dot button {
   background: #ffffff;
 }
@@ -529,7 +573,7 @@ h6 {
 }
 
 .opp-exam-dots .react-multi-carousel-dot button {
-  background: #E0F9E7;
+  background: #e0f9e7;
 }
 
 @media (max-width: 1400px) {
