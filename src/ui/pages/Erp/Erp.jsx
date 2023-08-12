@@ -10,6 +10,7 @@ import Statistics from 'src/ui/components/Sections/Statistics';
 import ContactCard from '../../components/Cards/ContactCard';
 import HeroErp from 'src/ui/components/Heros/HeroErp';
 import AdvantagesErp from 'src/ui/components/Sections/AdvantagesErp';
+import Navbar from 'src/ui/components/Layout/Header/Navbar';
 
 const Erp = () => {
   return (
@@ -17,6 +18,7 @@ const Erp = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Header />
       </div>
+      <Navbar />
       <HeroErp />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <OurUsers bgColor="bg-primary-12" />

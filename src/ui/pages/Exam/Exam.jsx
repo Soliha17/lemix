@@ -2,6 +2,7 @@ import ContactCard from 'src/ui/components/Cards/ContactCard';
 import HeroExam from 'src/ui/components/Heros/HeroExam';
 import Footer from 'src/ui/components/Layout/Footer';
 import Header from 'src/ui/components/Layout/Header/Header';
+import Navbar from 'src/ui/components/Layout/Header/Navbar';
 import AdvantagesExam from 'src/ui/components/Sections/AdvantagesExam';
 import FeedBacksBg from 'src/ui/components/Sections/FeedBacksBg';
 import ForWhoExam from 'src/ui/components/Sections/ForWhoExam';
@@ -17,6 +18,7 @@ const Exam = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Header />
       </div>
+      <Navbar />
       <HeroExam />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <OpportunityExam />

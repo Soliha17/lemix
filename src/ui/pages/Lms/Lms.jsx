@@ -2,6 +2,7 @@ import ContactCard from 'src/ui/components/Cards/ContactCard';
 import HeroLms from 'src/ui/components/Heros/HeroLms';
 import Footer from 'src/ui/components/Layout/Footer';
 import Header from 'src/ui/components/Layout/Header/Header';
+import Navbar from 'src/ui/components/Layout/Header/Navbar';
 import AdvantagesLms from 'src/ui/components/Sections/AdvantagesLms';
 import EasyAppLms from 'src/ui/components/Sections/EasyAppLms';
 import FeedBacksBg from 'src/ui/components/Sections/FeedBacksBg';
@@ -17,6 +18,7 @@ const Lms = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Header />
       </div>
+      <Navbar />
       <HeroLms />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <OpportunityLms />

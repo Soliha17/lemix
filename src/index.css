@@ -121,6 +121,14 @@ h6 {
   width: 800px;
 }
 
+.navbar-tabs .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  text-transform: capitalize;
+}
+
+.navbar-tabs .css-11eugco-MuiTabs-root{
+  min-height: 41px !important;
+}
+
 @media (max-width: 1024px) {
   .phone-img__easy-app img {
     width: 300px;
