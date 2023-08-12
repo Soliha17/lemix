@@ -1,3 +1,4 @@
+import ContactCard from 'src/ui/components/Cards/ContactCard';
 import HeroExam from 'src/ui/components/Heros/HeroExam';
 import Footer from 'src/ui/components/Layout/Footer';
 import Header from 'src/ui/components/Layout/Header/Header';
@@ -28,6 +29,7 @@ const Exam = () => {
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Pricing bgColor="bg-success-100" borderColor="border-success-100" />
         <PriceComparison bgColor="#E0F9E7" />
+        <ContactCard />
       </div>
       <Footer />
     </>
