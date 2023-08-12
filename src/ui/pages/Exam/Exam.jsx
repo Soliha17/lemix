@@ -2,6 +2,7 @@ import HeroExam from 'src/ui/components/Heros/HeroExam';
 import Header from 'src/ui/components/Layout/Header/Header';
 import ForWhoExam from 'src/ui/components/Sections/ForWhoExam';
 import OpportunityExam from 'src/ui/components/Sections/OpportunityExam';
+import StatisticsExam from 'src/ui/components/Sections/StatisticExam';
 
 const Exam = () => {
   return (
@@ -12,7 +13,8 @@ const Exam = () => {
       <HeroExam />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <OpportunityExam />
-        <ForWhoExam/>
+        <ForWhoExam />
+        <StatisticsExam />
       </div>
     </>
   );
