@@ -1,8 +1,10 @@
 import HeroExam from 'src/ui/components/Heros/HeroExam';
 import Header from 'src/ui/components/Layout/Header/Header';
 import AdvantagesExam from 'src/ui/components/Sections/AdvantagesExam';
+import FeedBacksBg from 'src/ui/components/Sections/FeedBacksBg';
 import ForWhoExam from 'src/ui/components/Sections/ForWhoExam';
 import OpportunityExam from 'src/ui/components/Sections/OpportunityExam';
+import OurUsers from 'src/ui/components/Sections/OurUsers';
 import StatisticsExam from 'src/ui/components/Sections/StatisticExam';
 
 const Exam = () => {
@@ -16,8 +18,10 @@ const Exam = () => {
         <OpportunityExam />
         <ForWhoExam />
         <StatisticsExam />
-        <AdvantagesExam/>
+        <AdvantagesExam />
+        <OurUsers bgColor="bg-success-12" />
       </div>
+      <FeedBacksBg bgColor="bg-success-12" />
     </>
   );
 };

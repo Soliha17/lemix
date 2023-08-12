@@ -513,6 +513,7 @@ h6 {
 }
 
 .advantages-dots__exam .react-multi-carousel-dot--active button,
+.feedback-bg-dots--green .react-multi-carousel-dot--active button,
 .opp-exam-dots .react-multi-carousel-dot--active button {
   background: #00d23b !important;
 }
@@ -565,6 +566,7 @@ h6 {
   }
 }
 
+.feedback-bg-dots--green .react-multi-carousel-dot button,
 .feedback-bg-dots .react-multi-carousel-dot button {
   background: #ffffff;
 }

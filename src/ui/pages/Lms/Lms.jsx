@@ -22,9 +22,9 @@ const Lms = () => {
         <OpportunityLms />
         <Statistics />
         <AdvantagesLms />
-        <OurUsers />
+        <OurUsers bgColor="bg-primary-12" />
       </div>
-      <FeedBacksBg />
+      <FeedBacksBg bgColor="bg-primary-12" />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <EasyAppLms />
         <Pricing />

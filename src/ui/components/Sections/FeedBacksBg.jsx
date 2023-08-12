@@ -107,9 +107,9 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
   );
 };
 
-const FeedBacksBg = () => {
+const FeedBacksBg = ({ bgColor }) => {
   return (
-    <div className="mt-16 w-full bg-primary-12 py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20">
+    <div className={`mt-16 w-full ${bgColor} py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20`}>
       <SectionName name="Mijozlarimiz fikrlari" />
       <div className="relative mx-auto mt-6 max-w-7xl px-5 md:mt-8 md:px-10 lg:mt-10">
         <Carousel
@@ -132,7 +132,7 @@ const FeedBacksBg = () => {
           partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}
           // deviceType={this.props.deviceType}
-          dotListClass="feedback-bg-dots"
+          dotListClass={` ${bgColor === "bg-success-12" && "feedback-bg-dots--green"} feedback-bg-dots`}
           itemClass="carousel-item-padding-40-px"
         >
           {feedBackDatas.map((feedback) => (

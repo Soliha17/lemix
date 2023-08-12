@@ -72,11 +72,13 @@ const responsive = {
   },
 };
 
-const OurUsers = () => {
+const OurUsers = ({ bgColor }) => {
   return (
     <div className="mt-16 w-full md:mt-24 lg:mt-20">
       <SectionName name="Foydalanuvchilarimiz" />
-      <div className="our-users-card mt-6 rounded-2xl bg-primary-12 bg-no-repeat py-10 md:mt-8 lg:mt-10">
+      <div
+        className={`our-users-card mt-6 rounded-2xl ${bgColor} bg-no-repeat py-10 md:mt-8 lg:mt-10`}
+      >
         <Carousel
           renderButtonGroupOutside={true}
           swipeable={true}

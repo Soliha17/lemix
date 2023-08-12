@@ -19,13 +19,13 @@ const Erp = () => {
       </div>
       <HeroErp />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <OurUsers />
+        <OurUsers bgColor="bg-primary-12" />
         <OpportunityErp />
         <Statistics />
         <AdvantagesErp />
         <AllOneErp />
       </div>
-      <FeedBacksBg />
+      <FeedBacksBg bgColor="bg-primary-12" />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Pricing />
         <PriceComparison />
