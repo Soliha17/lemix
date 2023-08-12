@@ -17,7 +17,7 @@ function Header() {
         <div className="flex">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-12 w-auto" src={lemixLogo} alt="" />
+            <img className="w-36 sm:h-12 sm:w-auto" src={lemixLogo} alt="" />
           </a>
         </div>
         <div className="flex gap-3 lg:hidden">

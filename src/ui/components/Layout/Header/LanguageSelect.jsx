@@ -41,7 +41,7 @@ export default function LanguageSelect() {
       {({ open }) => (
         <>
           <Listbox.Label className="hidden">Assigned to</Listbox.Label>
-          <div className="relative mt-2">
+          <div className="relative">
             <Listbox.Button className="relative w-full cursor-default rounded-md bg-white-main py-1.5 pl-3 pr-10 text-left text-black-75 focus:outline-none focus:ring-2 focus:ring-primary-100 sm:text-sm sm:leading-6">
               <span className="flex items-center">
                 <span className="ml-3 block truncate">{selected.name}</span>
