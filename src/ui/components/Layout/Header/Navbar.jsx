@@ -38,7 +38,7 @@ const Navbar = () => {
     <div
       className={`navbar-tabs fixed ${
         isSticky && 'top-0'
-      } z-50 flex w-full justify-center border-b border-t border-neo-100 bg-white-main`}
+      } z-40 flex w-full justify-center border-b border-t border-neo-100 bg-white-main`}
     >
       <Tabs
         value={value}
