@@ -1,19 +1,23 @@
 import { Fragment, useState } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
+import { useTranslation } from 'react-i18next';
 
 const languages = [
   {
     id: 1,
     name: 'UZ',
+    value: 'uz',
   },
   {
     id: 2,
     name: 'EN',
+    value: 'en',
   },
   {
     id: 3,
     name: 'RU',
+    value: 'ru',
   },
 ];
 
@@ -23,9 +27,17 @@ function classNames(...classes) {
 
 export default function LanguageSelect() {
   const [selected, setSelected] = useState(languages[0]);
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  console.log(currentLanguage);
+
+  const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language.value);
+    setSelected(language);
+  };
 
   return (
-    <Listbox value={selected} onChange={setSelected} className="border-0">
+    <Listbox value={selected} onChange={handleLanguageChange} className="border-0">
       {({ open }) => (
         <>
           <Listbox.Label className="hidden">Assigned to</Listbox.Label>

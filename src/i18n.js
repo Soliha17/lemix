@@ -1,24 +1,29 @@
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend";
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
-i18next
-  .use(HttpApi)
-  .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
-    fallbackLng: "uz",
-    supportedLngs: ["en", "ru", "uz"],
-    debug: false,
-    detection: {
-      order: ["path", "cookie", "htmlTag"],
-      caches: ["cookie"],
-    },
-    react: { useSuspense: true },
-    backend: {
-      loadPath: "/languages/{{lng}}/translation.json",
-    },
-  });
+import translationEN from 'src/locales/en.json'; // Import your language files
+import translationRU from 'src/locales/ru.json';
+import translationUZ from 'src/locales/uz.json';
 
-export default i18next;
+const resources = {
+  en: {
+    translation: translationEN,
+  },
+  ru: {
+    translation: translationRU,
+  },
+  uz: {
+    translation: translationUZ,
+  },
+};
+
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'en', // Set the default language here
+  fallbackLng: 'en', // Set the fallback language here
+  interpolation: {
+    escapeValue: false, // React already escapes content by default
+  },
+});
+
+export default i18n;

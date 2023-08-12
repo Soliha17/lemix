@@ -1,5 +1,6 @@
 // import { useTranslation } from "react-i18next"
 
+import { useTranslation } from 'react-i18next';
 import AboutCard from 'src/ui/components/Cards/AboutCard';
 import HeroHome from 'src/ui/components/Heros/HeroHome';
 import Footer from 'src/ui/components/Layout/Footer';
@@ -10,11 +11,12 @@ import ProductHome from 'src/ui/components/Sections/ProductHome';
 import Statistics from 'src/ui/components/Sections/Statistics';
 
 const Home = () => {
-  // const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <>
       <div className="mx-auto max-w-7xl px-5 md:px-10">
         <Header />
+        <h1>{t('salom')}</h1>
         <HeroHome />
         <ProductHome />
         <Statistics />
