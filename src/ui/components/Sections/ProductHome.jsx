@@ -66,16 +66,16 @@ const ProductHome = () => {
         <ProductCard />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        <ProductCard />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        <ProductCard />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        Item Three
+        <ProductCard />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-        Item Three
+        <ProductCard />
       </CustomTabPanel>
     </div>
   );

@@ -2,8 +2,12 @@ import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
 import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
 
 import aboutVideo from 'src/assets/images/about-video.png';
+import { useState } from 'react';
+import VideoModal from '../Atoms/VideoModal';
 
 const AboutCard = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <div className="about-card flex w-full flex-col items-end rounded-3xl bg-neo-100 bg-no-repeat lg:flex-row lg:items-center">
@@ -26,8 +30,14 @@ const AboutCard = () => {
             <BlackOutlineBtn text="Maslahat olish" />
           </div>
         </div>
-        <img className="rounded-r-none sm:rounded-r-3xl" src={aboutVideo} alt="about video" />
+        <img
+          className="rounded-r-none sm:rounded-r-3xl"
+          onClick={() => setOpen(true)}
+          src={aboutVideo}
+          alt="about video"
+        />
       </div>
+      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
     </div>
   );
 };
