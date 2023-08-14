@@ -6,7 +6,7 @@ import wrongIcon from 'src/assets/images/wrong-icon-pricing.svg';
 const PricingOutlinedCard = ({ plan, price, data, bgColor, borderColor }) => {
   return (
     <div
-      className={`col flex flex-col gap-10 rounded-3xl border ${borderColor} p-6 xl:gap-12 xl:p-8`}
+      className={`flex flex-col gap-10 rounded-3xl border ${borderColor} p-6 xl:gap-12`}
     >
       <div>
         <p

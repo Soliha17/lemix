@@ -488,12 +488,12 @@ h6 {
 }
 
 /* PRICING TABS */
-.pricing-tabs button {
+.tablist__pricing button {
   width: 169px;
 }
 
 @media (max-width: 800px) {
-  .pricing-tabs button {
+  .tablist__pricing button {
     width: auto;
   }
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleTabClick = (sectionId) => {
     const section = document.getElementById(sectionId);
-    console.log(sectionId);
+    console.log(section);
     if (section) {
       section.scrollIntoView({
         behavior: 'smooth',
@@ -24,9 +24,11 @@ const Navbar = () => {
   const handleScroll = useCallback(() => {
     for (let i = 0; i < sections.length; i++) {
       const section = document.getElementById(sections[i]);
+      // console.log(section);
       if (section) {
         const rect = section.getBoundingClientRect();
         if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          console.log(section);
           setValue(i);
         }
       }
@@ -48,6 +50,7 @@ const Navbar = () => {
 
   const handleChange = (event, newValue) => {
     console.log(newValue);
+    console.log(sections[newValue]);
     setValue(newValue);
     handleTabClick(sections[newValue]);
   };
