@@ -133,10 +133,18 @@ h6 {
   min-height: 41px !important;
 }
 
+.dropdown-header {
+  max-width: 170px;
+}
+
 @media (max-width: 1024px) {
   .phone-img__easy-app img {
     width: 300px;
     margin-top: 350px;
+  }
+
+  .dropdown-header {
+    max-width: 100%;
   }
 
   .easy-app-card__lms {
