@@ -26,7 +26,9 @@ const Navbar = () => {
       const section = document.getElementById(sections[i]);
       if (section) {
         const rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+        console.log(rect);
+        console.log(window.innerHeight);
+        if (rect.bottom <= window.innerHeight / 0.9) {
           setValue(i);
         }
       }
