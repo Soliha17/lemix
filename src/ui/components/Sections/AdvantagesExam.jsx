@@ -50,11 +50,11 @@ const AdvantagesExam = () => {
           // itemClass="carousel-item-padding-40-px"
         >
           <AdvantageCardExam />
-          <div className="h-40 w-full bg-yellow-500">Item 2</div>
-          <div className="h-40 w-full bg-pink-500">Item 3</div>
-          <div className="h-40 w-full bg-blue-500">Item 4</div>
-          <div className="h-40 w-full bg-violet-500">Item 5</div>
-          <div className="h-40 w-full bg-green-500">Item 6</div>
+          <AdvantageCardExam />
+          <AdvantageCardExam />
+          <AdvantageCardExam />
+          <AdvantageCardExam />
+          <AdvantageCardExam />
         </Carousel>
       </div>
     </div>
