@@ -1,6 +1,10 @@
 import heroImg from 'src/assets/images/hero-erp-img.png';
+import { useState } from 'react';
+import VideoModal from '../Atoms/VideoModal';
 
 const HeroErp = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div id="general" className="hero-erp mt-10 bg-neo-75 bg-no-repeat py-6 md:py-14 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-9 px-5 sm:flex-row md:px-10">
@@ -16,9 +20,10 @@ const HeroErp = () => {
           </button>
         </div>
         <div className="card__hero-erp">
-          <img src={heroImg} alt="heroImg" />
+          <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" />
         </div>
       </div>
+      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
     </div>
   );
 };

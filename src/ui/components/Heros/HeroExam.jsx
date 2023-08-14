@@ -1,8 +1,12 @@
 import done from 'src/assets/images/done-icon__contact.svg';
 import table from 'src/assets/images/table-advantages.png';
 import playIcon from 'src/assets/images/play-video-icon.png';
+import VideoModal from '../Atoms/VideoModal';
+import { useState } from 'react';
 
 const HeroExam = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div id="general" className="hero-exam mt-10 bg-success-12 bg-no-repeat py-6 md:py-14 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-9 px-5 sm:flex-row md:px-10">
@@ -23,10 +27,11 @@ const HeroExam = () => {
             <img src={done} alt="done icon" />
           </div>
           <div className="men-img__hero-exam">
-            <img src={playIcon} alt="playIcon" />
+            <img src={playIcon} onClick={() => setOpen(true)} alt="playIcon" />
           </div>
         </div>
       </div>
+      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
     </div>
   );
 };

@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import heroImg from 'src/assets/images/hero-img__lms.png';
 import done from 'src/assets/images/done-icon__contact.svg';
+import VideoModal from '../Atoms/VideoModal';
 
 const HeroLms = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div id="general" className="hero-erp mt-10 bg-neo-75 bg-no-repeat py-6 md:py-14 xl:py-20">
       <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-9 px-5 sm:flex-row md:px-10">
@@ -20,9 +24,10 @@ const HeroLms = () => {
           <div className="circle__hero-lms -mb-16 -ml-3 sm:-mb-20 sm:-ml-10">
             <img src={done} alt="done icon" />
           </div>
-          <img src={heroImg} alt="heroImg" />
+          <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" />
         </div>
       </div>
+      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
     </div>
   );
 };
