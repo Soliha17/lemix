@@ -274,7 +274,7 @@ h6 {
   min-width: 220px;
   background: rgba(1, 119, 251, 0.32);
   backdrop-filter: blur(16px);
-  z-index: 99;
+  z-index: 20;
   position: absolute;
 }
 
