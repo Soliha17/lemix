@@ -26,10 +26,12 @@ function classNames(...classes) {
 }
 
 export default function LanguageSelect() {
-  const [selected, setSelected] = useState(languages[0]);
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
   console.log(currentLanguage);
+  const [selected, setSelected] = useState(
+    languages.find((lang) => lang.value === currentLanguage),
+  );
 
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language.value);
@@ -41,7 +43,7 @@ export default function LanguageSelect() {
       {({ open }) => (
         <>
           <Listbox.Label className="hidden">Assigned to</Listbox.Label>
-          <div className="relative">
+          <div className="relative z-50">
             <Listbox.Button className="relative w-full cursor-default rounded-md bg-white-main py-1.5 pl-3 pr-10 text-left text-black-75 focus:outline-none focus:ring-2 focus:ring-primary-100 sm:text-sm sm:leading-6">
               <span className="flex items-center">
                 <span className="ml-3 block truncate">{selected.name}</span>

@@ -3,9 +3,11 @@ import table from 'src/assets/images/table-advantages.png';
 import playIcon from 'src/assets/images/play-video-icon.png';
 import VideoModal from '../Atoms/VideoModal';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const HeroExam = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div id="general" className="hero-exam mt-10 bg-success-12 bg-no-repeat py-6 md:py-14 xl:py-20">
@@ -18,7 +20,7 @@ const HeroExam = () => {
             materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi.
           </p>
           <button className="w-full rounded-2xl bg-success-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto">
-            Bepul foydalanish
+            {t('free')}
           </button>
         </div>
         <div className="relative mb-32">

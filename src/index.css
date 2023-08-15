@@ -137,6 +137,7 @@ h6 {
   max-width: 170px;
 }
 
+
 @media (max-width: 1024px) {
   .phone-img__easy-app img {
     width: 300px;
