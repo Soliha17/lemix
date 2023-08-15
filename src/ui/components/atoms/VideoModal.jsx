@@ -22,7 +22,7 @@ export default function VideoModal({ open, setOpen, videoId }) {
                     src={`https://www.youtube.com/embed/${videoId}`}
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share fullscreen"
-                    allowfullscreen
+                    allowfullscreen="1"
                   ></iframe>
                 </div>
               </div>
