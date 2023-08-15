@@ -45,8 +45,8 @@ const products = [
 
 const Propover = ({ title }) => {
   return (
-    <Popover className="relative z-50">
-      <Popover.Button className="flex items-center gap-x-1 text-sm font-normal leading-6 text-black-75">
+    <Popover className="relative z-50 border-none outline-none">
+      <Popover.Button className="flex items-center gap-x-1 border-none text-sm font-normal leading-6 text-black-75 outline-none hover:text-primary-100">
         {title}
         <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
       </Popover.Button>

@@ -32,7 +32,10 @@ function Header() {
           </button>
         </div>
         <Popover.Group className="hidden items-center lg:flex lg:gap-x-6">
-          <a href="#" className="text-sm font-normal leading-normal text-black-75">
+          <a
+            href="#"
+            className="text-sm font-normal leading-normal text-black-75 hover:text-primary-100"
+          >
             Bosh sahifasi
           </a>
           <Propover title="Mahsulotlar" />
