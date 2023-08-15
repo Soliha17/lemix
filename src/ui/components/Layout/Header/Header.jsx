@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import { Dialog, Popover } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -11,14 +13,18 @@ import LanguageSelect from './LanguageSelect';
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="bg-white-main">
       <nav className="flex items-center justify-between p-3" aria-label="Global">
         <div className="flex">
-          <a href="#" className="-m-1.5 p-1.5">
+          <NavLink to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img className="w-36 sm:h-12 sm:w-auto" src={lemixLogo} alt="" />
-          </a>
+          </NavLink>
         </div>
         <div className="flex gap-3 lg:hidden">
           <LanguageSelect />
@@ -32,12 +38,15 @@ function Header() {
           </button>
         </div>
         <Popover.Group className="hidden items-center lg:flex lg:gap-x-6">
-          <a
-            href="#"
-            className="text-sm font-normal leading-normal text-black-75 hover:text-primary-100"
+          <NavLink
+            to={'/'}
+            exact
+            className={`text-sm font-normal leading-normal ${
+              location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
+            } hover:text-primary-100`}
           >
             Bosh sahifasi
-          </a>
+          </NavLink>
           <Propover title="Mahsulotlar" />
           <Propover title="Yechimlar" />
           <Propover title="Resurslar" />
@@ -55,7 +64,7 @@ function Header() {
           </button>
         </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={closeMobileMenu}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white-main px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -75,12 +84,16 @@ function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 text-black-75">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-normal hover:bg-gray-50"
+                <NavLink
+                  to={'/'}
+                  exact
+                  onClick={closeMobileMenu}
+                  className={`-mx-3 block ${
+                    location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
+                  } rounded-lg px-3 py-2 text-base font-semibold leading-normal hover:bg-gray-50`}
                 >
                   Bosh sahifasi
-                </a>
+                </NavLink>
                 <DisclosureComp title="Mahsulotlar" />
                 <DisclosureComp title="Yechimlar" />
                 <DisclosureComp title="Resurslar " />

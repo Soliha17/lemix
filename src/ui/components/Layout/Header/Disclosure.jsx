@@ -1,52 +1,21 @@
-// import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import PropTypes from 'prop-types';
-
-import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-} from '@heroicons/react/24/outline';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Disclosure } from '@headlessui/react';
+import { NavLink } from 'react-router-dom';
 
 const products = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of your traffic',
-    href: '#',
-    icon: ChartPieIcon,
+    name: 'Lemix ERP',
+    href: '/erp',
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers',
-    href: '#',
-    icon: CursorArrowRaysIcon,
+    name: 'Lemix LMS',
+    href: '/lms',
   },
   {
-    name: 'Security',
-    description: 'Your customers’ data will be safe and secure',
-    href: '#',
-    icon: FingerPrintIcon,
+    name: 'Lemix EXAM',
+    href: '/exam',
   },
-  {
-    name: 'Integrations',
-    description: 'Connect with third-party tools',
-    href: '#',
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will convert',
-    href: '#',
-    icon: ArrowPathIcon,
-  },
-];
-
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ];
 
 function classNames(...classes) {
@@ -66,12 +35,13 @@ const DisclosureComp = ({ title }) => {
                 aria-hidden="true"
               />
             </Disclosure.Button>
-            <Disclosure.Panel className="mt-2 space-y-2">
-              {[...products, ...callsToAction].map((item) => (
+            <Disclosure.Panel className="disclosure-panel mt-2 space-y-2">
+              {products.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as={NavLink}
+                  to={item.href}
+                  exact
                   className="block rounded-lg py-2 pl-6 pr-3 text-sm text-black-75 hover:bg-gray-50"
                 >
                   {item.name}

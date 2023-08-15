@@ -1,45 +1,22 @@
 import { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
+
 import { Popover, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
-import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-} from '@heroicons/react/24/outline';
 
 const products = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of your traffic',
-    href: '#',
-    icon: ChartPieIcon,
+    name: 'Lemix ERP',
+    href: '/erp',
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers',
-    href: '#',
-    icon: CursorArrowRaysIcon,
+    name: 'Lemix LMS',
+    href: '/lms',
   },
   {
-    name: 'Security',
-    description: 'Your customers’ data will be safe and secure',
-    href: '#',
-    icon: FingerPrintIcon,
-  },
-  {
-    name: 'Integrations',
-    description: 'Connect with third-party tools',
-    href: '#',
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will convert',
-    href: '#',
-    icon: ArrowPathIcon,
+    name: 'Lemix EXAM',
+    href: '/exam',
   },
 ];
 
@@ -65,12 +42,12 @@ const Propover = ({ title }) => {
             {products.map((item) => (
               <div
                 key={item.name}
-                className="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
+                className="propover-panel group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
               >
-                <a href={item.href} className="block font-normal text-gray-900">
+                <NavLink exact to={item.href} className="block font-normal text-gray-900">
                   {item.name}
                   <span className="absolute inset-0" />
-                </a>
+                </NavLink>
               </div>
             ))}
           </div>

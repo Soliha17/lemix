@@ -137,6 +137,10 @@ h6 {
   max-width: 170px;
 }
 
+.disclosure-panel .active,
+.propover-panel .active {
+  color: #0177fb;
+}
 
 @media (max-width: 1024px) {
   .phone-img__easy-app img {
