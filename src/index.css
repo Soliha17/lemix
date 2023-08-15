@@ -142,6 +142,10 @@ h6 {
   color: #0177fb;
 }
 
+.video-modal-wrapper {
+  background: rgba(0, 0, 0, 0.75);
+}
+
 @media (max-width: 1024px) {
   .phone-img__easy-app img {
     width: 300px;
