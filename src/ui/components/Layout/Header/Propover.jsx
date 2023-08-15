@@ -44,7 +44,7 @@ const Propover = ({ title }) => {
                 key={item.name}
                 className="propover-panel group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
               >
-                <NavLink exact to={item.href} className="block font-normal text-gray-900">
+                <NavLink exact="true" to={item.href} className="block font-normal text-gray-900">
                   {item.name}
                   <span className="absolute inset-0" />
                 </NavLink>

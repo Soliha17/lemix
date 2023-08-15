@@ -9,11 +9,18 @@ import lemixLogo from 'src/assets/images/lemix-logo.png';
 import Propover from './Propover';
 import DisclosureComp from './Disclosure';
 import LanguageSelect from './LanguageSelect';
+import ContactModal from '../../Atoms/ContactModal';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
+  const openContactModal = () => {
+    setOpen(true);
     setMobileMenuOpen(false);
   };
 
@@ -40,7 +47,7 @@ function Header() {
         <Popover.Group className="hidden items-center lg:flex lg:gap-x-6">
           <NavLink
             to={'/'}
-            exact
+            exact="true"
             className={`text-sm font-normal leading-normal ${
               location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
             } hover:text-primary-100`}
@@ -56,7 +63,10 @@ function Header() {
           <div>
             <LanguageSelect />
           </div>
-          <button className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600">
+          <button
+            onClick={openContactModal}
+            className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600"
+          >
             Demodan foydalanish
           </button>
           <button className="rounded-2xl border border-primary-100 px-9 py-4 text-primary-100 hover:bg-primary-100 hover:text-white-main">
@@ -86,7 +96,7 @@ function Header() {
               <div className="space-y-2 py-6 text-black-75">
                 <NavLink
                   to={'/'}
-                  exact
+                  exact="true"
                   onClick={closeMobileMenu}
                   className={`-mx-3 block ${
                     location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
@@ -99,7 +109,10 @@ function Header() {
                 <DisclosureComp title="Resurslar " />
               </div>
               <div className="flex flex-col gap-3 py-6">
-                <button className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600">
+                <button
+                  onClick={openContactModal}
+                  className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600"
+                >
                   Demodan foydalanish
                 </button>
                 <button className="rounded-2xl border border-primary-100 px-9 py-4 text-primary-100 hover:bg-primary-100 hover:text-white-main">
@@ -110,6 +123,7 @@ function Header() {
           </div>
         </Dialog.Panel>
       </Dialog>
+      <ContactModal open={open} setOpen={setOpen} />
     </header>
   );
 }

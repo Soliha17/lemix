@@ -20,11 +20,8 @@ const ContactCard = () => {
           <img src={goodFilled} alt="goodFilled" />
         </div>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-5">
         <div>
-          <h4 className="mb-4 text-3xl text-white-main xl:mb-6">
-            Lemix sizning biznesingizga <br /> yordam beradi
-          </h4>
           <p className="text-base text-white-main">
             Ma&apos;lumotlaringizni qoldiring mutaxasislarimiz <br /> siz bilan tez orada
             bog&apos;lanishadi
@@ -33,6 +30,8 @@ const ContactCard = () => {
         <div className="form__contact-card">
           <input type="text" placeholder="Ismingiz" />
           <input type="number" placeholder="+998 00 000 00 00" />
+          <input type="text" placeholder="Markaz nomi" />
+          <input type="number" placeholder="Telegram raqam" />
           <button>Yuborish</button>
         </div>
       </div>

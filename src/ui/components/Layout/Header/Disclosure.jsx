@@ -41,7 +41,7 @@ const DisclosureComp = ({ title }) => {
                   key={item.name}
                   as={NavLink}
                   to={item.href}
-                  exact
+                  exact="true"
                   className="block rounded-lg py-2 pl-6 pr-3 text-sm text-black-75 hover:bg-gray-50"
                 >
                   {item.name}

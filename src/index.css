@@ -214,6 +214,15 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.contact-modal {
+  background-image: url('src/assets/images/line__contact-modal.svg'),
+    url('src/assets/images/bottom-line__contact-modal.svg');
+  background-position:
+    top right,
+    bottom left;
+  background-repeat: no-repeat;
+}
+
 .about-card {
   background-image: url('src/assets/images/line__about-home.png');
   background-position: bottom right;
@@ -309,6 +318,10 @@ h6 {
   border-radius: 50%;
 }
 
+.circle__contact-modal {
+  background: #bfddfe;
+}
+
 .circle__hero-exam {
   position: absolute;
   top: -50px;
@@ -398,6 +411,10 @@ h6 {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+.form__contact-card .send-btn__contact-modal {
+  background: #0177fb;
 }
 
 .form__contact-card button:hover {
