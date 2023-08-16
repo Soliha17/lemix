@@ -2,7 +2,7 @@ import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
 import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
 import opportunityTable from 'src/assets/images/opportunity-table.png';
 
-const OpportunityCardHome = () => {
+const OpportunityCardHome = ({ setOpen }) => {
   return (
     <div className="opportunity-card flex w-full flex-col items-end rounded-3xl bg-primary-12 bg-no-repeat lg:flex-row lg:items-center">
       <div className="p-6 sm:p-9 lg:pr-0 xl:p-16">
@@ -17,8 +17,8 @@ const OpportunityCardHome = () => {
           </p>
         </div>
         <div className="flex flex-col gap-6 sm:gap-4 lg:flex-row">
-          <WhiteButton text="Bepul foydalanish" />
-          <BlackOutlineBtn text="Batafsil" />
+          <WhiteButton setOpen={setOpen} text="Bepul foydalanish" />
+          <BlackOutlineBtn setOpen={setOpen} text="Batafsil" />
         </div>
       </div>
       <img

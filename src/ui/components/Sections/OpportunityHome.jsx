@@ -3,6 +3,8 @@ import 'react-multi-carousel/lib/styles.css';
 
 import SectionName from 'src/ui/components/Atoms/SectionName';
 import OpportunityCardHome from 'src/ui/components/Cards/OpportunityCardHome';
+import ContactModal from '../Atoms/ContactModal';
+import { useState } from 'react';
 
 const responsive = {
   desktop: {
@@ -23,6 +25,8 @@ const responsive = {
 };
 
 const OpportunityHome = () => {
+  const [openContactModal, setOpenContactModal] = useState(false);
+
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <SectionName name="Tizimimiz imkoniyatlari" />
@@ -49,14 +53,15 @@ const OpportunityHome = () => {
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"
         >
-          <OpportunityCardHome />
-          <OpportunityCardHome />
-          <OpportunityCardHome />
-          <OpportunityCardHome />
-          <OpportunityCardHome />
-          <OpportunityCardHome />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome setOpen={setOpenContactModal} />
         </Carousel>
       </div>
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };

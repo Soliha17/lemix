@@ -4,9 +4,12 @@ import playIcon from 'src/assets/images/play-video-icon.png';
 import VideoModal from '../Atoms/VideoModal';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ContactModal from '../Atoms/ContactModal';
 
 const HeroExam = () => {
   const [open, setOpen] = useState(false);
+  const [openContactModal, setOpenContactModal] = useState(false);
+
   const { t } = useTranslation();
 
   return (
@@ -19,7 +22,10 @@ const HeroExam = () => {
             tizimlari o&apos;quv jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv
             materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi.
           </p>
-          <button className="w-full rounded-2xl bg-success-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto">
+          <button
+            onClick={() => setOpenContactModal(!openContactModal)}
+            className="w-full rounded-2xl bg-success-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto"
+          >
             {t('free')}
           </button>
         </div>
@@ -33,7 +39,8 @@ const HeroExam = () => {
           </div>
         </div>
       </div>
-      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
+      <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };

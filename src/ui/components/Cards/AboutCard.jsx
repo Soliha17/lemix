@@ -4,9 +4,11 @@ import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
 import aboutVideo from 'src/assets/images/about-video.png';
 import { useState } from 'react';
 import VideoModal from '../Atoms/VideoModal';
+import ContactModal from '../Atoms/ContactModal';
 
 const AboutCard = () => {
   const [open, setOpen] = useState(false);
+  const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
@@ -26,8 +28,8 @@ const AboutCard = () => {
             </p>
           </div>
           <div className="flex flex-col gap-6 sm:gap-4 lg:flex-row">
-            <WhiteButton text="Bepul foydalanish" />
-            <BlackOutlineBtn text="Maslahat olish" />
+            <WhiteButton setOpen={setOpenContactModal} text="Bepul foydalanish" />
+            <BlackOutlineBtn setOpen={setOpenContactModal} text="Maslahat olish" />
           </div>
         </div>
         <img
@@ -37,7 +39,8 @@ const AboutCard = () => {
           alt="about video"
         />
       </div>
-      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
+      <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };

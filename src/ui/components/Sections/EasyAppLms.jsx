@@ -1,6 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import EasyAppCardLms from '../Cards/EasyAppCardLms';
+import { useState } from 'react';
+import ContactModal from '../Atoms/ContactModal';
 
 const responsive = {
   desktop: {
@@ -21,6 +23,7 @@ const responsive = {
 };
 
 const EasyAppLms = () => {
+  const [openContactModal, setOpenContactModal] = useState(false);
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <div className="relative mt-6 md:mt-8 lg:mt-10">
@@ -46,14 +49,15 @@ const EasyAppLms = () => {
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"
         >
-          <EasyAppCardLms />
-          <EasyAppCardLms />
-          <EasyAppCardLms />
-          <EasyAppCardLms />
-          <EasyAppCardLms />
-          <EasyAppCardLms />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
+          <EasyAppCardLms setOpen={setOpenContactModal} />
         </Carousel>
       </div>
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };

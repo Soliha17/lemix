@@ -2,9 +2,11 @@ import { useState } from 'react';
 import heroImg from 'src/assets/images/hero-img__lms.png';
 import done from 'src/assets/images/done-icon__contact.svg';
 import VideoModal from '../Atoms/VideoModal';
+import ContactModal from '../Atoms/ContactModal';
 
 const HeroLms = () => {
   const [open, setOpen] = useState(false);
+  const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
     <div id="general" className="hero-erp mt-10 bg-neo-75 bg-no-repeat py-6 md:py-14 xl:py-20">
@@ -16,7 +18,10 @@ const HeroLms = () => {
             tizimlari o&apos;quv jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv
             materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi.
           </p>
-          <button className="w-full rounded-2xl bg-primary-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto">
+          <button
+            onClick={() => setOpenContactModal(!openContactModal)}
+            className="w-full rounded-2xl bg-primary-100 px-9 py-4 font-semibold text-white-main hover:bg-primary-75 sm:w-auto"
+          >
             Bepul foydalanish
           </button>
         </div>
@@ -27,7 +32,8 @@ const HeroLms = () => {
           <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" />
         </div>
       </div>
-      <VideoModal open={open} setOpen={setOpen} videoId={'HE6-EB3slPQ'} />
+      <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };

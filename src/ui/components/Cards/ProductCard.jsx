@@ -1,8 +1,11 @@
 import nft from 'src/assets/images/nft-marketplace.png';
 import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
 import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
+import { useState } from 'react';
+import ContactModal from '../Atoms/ContactModal';
 
 const ProductCard = () => {
+  const [openContactModal, setOpenContactModal] = useState(false);
   return (
     <div className="product-card relative mt-6 flex justify-start rounded-3xl bg-primary-25 bg-no-repeat p-6 sm:p-8 md:mt-8 md:p-9 lg:mt-14 lg:p-16">
       <div className="info-col__product-card flex flex-col gap-12 sm:gap-28">
@@ -17,11 +20,12 @@ const ProductCard = () => {
           </p>
         </div>
         <div className="flex flex-col gap-6 sm:flex-row">
-          <WhiteButton text={'Bepul foydalanish'} />
-          <BlackOutlineBtn text="Batafsil" />
+          <WhiteButton setOpen={setOpenContactModal} text={'Bepul foydalanish'} />
+          <BlackOutlineBtn setOpen={setOpenContactModal} text="Batafsil" />
         </div>
       </div>
       <img src={nft} alt="dashboard" className="nft-img__product-card" />
+      <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );
 };
