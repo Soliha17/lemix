@@ -1,9 +1,22 @@
+import { useForm } from 'react-hook-form';
+
 import dashboardImg from 'src/assets/images/contact-dashboard.png';
 import done from 'src/assets/images/done-icon__contact.svg';
 import goodFilled from 'src/assets/images/good-filled__contact.svg';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ContactModal = ({ open, setOpen }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    setOpen(false);
+    console.log(data);
+  };
+
   return (
     <>
       {open ? (
@@ -52,13 +65,69 @@ const ContactModal = ({ open, setOpen }) => {
                           orada bog&apos;lanishadi
                         </p>
                       </div>
-                      <div className="form__contact-card">
-                        <input type="text" placeholder="Ismingiz" />
-                        <input type="number" placeholder="+998 00 000 00 00" />
-                        <input type="text" placeholder="Markaz nomi" />
-                        <input type="number" placeholder="Telegram raqam" />
-                        <button className="send-btn__contact-modal">Yuborish</button>
-                      </div>
+                      <form onSubmit={handleSubmit(onSubmit)} className="form__contact-card">
+                        <div>
+                          <input
+                            name="firstName"
+                            type="text"
+                            className="w-full"
+                            placeholder="Ismingiz"
+                            {...register('firstName', { required: true })}
+                          />
+                          {errors.firstName && (
+                            <p className="mt-1 text-xs font-semibold text-red-600">
+                              Ism kiritish majburiy!
+                            </p>
+                          )}
+                        </div>
+
+                        <div>
+                          <input
+                            name="phoneNumber"
+                            type="number"
+                            className="w-full"
+                            placeholder="+998 00 000 00 00"
+                            {...register('phoneNumber', { required: true })}
+                          />
+                          {errors.phoneNumber && (
+                            <p className="mt-1 text-xs font-semibold text-red-600">
+                              Raqam kiritish majburiy!
+                            </p>
+                          )}
+                        </div>
+
+                        <div>
+                          <input
+                            name="email"
+                            type="email"
+                            className="w-full"
+                            placeholder="Emailingiz"
+                            {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
+                          />
+                          {errors.email && (
+                            <p className="mt-1 text-xs font-semibold text-red-600">
+                              Email kiritish majburiy!
+                            </p>
+                          )}
+                        </div>
+
+                        <div>
+                          <input
+                            name="centerName"
+                            type="text"
+                            className="w-full"
+                            placeholder="Markaz nomi"
+                            {...register('centerName', { required: true })}
+                          />
+                          {errors.centerName && (
+                            <p className="mt-1 text-xs font-semibold text-red-600">
+                              Markaz nomini kiritish majburiy!
+                            </p>
+                          )}
+                        </div>
+
+                        <button onClick={handleSubmit}>Yuborish</button>
+                      </form>
                     </div>
                   </div>
                 </div>

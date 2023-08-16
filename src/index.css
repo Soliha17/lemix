@@ -389,7 +389,7 @@ h6 {
 .form__contact-card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .form__contact-card input {

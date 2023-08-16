@@ -66,7 +66,7 @@ export default function LanguageSelect() {
                     key={language.id}
                     className={({ active }) =>
                       classNames(
-                        active ? 'text-white bg-primary-75' : 'text-black-75',
+                        active ? 'text-white bg-primary-100' : 'text-black-75',
                         'relative cursor-default select-none py-2 pl-3 pr-9',
                       )
                     }
