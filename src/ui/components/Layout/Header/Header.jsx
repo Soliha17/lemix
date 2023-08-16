@@ -20,7 +20,7 @@ function Header() {
   };
 
   const openContactModal = () => {
-    setOpen(true);
+    setOpen(!open);
     setMobileMenuOpen(false);
   };
 

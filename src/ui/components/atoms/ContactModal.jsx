@@ -8,12 +8,21 @@ const ContactModal = ({ open, setOpen }) => {
     <>
       {open ? (
         <>
-          <div className="video-modal-wrapper fixed inset-0 z-50 flex w-full items-center justify-center overflow-x-hidden overflow-y-hidden outline-none focus:outline-none">
+          <div
+            onClick={() => setOpen(false)}
+            className="video-modal-wrapper fixed inset-0 z-50 flex w-full items-center justify-center overflow-x-hidden overflow-y-hidden outline-none focus:outline-none"
+          >
             <div className="relative mx-auto my-6 max-w-7xl">
               {/*content*/}
               <div className="bg-white relative flex w-full flex-col items-start gap-1 rounded-lg border-0 shadow-lg outline-none focus:outline-none">
                 {/*body*/}
-                <div className="relative">
+                <div
+                  className="relative"
+                  onClick={(e) => {
+                    // do not close modal if anything inside modal content is clicked
+                    e.stopPropagation();
+                  }}
+                >
                   <button
                     className="absolute right-3 top-3 self-end bg-transparent"
                     onClick={() => setOpen(!open)}
@@ -48,7 +57,7 @@ const ContactModal = ({ open, setOpen }) => {
                         <input type="number" placeholder="+998 00 000 00 00" />
                         <input type="text" placeholder="Markaz nomi" />
                         <input type="number" placeholder="Telegram raqam" />
-                        <button className='send-btn__contact-modal'>Yuborish</button>
+                        <button className="send-btn__contact-modal">Yuborish</button>
                       </div>
                     </div>
                   </div>
