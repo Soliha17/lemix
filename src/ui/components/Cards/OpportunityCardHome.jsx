@@ -1,5 +1,5 @@
-import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
-import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
+import BlackOutlineBtn from 'src/ui/components/atoms/BlackOutlineBtn';
+import WhiteButton from 'src/ui/components/atoms/WhiteButton';
 import opportunityTable from 'src/assets/images/opportunity-table.png';
 
 const OpportunityCardHome = ({ setOpen }) => {

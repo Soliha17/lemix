@@ -1,10 +1,10 @@
 import done from 'src/assets/images/done-icon__contact.svg';
 import table from 'src/assets/images/table-advantages.png';
 import playIcon from 'src/assets/images/play-video-icon.png';
-import VideoModal from '../Atoms/VideoModal';
+import VideoModal from '../atoms/VideoModal';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import ContactModal from '../Atoms/ContactModal';
+import ContactModal from '../atoms/ContactModal';
 
 const HeroExam = () => {
   const [open, setOpen] = useState(false);

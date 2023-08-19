@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import EasyAppCardLms from '../Cards/EasyAppCardLms';
 import { useState } from 'react';
-import ContactModal from '../Atoms/ContactModal';
+import ContactModal from '../atoms/ContactModal';
 
 const responsive = {
   desktop: {

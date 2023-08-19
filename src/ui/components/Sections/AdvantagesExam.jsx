@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import AdvantageCardExam from '../Cards/AdvantageCardExam';
 
 const responsive = {

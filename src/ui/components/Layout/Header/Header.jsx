@@ -9,7 +9,7 @@ import lemixLogo from 'src/assets/images/lemix-logo.png';
 import Propover from './Propover';
 import DisclosureComp from './Disclosure';
 import LanguageSelect from './LanguageSelect';
-import ContactModal from '../../Atoms/ContactModal';
+import ContactModal from '../../atoms/ContactModal';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

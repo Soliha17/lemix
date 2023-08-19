@@ -1,8 +1,8 @@
 import nft from 'src/assets/images/nft-marketplace.png';
-import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
-import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
+import WhiteButton from 'src/ui/components/atoms/WhiteButton';
+import BlackOutlineBtn from 'src/ui/components/atoms/BlackOutlineBtn';
 import { useState } from 'react';
-import ContactModal from '../Atoms/ContactModal';
+import ContactModal from '../atoms/ContactModal';
 
 const ProductCard = () => {
   const [openContactModal, setOpenContactModal] = useState(false);

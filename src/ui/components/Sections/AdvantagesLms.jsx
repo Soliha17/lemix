@@ -1,4 +1,4 @@
-import SectionName from '../Atoms/SectionName';
+import SectionName from '../atoms/SectionName';
 import Advantage2CardLms from '../Cards/Advantage2CardLms';
 import AdvantageCardLms from '../Cards/AdvantageCardLms';
 

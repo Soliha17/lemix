@@ -1,5 +1,5 @@
-import PricingTabs from 'src/ui/components/Atoms/PricingTabs';
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import PricingTabs from 'src/ui/components/atoms/PricingTabs';
+import SectionName from 'src/ui/components/atoms/SectionName';
 
 const Pricing = ({ bgColor, borderColor }) => {
   return (

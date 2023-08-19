@@ -1,9 +1,9 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import OpportunityCardHome from 'src/ui/components/Cards/OpportunityCardHome';
-import ContactModal from '../Atoms/ContactModal';
+import ContactModal from '../atoms/ContactModal';
 import { useState } from 'react';
 
 const responsive = {

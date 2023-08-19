@@ -1,5 +1,5 @@
 import CustomizedAccordions from 'src/ui/components/Moleculas/PriceAccordion';
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 
 const PriceComparison = ({ bgColor }) => {
   return (

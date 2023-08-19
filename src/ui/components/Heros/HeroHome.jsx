@@ -6,7 +6,7 @@ import rightArrow from 'src/assets/images/right-blue-arrow.svg';
 import dashboard from 'src/assets/images/dashboard-img__home-hero.png';
 import student from 'src/assets/images/student.png';
 import students from 'src/assets/images/students.png';
-import ContactModal from '../Atoms/ContactModal';
+import ContactModal from '../atoms/ContactModal';
 
 const HeroHome = () => {
   const [openContactModal, setOpenContactModal] = useState(false);

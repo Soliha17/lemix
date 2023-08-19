@@ -1,4 +1,4 @@
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import AdvantagesCard from 'src/ui/components/Cards/AdvantagesCard';
 
 import dashboard from 'src/assets/images/advantages-dashboard.png';

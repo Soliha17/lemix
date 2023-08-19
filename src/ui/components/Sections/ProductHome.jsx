@@ -4,7 +4,7 @@ import Tabs from '@mui/material/Tabs';
 
 import PropTypes from 'prop-types';
 
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import ProductCard from 'src/ui/components/Cards/ProductCard';
 
 const ProductHome = () => {

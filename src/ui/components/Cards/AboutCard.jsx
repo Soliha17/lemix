@@ -1,10 +1,10 @@
-import BlackOutlineBtn from 'src/ui/components/Atoms/BlackOutlineBtn';
-import WhiteButton from 'src/ui/components/Atoms/WhiteButton';
+import BlackOutlineBtn from 'src/ui/components/atoms/BlackOutlineBtn';
+import WhiteButton from 'src/ui/components/atoms/WhiteButton';
 
 import aboutVideo from 'src/assets/images/about-video.png';
 import { useState } from 'react';
-import VideoModal from '../Atoms/VideoModal';
-import ContactModal from '../Atoms/ContactModal';
+import VideoModal from '../atoms/VideoModal';
+import ContactModal from '../atoms/ContactModal';
 
 const AboutCard = () => {
   const [open, setOpen] = useState(false);

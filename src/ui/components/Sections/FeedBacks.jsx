@@ -3,7 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
 import FeedBackCard from 'src/ui/components/Cards/FeedBackCard';
 import Person from 'src/assets/images/xalilbek.png';
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 
 const feedBackDatas = [
   {

@@ -1,4 +1,4 @@
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import ansLogo from 'src/assets/images/ans-logo.png';
 import novusLogo from 'src/assets/images/novus-logo.png';
 import atbLogo from 'src/assets/images/atb-logo.png';

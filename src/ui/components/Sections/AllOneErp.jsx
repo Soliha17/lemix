@@ -1,4 +1,4 @@
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 import AllOneCard from 'src/ui/components/Cards/AllOneCard';
 
 const allOneErp = [

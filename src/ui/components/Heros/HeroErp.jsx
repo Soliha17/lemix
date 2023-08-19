@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import heroImg from 'src/assets/images/hero-erp-img.png';
-import VideoModal from '../Atoms/VideoModal';
-import ContactModal from '../Atoms/ContactModal';
+import VideoModal from '../atoms/VideoModal';
+import ContactModal from '../atoms/ContactModal';
 
 const HeroErp = () => {
   const [open, setOpen] = useState(false);

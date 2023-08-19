@@ -1,4 +1,4 @@
-import SectionName from 'src/ui/components/Atoms/SectionName';
+import SectionName from 'src/ui/components/atoms/SectionName';
 
 import supportImg from 'src/assets/images/support-img__erp.png';
 import tableImg from 'src/assets/images/opportunity-table__erp.png';

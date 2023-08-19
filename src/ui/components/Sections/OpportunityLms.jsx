@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import SectionName from '../Atoms/SectionName';
+import SectionName from '../atoms/SectionName';
 
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
 import OpportunityCardLms from '../Cards/OpportunityCardLms';

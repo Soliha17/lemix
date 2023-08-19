@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import heroImg from 'src/assets/images/hero-img__lms.png';
 import done from 'src/assets/images/done-icon__contact.svg';
-import VideoModal from '../Atoms/VideoModal';
-import ContactModal from '../Atoms/ContactModal';
+import VideoModal from '../atoms/VideoModal';
+import ContactModal from '../atoms/ContactModal';
 
 const HeroLms = () => {
   const [open, setOpen] = useState(false);
