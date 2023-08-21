@@ -15,6 +15,9 @@ const Navbar = () => {
     }
   };
 
+
+  // try
+
   const sections = useMemo(
     () => ['general', 'opportunities', 'advantages', 'feedbacks', 'prices', 'contact'],
     [],
