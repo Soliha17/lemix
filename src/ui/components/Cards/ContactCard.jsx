@@ -73,7 +73,7 @@ const ContactCard = () => {
               type="email"
               className="w-full"
               placeholder="Emailingiz"
-              {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
+              {...register('email', { required: false, pattern: /^\S+@\S+$/i })}
             />
             {errors.email && (
               <p className="mt-1 text-xs font-bold text-red-600">Email kiritish majburiy!</p>
@@ -86,7 +86,7 @@ const ContactCard = () => {
               type="text"
               className="w-full"
               placeholder="Markaz nomi"
-              {...register('centerName', { required: true })}
+              {...register('centerName', { required: false })}
             />
             {errors.centerName && (
               <p className="mt-1 text-xs font-bold text-red-600">
