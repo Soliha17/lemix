@@ -69,6 +69,8 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* fix style issues */
+
 #app {
   position: relative !important;
   z-index: 999 !important;
@@ -76,6 +78,10 @@
 
 .amo-button-holder.amo-vertical {
   z-index: 999 !important;
+}
+
+.video-modal-wrapper {
+  z-index: 99999 !important;
 }
 
 h1 {
