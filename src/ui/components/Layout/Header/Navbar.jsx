@@ -15,7 +15,6 @@ const Navbar = () => {
     }
   };
 
-
   // try
 
   const sections = useMemo(
@@ -56,8 +55,8 @@ const Navbar = () => {
   return (
     <div
       className={`navbar-tabs fixed ${
-        isSticky && 'top-0'
-      } z-40 flex w-full justify-center border-b border-t border-neo-100 bg-white-main`}
+        isSticky && 'z-40' && 'top-0'
+      } z-0 flex w-full justify-center border-b border-t border-neo-100 bg-white-main`}
     >
       <Tabs
         key={value}

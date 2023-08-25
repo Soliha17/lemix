@@ -69,11 +69,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* Fix amo widget style */
-.amo-button-holder {
-  z-index: 999;
-}
-
 h1 {
   /* font-size: 61px; */
   line-height: normal;
@@ -716,7 +711,7 @@ h6 {
   position: absolute;
   left: 128px;
   top: 180px;
-  z-index: 2;
+  z-index: 1;
 }
 
 @media (max-width: 1100px) {
@@ -803,7 +798,7 @@ h6 {
   }
 
   .img-card--first {
-    z-index: 2;
+    z-index: 1;
   }
 }
 
@@ -820,6 +815,14 @@ h6 {
 
   .img-card--second {
     right: 20px;
+  }
+
+  .img-card--first {
+    z-index: 2;
+  }
+
+  .img-card--second {
+    z-index: 2;
   }
 }
 
