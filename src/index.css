@@ -69,6 +69,11 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* Fix amo widget style */
+.amo-button-holder {
+  z-index: 999;
+}
+
 h1 {
   /* font-size: 61px; */
   line-height: normal;
