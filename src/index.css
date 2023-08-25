@@ -69,6 +69,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+.amo-button-holder {
+  z-index: 999;
+}
+
 h1 {
   /* font-size: 61px; */
   line-height: normal;
