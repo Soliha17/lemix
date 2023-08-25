@@ -70,8 +70,12 @@
 }
 
 #app {
-  position: relative;
-  z-index: 999;
+  position: relative !important;
+  z-index: 999 !important;
+}
+
+.amo-button-holder.amo-vertical {
+  z-index: 999 !important;
 }
 
 h1 {
