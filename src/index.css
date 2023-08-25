@@ -69,7 +69,8 @@
   font-family: 'Inter', sans-serif;
 }
 
-.amo-button-holder {
+#app {
+  position: relative;
   z-index: 999;
 }
 
