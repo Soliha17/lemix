@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <h6 className="mb-3 text-base font-bold text-white-main">A&apos;loqa</h6>
             <ul className="flex cursor-pointer flex-col gap-3 text-sm text-neo-100">
-              <li>+998-(00)-000-00-00</li>
+              <li>+998 78 113-77-50</li>
               <li>Lemix@gmail.com</li>
             </ul>
           </div>
