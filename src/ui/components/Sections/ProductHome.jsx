@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 
@@ -45,7 +46,7 @@ const ProductHome = () => {
 
   return (
     <div className="product-section mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Bizning mahsulotlar" />
+      <SectionName name="ourProducts" />
       <div className="mt-8 flex justify-center">
         <Tabs
           value={value}

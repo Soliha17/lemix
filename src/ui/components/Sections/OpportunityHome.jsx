@@ -1,10 +1,10 @@
+import { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+import ContactModal from '../atoms/ContactModal';
 import SectionName from 'src/ui/components/atoms/SectionName';
 import OpportunityCardHome from 'src/ui/components/Cards/OpportunityCardHome';
-import ContactModal from '../atoms/ContactModal';
-import { useState } from 'react';
 
 const responsive = {
   desktop: {
@@ -29,7 +29,7 @@ const OpportunityHome = () => {
 
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Tizimimiz imkoniyatlari" />
+      <SectionName name="featuresOfOurSystem" />
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           swipeable={false}

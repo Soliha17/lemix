@@ -1,5 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTranslation } from 'react-i18next';
+
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
 import FeedBackCard from 'src/ui/components/Cards/FeedBackCard';
 import Person from 'src/assets/images/xalilbek.png';
@@ -11,50 +13,35 @@ const feedBackDatas = [
     img: Person,
     name: 'Halilbek Safarov',
     position: 'Toko LC rahbari',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 2,
     img: Person,
     name: 'Odilbek Zokirov',
     position: 'Manama prizidenti',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 3,
     img: Person,
     name: 'Someone Alibekov',
     position: 'Senior developer in Google',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 4,
     img: Person,
     name: 'Rahmbek Jamilova',
     position: 'Epamer',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 5,
     img: Person,
     name: 'Fotima Qahhorova',
     position: 'Epamer',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
 ];
 
@@ -108,9 +95,11 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
 };
 
 const FeedBacks = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mt-16 w-full md:mt-24 lg:mt-20">
-      <SectionName name="Fikrlar" />
+      <SectionName name="thoughts" />
       <div className="mt-6 md:mt-8 lg:mt-10">
         <Carousel
           renderButtonGroupOutside={true}
@@ -140,7 +129,7 @@ const FeedBacks = () => {
               img={feedback.img}
               fullName={feedback.name}
               position={feedback.position}
-              text={feedback.text}
+              text={t(feedback.text)}
               bgColor="bg-primary-12"
             />
           ))}

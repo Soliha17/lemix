@@ -1,8 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useCallback, useMemo } from 'react';
+
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   const [value, setValue] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -66,12 +70,12 @@ const Navbar = () => {
         scrollButtons={false}
         aria-label="scrollable prevent tabs example"
       >
-        <Tab label="Umumiy" />
-        <Tab label="Imkoniyatlar" />
-        <Tab label="Afzalliklar" />
-        <Tab label="Fikrlar" />
-        <Tab label="Narxlar" />
-        <Tab label="Bog'lanish" />
+        <Tab label={t('general')} />
+        <Tab label={t('opportunities')} />
+        <Tab label={t('advantages')} />
+        <Tab label={t('thoughts')} />
+        <Tab label={t('prices')} />
+        <Tab label={t('connection')} />
       </Tabs>
     </div>
   );

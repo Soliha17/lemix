@@ -1,14 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import whiteCheckIcon from 'src/assets/images/white-check-icon.svg';
 import wrongIcon from 'src/assets/images/white-wrong-icon.svg';
 
 const PricingFilledCard = ({ plan, price, data, bgColor }) => {
+  const { t } = useTranslation();
+
   return (
     <div className={`col flex flex-col gap-10 rounded-3xl ${bgColor} p-6 xl:gap-12 xl:p-8`}>
       <div>
-        <p className="w-fit rounded-3xl bg-white-main px-6 py-3 text-xl text-black-100">{plan}</p>
+        <p className="w-fit rounded-3xl bg-white-main px-6 py-3 text-xl text-black-100">
+          {t(plan)}
+        </p>
         <h2 className="mb-3 mt-4 text-3xl font-semibold text-white-main xl:text-5xl">{price}</h2>
-        <p className="text-base text-white-main">so&apos;m/oyiga</p>
+        <p className="text-base text-white-main">{t('soumsMonth')}</p>
       </div>
       <div className="flex flex-col gap-6 ">
         {data.map((item) => (
@@ -33,7 +39,7 @@ const PricingFilledCard = ({ plan, price, data, bgColor }) => {
           bgColor === 'bg-success-100' ? 'text-success-100' : ' text-primary-100'
         } hover:bg-neo-100`}
       >
-        Ulanish
+        {t("share")}
       </button>
     </div>
   );

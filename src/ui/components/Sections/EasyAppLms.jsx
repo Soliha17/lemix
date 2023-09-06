@@ -1,7 +1,9 @@
+import { useState } from 'react';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import EasyAppCardLms from '../Cards/EasyAppCardLms';
-import { useState } from 'react';
 import ContactModal from '../atoms/ContactModal';
 
 const responsive = {
@@ -24,6 +26,7 @@ const responsive = {
 
 const EasyAppLms = () => {
   const [openContactModal, setOpenContactModal] = useState(false);
+
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
       <div className="relative mt-6 md:mt-8 lg:mt-10">

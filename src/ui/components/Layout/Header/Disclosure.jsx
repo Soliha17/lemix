@@ -1,19 +1,21 @@
-import PropTypes from 'prop-types';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Disclosure } from '@headlessui/react';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+import { Disclosure } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const products = [
   {
-    name: 'Lemix ERP',
+    name: 'lemixErp',
     href: '/erp',
   },
   {
-    name: 'Lemix LMS',
+    name: 'lemixLms',
     href: '/lms',
   },
   {
-    name: 'Lemix EXAM',
+    name: 'lemixExam',
     href: '/exam',
   },
 ];
@@ -23,13 +25,15 @@ function classNames(...classes) {
 }
 
 const DisclosureComp = ({ title }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Disclosure as="div" className="-mx-3">
         {({ open }) => (
           <div>
             <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base text-black-75 hover:bg-gray-50">
-              {title}
+              {t(title)}
               <ChevronDownIcon
                 className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                 aria-hidden="true"
@@ -44,7 +48,7 @@ const DisclosureComp = ({ title }) => {
                   exact="true"
                   className="block rounded-lg py-2 pl-6 pr-3 text-sm text-black-75 hover:bg-gray-50"
                 >
-                  {item.name}
+                  {t(item.name)}
                 </Disclosure.Button>
               ))}
             </Disclosure.Panel>

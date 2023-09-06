@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import { Dialog, Popover } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -12,6 +13,8 @@ import LanguageSelect from './LanguageSelect';
 import ContactModal from '../../atoms/ContactModal';
 
 function Header() {
+  const { t } = useTranslation();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -29,7 +32,7 @@ function Header() {
       <nav className="flex items-center justify-between p-3" aria-label="Global">
         <div className="flex">
           <NavLink to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Lemix</span>
             <img className="w-36 sm:h-12 sm:w-auto" src={lemixLogo} alt="" />
           </NavLink>
         </div>
@@ -52,11 +55,11 @@ function Header() {
               location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
             } hover:text-primary-100`}
           >
-            Bosh sahifasi
+            {t('home')}
           </NavLink>
-          <Propover title="Mahsulotlar" />
-          <Propover title="Yechimlar" />
-          <Propover title="Resurslar" />
+          <Propover title="products" />
+          <Propover title="solutions" />
+          <Propover title="resources" />
         </Popover.Group>
 
         <div className="hidden gap-4 lg:flex lg:items-center lg:justify-end">
@@ -67,10 +70,10 @@ function Header() {
             onClick={openContactModal}
             className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600"
           >
-            Demodan foydalanish
+            {t('demoUsage')}
           </button>
           <button className="rounded-2xl border border-primary-100 px-9 py-4 text-primary-100 hover:bg-primary-100 hover:text-white-main">
-            Kirish
+            {t('enter')}
           </button>
         </div>
       </nav>
@@ -102,21 +105,21 @@ function Header() {
                     location.pathname === '/' ? 'text-primary-100' : 'text-black-75'
                   } rounded-lg px-3 py-2 text-base font-semibold leading-normal hover:bg-gray-50`}
                 >
-                  Bosh sahifasi
+                  {t('home')}
                 </NavLink>
-                <DisclosureComp title="Mahsulotlar" />
-                <DisclosureComp title="Yechimlar" />
-                <DisclosureComp title="Resurslar " />
+                <DisclosureComp title="products" />
+                <DisclosureComp title="solutions" />
+                <DisclosureComp title="resources" />
               </div>
               <div className="flex flex-col gap-3 py-6">
                 <button
                   onClick={openContactModal}
                   className="rounded-2xl bg-primary-100 px-9 py-4 text-white-main hover:bg-blue-600"
                 >
-                  Demodan foydalanish
+                  {t('demoUsage')}
                 </button>
                 <button className="rounded-2xl border border-primary-100 px-9 py-4 text-primary-100 hover:bg-primary-100 hover:text-white-main">
-                  Kirish
+                  {t('enter')}
                 </button>
               </div>
             </div>

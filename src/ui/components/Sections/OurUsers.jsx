@@ -75,7 +75,7 @@ const responsive = {
 const OurUsers = ({ bgColor }) => {
   return (
     <div className="mt-16 w-full md:mt-24 lg:mt-20">
-      <SectionName name="Foydalanuvchilarimiz" />
+      <SectionName name="ourUsers" />
       <div
         className={`our-users-card mt-6 rounded-2xl ${bgColor} bg-no-repeat py-10 md:mt-8 lg:mt-10`}
       >

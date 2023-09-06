@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import blueCheckIcon from 'src/assets/images/blue-check-icon.svg';
 import greenCheckIcon from 'src/assets/images/green-done.svg';
 import wrongIcon from 'src/assets/images/wrong-icon-pricing.svg';
 
 const PricingOutlinedCard = ({ plan, price, data, bgColor, borderColor }) => {
+  const { t } = useTranslation();
+
   return (
-    <div
-      className={`flex flex-col gap-10 rounded-3xl border ${borderColor} p-6 xl:gap-12`}
-    >
+    <div className={`flex flex-col gap-10 rounded-3xl border ${borderColor} p-6 xl:gap-12`}>
       <div>
         <p
           className={`w-fit rounded-3xl ${
@@ -16,10 +18,10 @@ const PricingOutlinedCard = ({ plan, price, data, bgColor, borderColor }) => {
             bgColor === 'bg-success-100' ? 'text-white-main' : 'text-black-0'
           } px-6 py-3 text-xl text-black-100`}
         >
-          {plan}
+          {t(plan)}
         </p>
         <h2 className="mb-3 mt-4 text-3xl font-semibold text-black-0 xl:text-5xl">{price}</h2>
-        <p className="text-base text-black-0">so&apos;m/oyiga</p>
+        <p className="text-base text-black-0">{t('soumsMonth')}</p>
       </div>
       <div className="flex flex-col gap-6 ">
         {data.map((item) => (
@@ -48,7 +50,7 @@ const PricingOutlinedCard = ({ plan, price, data, bgColor, borderColor }) => {
           bgColor === 'bg-success-100' ? 'hover:bg-success-75' : 'hover:bg-primary-75'
         }`}
       >
-        Ulanish
+        {t('share')}
       </button>
     </div>
   );

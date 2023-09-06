@@ -1,12 +1,16 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 import BlackOutlineBtn from 'src/ui/components/atoms/BlackOutlineBtn';
 import WhiteButton from 'src/ui/components/atoms/WhiteButton';
-
-import aboutVideo from 'src/assets/images/about-video.png';
-import { useState } from 'react';
 import VideoModal from '../atoms/VideoModal';
 import ContactModal from '../atoms/ContactModal';
 
+import aboutVideo from 'src/assets/images/about-video.png';
+
 const AboutCard = () => {
+  const { t } = useTranslation();
+
   const [open, setOpen] = useState(false);
   const [openContactModal, setOpenContactModal] = useState(false);
 
@@ -16,20 +20,13 @@ const AboutCard = () => {
         <div className="p-6 sm:p-9 lg:pr-0 xl:p-16">
           <div className="mb-16 md:mb-24 lg:mb-48">
             <h2 className="mb-4 text-2xl font-semibold md:text-3xl lg:mb-6 lg:text-4xl">
-              Biz haqimizda
+              {t('aboutUs')}
             </h2>
-            <p className="text-sm lg:text-base">
-              O&apos;quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System)
-              tizimlari o&apos;quv jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv
-              materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi. O&apos;quv markazlari
-              uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o&apos;quv
-              jarayonini boshqarish, o&apos;quvchilarni baholash va o&apos;quv materiallarini taqdim
-              etish uchun yaxshi imkoniyatlar beradi.
-            </p>
+            <p className="text-sm lg:text-base">{t('lmsDesc')}</p>
           </div>
           <div className="flex flex-col gap-6 sm:gap-4 lg:flex-row">
-            <WhiteButton setOpen={setOpenContactModal} text="Bepul foydalanish" />
-            <BlackOutlineBtn setOpen={setOpenContactModal} text="Maslahat olish" />
+            <WhiteButton setOpen={setOpenContactModal} text="freeToUse" />
+            <BlackOutlineBtn setOpen={setOpenContactModal} text="getAdvice" />
           </div>
         </div>
         <img

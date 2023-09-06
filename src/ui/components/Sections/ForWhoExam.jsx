@@ -2,6 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import SectionName from '../atoms/SectionName';
+import ForWhoCard from '../Cards/ForWhoCard';
 
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
 import pupils from 'src/assets/images/pupils.png';
@@ -11,7 +12,6 @@ import blue from 'src/assets/images/blue-bg.svg';
 import progressDashboard from 'src/assets/images/progress-dashboard.png';
 import cardDashboard from 'src/assets/images/card-dashboard.png';
 
-import ForWhoCard from '../Cards/ForWhoCard';
 
 const responsive = {
   desktop: {
@@ -92,7 +92,7 @@ const TestCard = () => {
 const ForWhoExam = () => {
   return (
     <div className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Lemix Exam Kimlar uchun" />
+      <SectionName name="lemixExamForWho" />
 
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel

@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
 import Person from 'src/assets/images/xalilbek.png';
+
 import SectionName from 'src/ui/components/atoms/SectionName';
 import FeedBackCard from 'src/ui/components/Cards/FeedBackCard';
 
@@ -11,50 +15,35 @@ const feedBackDatas = [
     img: Person,
     name: 'Halilbek Safarov',
     position: 'Toko LC rahbari',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 2,
     img: Person,
     name: 'Odilbek Zokirov',
     position: 'Manama prizidenti',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 3,
     img: Person,
     name: 'Someone Alibekov',
     position: 'Senior developer in Google',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 4,
     img: Person,
     name: 'Rahmbek Jamilova',
     position: 'Epamer',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
   {
     id: 5,
     img: Person,
     name: 'Fotima Qahhorova',
     position: 'Epamer',
-    text: `
-      Bu juda ajoyib mahsulot bo'lib, juda ko'p yordam beradi, ayniqsa yirik loyihalarda!
-      Men Lemix, jarayonlarni raqamlashtirmasdan qanday qilib samarali bo'lishi uchun o'quv tizimini yaratishni tushunmayapman.
-    `,
+    text: 'feedbackText',
   },
 ];
 
@@ -108,9 +97,14 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
 };
 
 const FeedBacksBg = ({ bgColor }) => {
+  const { t } = useTranslation();
+
   return (
-    <div id='feedbacks' className={`mt-16 w-full ${bgColor} py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20`}>
-      <SectionName name="Mijozlarimiz fikrlari" />
+    <div
+      id="feedbacks"
+      className={`mt-16 w-full ${bgColor} py-10 md:mt-24 md:py-14 lg:mt-20 xl:py-20`}
+    >
+      <SectionName name="ourCustomersOpinions" />
       <div className="relative mx-auto mt-6 max-w-7xl px-5 md:mt-8 md:px-10 lg:mt-10">
         <Carousel
           swipeable={true}
@@ -132,7 +126,9 @@ const FeedBacksBg = ({ bgColor }) => {
           partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}
           // deviceType={this.props.deviceType}
-          dotListClass={` ${bgColor === "bg-success-12" && "feedback-bg-dots--green"} feedback-bg-dots`}
+          dotListClass={` ${
+            bgColor === 'bg-success-12' && 'feedback-bg-dots--green'
+          } feedback-bg-dots`}
           itemClass="carousel-item-padding-40-px"
         >
           {feedBackDatas.map((feedback) => (
@@ -141,7 +137,7 @@ const FeedBacksBg = ({ bgColor }) => {
               img={feedback.img}
               fullName={feedback.name}
               position={feedback.position}
-              text={feedback.text}
+              text={t(feedback.text)}
               bgColor="bg-white-main"
             />
           ))}

@@ -9,23 +9,11 @@ import thirdCardImg from 'src/assets/images/second-img__ad-lms.png';
 const AdvantagesLms = () => {
   return (
     <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Afzalliklarimiz" />
+      <SectionName name="advantages" />
       <div>
-        <AdvantageCardLms
-          title="Interaktiv ta'lim"
-          text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-          img={firstCardImg}
-        />
-        <Advantage2CardLms
-          title="Qulay nazorat"
-          text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-          img={secondCardImg}
-        />
-        <AdvantageCardLms
-          title="Giprit ta'lim"
-          text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-          img={thirdCardImg}
-        />
+        <AdvantageCardLms title="interactiveEducation" text="lmsDesc" img={firstCardImg} />
+        <Advantage2CardLms title="convenientControl" text="lmsDesc" img={secondCardImg} />
+        <AdvantageCardLms title="egyptianEducation" text="lmsDesc" img={thirdCardImg} />
       </div>
     </div>
   );

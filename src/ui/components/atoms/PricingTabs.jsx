@@ -2,8 +2,11 @@ import Tabs from '@mui/joy/Tabs';
 import TabList from '@mui/joy/TabList';
 import Tab, { tabClasses } from '@mui/joy/Tab';
 import TabPanel from '@mui/joy/TabPanel';
-import PricingOutlinedCard from '../Cards/PricingOutlinedCard';
+
+import { useTranslation } from 'react-i18next';
+
 import PricingFilledCard from '../Cards/PricingFilledCard';
+import PricingOutlinedCard from '../Cards/PricingOutlinedCard';
 
 const basicDatas = [
   {
@@ -117,6 +120,8 @@ const biznesDatas = [
 export default function PricingTabs({ bgColor, borderColor }) {
   const selectedTabStyle = bgColor === 'bg-success-100' ? '#40DD6C' : '#40AAFF';
 
+  const { t } = useTranslation();
+
   return (
     <Tabs
       aria-label="tabs"
@@ -143,15 +148,15 @@ export default function PricingTabs({ bgColor, borderColor }) {
           },
         }}
       >
-        <Tab disableIndicator>3 oylik</Tab>
-        <Tab disableIndicator>6 oylik</Tab>
-        <Tab disableIndicator>12 oylik</Tab>
+        <Tab disableIndicator>3 {t('monthly')}</Tab>
+        <Tab disableIndicator>6 {t('monthly')}</Tab>
+        <Tab disableIndicator>12 {t('monthly')}</Tab>
       </TabList>
       <TabPanel value={0}>
         <div className="mt-6 flex flex-col gap-6 md:mt-10 md:flex-row">
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Oddiy"
+              plan="basic"
               bgColor={bgColor}
               borderColor={borderColor}
               price="199 000"
@@ -159,7 +164,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
             />
           </div>
           <PricingFilledCard
-            plan="Ommabop"
+            plan="popular"
             borderColor={borderColor}
             bgColor={bgColor}
             price="399 000"
@@ -167,7 +172,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
           />
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Biznes"
+              plan="business"
               borderColor={borderColor}
               bgColor={bgColor}
               price="599 000"
@@ -180,7 +185,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
         <div className="mt-6 flex flex-col gap-6 md:mt-10 md:flex-row">
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Oddiy"
+              plan="basic"
               bgColor={bgColor}
               borderColor={borderColor}
               price="999 000"
@@ -188,7 +193,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
             />
           </div>
           <PricingFilledCard
-            plan="Ommabop"
+            plan="popular"
             borderColor={borderColor}
             bgColor={bgColor}
             price="1399 000"
@@ -196,7 +201,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
           />
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Biznes"
+              plan="business"
               borderColor={borderColor}
               bgColor={bgColor}
               price="1599 000"
@@ -209,7 +214,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
         <div className="mt-6 flex flex-col gap-6 md:mt-10 md:flex-row">
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Oddiy"
+              plan="basic"
               bgColor={bgColor}
               borderColor={borderColor}
               price="1199 000"
@@ -217,7 +222,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
             />
           </div>
           <PricingFilledCard
-            plan="Ommabop"
+            plan="popular"
             borderColor={borderColor}
             bgColor={bgColor}
             price="1499 000"
@@ -225,7 +230,7 @@ export default function PricingTabs({ bgColor, borderColor }) {
           />
           <div className="mt-0 md:mt-12">
             <PricingOutlinedCard
-              plan="Biznes"
+              plan="business"
               borderColor={borderColor}
               bgColor={bgColor}
               price="1699 000"

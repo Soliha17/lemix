@@ -25,7 +25,7 @@ const responsive = {
 const AdvantagesExam = () => {
   return (
     <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Afzalliklar" />
+      <SectionName name="advantages" />
       <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           swipeable={false}

@@ -1,9 +1,13 @@
+import { useTranslation } from 'react-i18next';
+
 import youTube from 'src/assets/images/you-tube.svg';
 import telegram from 'src/assets/images/telegram.svg';
 import instagram from 'src/assets/images/instagram.svg';
 import facebook from 'src/assets/images/facebook.svg';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer mt-16 bg-black-100 bg-no-repeat pb-6 pt-8 md:mt-20 md:pb-8 md:pt-14 xl:mt-24">
       <div className="mx-auto max-w-7xl px-5 text-neo-75 md:px-10">
@@ -11,20 +15,20 @@ const Footer = () => {
           <div>
             <h6 className="mb-3 text-base font-bold text-white-main">Lemix</h6>
             <ul className="flex cursor-pointer flex-col gap-3 text-sm text-neo-100">
-              <li>Mahsulotlar</li>
-              <li>Yechimlar</li>
-              <li>Resurslar</li>
+              <li className="hover:underline"> {t('products')} </li>
+              <li className="hover:underline">{t('solutions')}</li>
+              <li className="hover:underline">{t('resources')}</li>
             </ul>
           </div>
           <div>
-            <h6 className="mb-3 text-base font-bold text-white-main">A&apos;loqa</h6>
+            <h6 className="mb-3 text-base font-bold text-white-main">{t('contact')}</h6>
             <ul className="flex cursor-pointer flex-col gap-3 text-sm text-neo-100">
-              <li>+998 78 113-77-50</li>
-              <li>Lemix@gmail.com</li>
+              <li className="hover:underline">+998 78 113-77-50</li>
+              <li className="hover:underline">Lemix@gmail.com</li>
             </ul>
           </div>
           <div>
-            <h6 className="mb-3 text-base font-bold text-white-main">Ijtimoiy Tarmoqlar</h6>
+            <h6 className="mb-3 text-base font-bold text-white-main"> {t('socialNetworks')} </h6>
             <ul className="flex cursor-pointer gap-3">
               <li>
                 <img src={youTube} alt="youTube" />

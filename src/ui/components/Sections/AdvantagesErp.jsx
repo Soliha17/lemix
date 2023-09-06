@@ -7,30 +7,16 @@ import table from 'src/assets/images/table-advantages.png';
 const AdvantagesErp = () => {
   return (
     <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
-      <SectionName name="Afzalliklarimiz" />
+      <SectionName name="ourAdvantages" />
 
       <div className="mt-6 flex flex-col gap-8 sm:flex-row md:mt-10">
         <div className="flex flex-col gap-8">
-          <AdvantagesCard
-            title="Interaktiv interfeys"
-            text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-            img={table}
-          />
-          <AdvantagesCard
-            title="Muammolarni tez yecha olish"
-            text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-          />
+          <AdvantagesCard title="interactiveInterface" text="lmsDesc" img={table} />
+          <AdvantagesCard title="abilityToSolveProblemsQuickly" text="lmsDesc" />
         </div>
         <div className="flex flex-col-reverse gap-8 sm:flex-col">
-          <AdvantagesCard
-            title="Muammolarni tez yecha olish"
-            text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-          />
-          <AdvantagesCard
-            title="Doimiy statistika"
-            text="O'quv markazlari uchun avtomatlashtiruvchi LMS (Learning Management System) tizimlari o'quv jarayonini boshqarish, o'quvchilarni baholash va o'quv materiallarini taqdim etish uchun yaxshi imkoniyatlar beradi."
-            img={dashboard}
-          />
+          <AdvantagesCard title="abilityToSolveProblemsQuickly" text="lmsDesc" />
+          <AdvantagesCard title="permanentStatistics" text="lmsDesc" img={dashboard} />
         </div>
       </div>
     </div>

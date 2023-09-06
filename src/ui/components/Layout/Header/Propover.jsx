@@ -1,30 +1,34 @@
 import { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import { Popover, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
 const products = [
   {
-    name: 'Lemix ERP',
+    name: 'lemixErp',
     href: '/erp',
   },
   {
-    name: 'Lemix LMS',
+    name: 'lemixLms',
     href: '/lms',
   },
   {
-    name: 'Lemix EXAM',
+    name: 'lemixExam',
     href: '/exam',
   },
 ];
 
 const Propover = ({ title }) => {
+  const { t } = useTranslation();
+
   return (
     <Popover className="relative z-50 border-none outline-none">
       <Popover.Button className="flex items-center gap-x-1 border-none text-sm font-normal leading-6 text-black-75 outline-none hover:text-primary-100">
-        {title}
+        {t(title)}
         <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
       </Popover.Button>
 
@@ -45,7 +49,7 @@ const Propover = ({ title }) => {
                 className="propover-panel group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 hover:bg-gray-50"
               >
                 <NavLink exact="true" to={item.href} className="block font-normal text-gray-900">
-                  {item.name}
+                  {t(item.name)}
                   <span className="absolute inset-0" />
                 </NavLink>
               </div>
