@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
-const HeroImgCard = ({ classname, title, img }) => {
+const HeroimgCard = ({ classname, title, img }) => {
   const { t } = useTranslation();
 
   return (
@@ -14,9 +14,9 @@ const HeroImgCard = ({ classname, title, img }) => {
   );
 };
 
-export default HeroImgCard;
+export default HeroimgCard;
 
-HeroImgCard.propTypes = {
+HeroimgCard.propTypes = {
   classname: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,

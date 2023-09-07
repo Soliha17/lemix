@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import HeroImg from '../Cards/HeroImgCard';
+import HeroImg from '../Cards/HeroimgCard';
 import ContactModal from '../atoms/ContactModal';
 
 import dashboard from 'src/assets/images/dashboard-img__home-hero.png';
