@@ -28,7 +28,9 @@ function classNames(...classes) {
 export default function LanguageSelect() {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
+
   console.log(currentLanguage);
+
   const [selected, setSelected] = useState(
     languages.find((lang) => lang.value === currentLanguage),
   );
@@ -36,6 +38,7 @@ export default function LanguageSelect() {
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language.value);
     setSelected(language);
+    localStorage.setItem('lang', language.value);
   };
 
   return (

@@ -33,7 +33,7 @@ const defaultLanguage = defineDomenUsingLocation();
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: defaultLanguage, // Set the default language here
+  lng: localStorage.getItem('lang') || defaultLanguage, // Set the default language here
   fallbackLng: defaultLanguage, // Set the fallback language here
   interpolation: {
     escapeValue: false, // React already escapes content by default
