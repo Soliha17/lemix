@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -26,12 +26,62 @@ const responsive = {
 
 const OpportunityHome = () => {
   const [openContactModal, setOpenContactModal] = useState(false);
+  const carouselRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Function to scroll to the next slide
+  const scrollNextSlide = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
+
+  // Function to scroll to the previous slide
+  const scrollPreviousSlide = () => {
+    if (carouselRef.current) {
+      carouselRef.current.previous();
+    }
+  };
+
+  function onWheelFn(e) {
+    if (e.deltaY > 0) {
+      // Scroll down
+      scrollNextSlide();
+    } else if (e.deltaY < 0) {
+      // Scroll up
+      scrollPreviousSlide();
+    } else {
+      console.log('else');
+      // document.body.classList.remove('stop-scrolling');
+    }
+  }
+
+  // document.body.style.overflow = 'hidden';
+
+  function doSpeicalThing(nextSlide, currentSlide, onMove) {
+    console.log(currentSlide);
+    if (currentSlide != 2 && currentSlide != 7) {
+      // document.body.classList.add('stop-scrolling');
+      document.body.style.overflow = 'hidden';
+
+      setIsSticky(true);
+    } else if (currentSlide === 2) {
+      document.body.style.overflow = 'scroll';
+    } else {
+      document.body.classList.remove('stop-scrolling');
+      setIsSticky(false);
+    }
+  }
 
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
+    <div className={`carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20`}>
       <SectionName name="featuresOfOurSystem" />
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+      <div
+        className={`relative mt-6 md:mt-8 lg:mt-10 ${isSticky ? 'sticky top-0' : 'relative'}`}
+        onWheel={onWheelFn}
+      >
         <Carousel
+          ref={carouselRef}
           swipeable={false}
           draggable={true}
           showDots={true}
@@ -49,6 +99,9 @@ const OpportunityHome = () => {
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={['tablet', 'mobile']}
+          beforeChange={(nextSlide, { currentSlide, onMove }) => {
+            doSpeicalThing(nextSlide, currentSlide, onMove);
+          }}
           // deviceType={this.props.deviceType}
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"

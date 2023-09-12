@@ -132,6 +132,15 @@ h6 {
   font-size: 12px;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper-scroll {
+  height: 600px;
+}
+
 .phone-img__easy-app img {
   width: 800px;
 }
