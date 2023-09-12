@@ -47,7 +47,7 @@ const feedBackDatas = [
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 1600, min: 1024 },
+    breakpoint: { max: 2600, min: 1024 },
     items: 2,
     slidesToSlide: 2, // optional, default to 1.
     partialVisibilityGutter: 100, // this is needed to tell the amount of px that should be visible.
