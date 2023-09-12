@@ -47,7 +47,7 @@ const feedBackDatas = [
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 2600, min: 1024 },
+    breakpoint: { max: 9000, min: 1024 },
     items: 2,
     slidesToSlide: 2, // optional, default to 1.
     partialVisibilityGutter: 100, // this is needed to tell the amount of px that should be visible.
@@ -109,7 +109,7 @@ const FeedBacks = () => {
           arrows={false}
           customButtonGroup={<ButtonGroup bgColor="bg-primary-12" />}
           responsive={responsive}
-          ssr={false} // means to render carousel on server-side.
+          ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}
@@ -119,7 +119,7 @@ const FeedBacks = () => {
           containerClass="carousel-container"
           partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}
-          // deviceType={this.props.deviceType}
+          deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
