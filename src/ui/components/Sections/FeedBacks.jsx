@@ -119,7 +119,7 @@ const FeedBacks = () => {
           containerClass="carousel-container"
           partialVisible={true}
           // removeArrowOnDeviceType={['tablet', 'mobile']}
-          deviceType={this.props.deviceType}
+          // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
