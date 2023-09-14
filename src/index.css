@@ -757,6 +757,11 @@ h6 {
     max-width: 470px;
   }
 
+  .carousel-wrapper-scroll {
+    height: auto;
+    margin-bottom: 100px;
+  }
+
   .card-group__hero-home {
     top: 50px;
     left: 30%;
@@ -839,6 +844,10 @@ h6 {
 
   .img-card--second {
     right: 20px;
+  }
+
+  .opportunity-dots {
+    margin-top: 50px !important;
   }
 }
 

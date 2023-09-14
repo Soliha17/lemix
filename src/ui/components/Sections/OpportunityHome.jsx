@@ -58,7 +58,7 @@ const OpportunityHome = () => {
         scrollPreviousSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else {
+      } else if ((currentSlide === 2 && e.pageY < 2650) || (currentSlide === 7 && e.pageY > 2440)) {
         console.log('else');
         document.body.style.overflowY = 'scroll';
 
@@ -73,7 +73,7 @@ const OpportunityHome = () => {
       <div className={`mt-6 md:mt-8 lg:mt-10`} onWheel={onWheelFn}>
         <Carousel
           ref={carouselRef}
-          swipeable={false}
+          swipeable={true}
           draggable={true}
           showDots={true}
           arrows={false}
