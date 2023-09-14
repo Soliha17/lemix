@@ -21,11 +21,13 @@ const OpportunityCardErp = () => {
           <p className="absolute -right-8 -top-12 z-10 rotate-12 whitespace-pre-line rounded-2xl bg-primary-25 px-7 py-2 text-white-main md:-right-5 md:-top-3">
             {t('controlOfTheSalesDepartment')}
           </p>
-          <img src={tableImg} alt="tableImg" />
+          <img src={tableImg} alt="tableImg" width={398} height={243} />
           <img
             className="support-img__erp absolute -bottom-8 -left-4"
             src={supportImg}
             alt="supportImg"
+            width={237}
+            height={175}
           />
         </div>
       </div>

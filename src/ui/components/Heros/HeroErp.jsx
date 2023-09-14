@@ -26,7 +26,7 @@ const HeroErp = () => {
           </button>
         </div>
         <div className="card__hero-erp">
-          <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" />
+          <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" width={608} height={482} />
         </div>
       </div>
       <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />

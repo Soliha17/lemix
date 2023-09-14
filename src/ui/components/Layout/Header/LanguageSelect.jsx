@@ -78,11 +78,6 @@ export default function LanguageSelect() {
                     {({ selected, active }) => (
                       <>
                         <div className="flex items-center">
-                          {/* <img
-                            src={person.avatar}
-                            alt=""
-                            className="h-5 w-5 flex-shrink-0 rounded-full"
-                          /> */}
                           <span
                             className={classNames(
                               selected ? 'font-semibold' : 'font-normal',

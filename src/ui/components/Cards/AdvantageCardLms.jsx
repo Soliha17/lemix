@@ -9,7 +9,7 @@ const AdvantageCardLms = ({ title, text, img }) => {
         <h2 className="mb-4 text-2xl font-semibold md:text-3xl lg:mb-6 lg:text-4xl">{t(title)}</h2>
         <p className="w-full text-sm lg:w-10/12 lg:text-base">{t(text)}</p>
       </div>
-      <img src={img} className="w-full md:w-1/2" alt="just card img" />
+      <img src={img} className="w-full md:w-1/2" width={529} height={383} alt="just card img" />
     </div>
   );
 };

@@ -18,11 +18,13 @@ const OpportunityCardExam = () => {
         <p className="p__opp-lms absolute -top-4 left-1/2 -translate-x-1/2 rotate-12 rounded-2xl bg-primary-25 px-7 py-2 text-white-main">
           {t('management')}
         </p>
-        <img src={tableImg} alt="tableImg" />
+        <img src={tableImg} width={457} height={279} alt="tableImg" />
         <img
           className="biznesmen-img__erp absolute -bottom-8 -left-4 sm:-left-8 md:-left-12"
           src={supportImg}
           alt="supportImg"
+          width={272}
+          height={201}
         />
       </div>
     </div>

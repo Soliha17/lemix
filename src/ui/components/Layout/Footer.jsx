@@ -31,16 +31,16 @@ const Footer = () => {
             <h6 className="mb-3 text-base font-bold text-white-main"> {t('socialNetworks')} </h6>
             <ul className="flex cursor-pointer gap-3">
               <li>
-                <img src={youTube} alt="youTube" />
+                <img src={youTube} alt="youTube" width={24} height={24} />
               </li>
               <li>
-                <img src={telegram} alt="telegram" />
+                <img src={telegram} alt="telegram" width={24} height={24} />
               </li>
               <li>
-                <img src={instagram} alt="instagram" />
+                <img src={instagram} alt="instagram" width={24} height={24} />
               </li>
               <li>
-                <img src={facebook} alt="facebook" />
+                <img src={facebook} alt="facebook" width={24} height={24} />
               </li>
             </ul>
           </div>

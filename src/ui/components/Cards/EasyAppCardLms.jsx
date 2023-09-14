@@ -26,7 +26,7 @@ const EasyAppCardLms = ({ setOpen }) => {
         </div>
       </div>
       <div className="phone-img__easy-app">
-        <img src={phone} alt="phone" />
+        <img src={phone} alt="phone" width={331} height={658} />
       </div>
     </div>
   );

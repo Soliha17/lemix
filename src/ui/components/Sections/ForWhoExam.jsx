@@ -65,7 +65,7 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
 const ProgressDashboardComp = () => {
   return (
     <>
-      <img src={green} alt="green" />
+      <img src={green} alt="green" width={285} height={203} />
       <img src={progressDashboard} className="absolute -right-3 -top-3" alt="progressDashboard" />
     </>
   );
@@ -74,7 +74,7 @@ const ProgressDashboardComp = () => {
 const CardDashboardComp = () => {
   return (
     <>
-      <img src={blue} alt="blue" />
+      <img src={blue} alt="blue" width={285} height={203} />
       <img src={cardDashboard} className="absolute -right-3 -top-3" alt="cardDashboard" />
     </>
   );
@@ -83,8 +83,8 @@ const CardDashboardComp = () => {
 const TestCard = () => {
   return (
     <>
-      <img src={pupils} alt="pupils" />
-      <img src={test} className="absolute -right-2 -top-8" alt="test" />
+      <img src={pupils} alt="pupils" width={246} height={223} />
+      <img src={test} className="absolute -right-2 -top-8" alt="test" width={168} height={168} />
     </>
   );
 };

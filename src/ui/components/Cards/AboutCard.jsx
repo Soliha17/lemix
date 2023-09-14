@@ -34,6 +34,8 @@ const AboutCard = () => {
           onClick={() => setOpen(true)}
           src={aboutVideo}
           alt="about video"
+          width={808}
+          height={808}
         />
       </div>
       <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />

@@ -25,6 +25,8 @@ const OpportunityCardHome = ({ setOpen }) => {
         className="max-w-xs p-8 pr-0 sm:max-w-lg sm:pr-0 md:p-9 md:pr-0 lg:p-20 lg:pr-0 xl:max-w-2xl"
         src={opportunityTable}
         alt="opportunityTable"
+        width={666}
+        height={399}
       />
     </div>
   );

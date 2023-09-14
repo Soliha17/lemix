@@ -26,12 +26,18 @@ const HeroExam = () => {
           </button>
         </div>
         <div className="relative mb-32">
-          <img src={table} alt="table" />
+          <img src={table} alt="table" width={457} height={279} />
           <div className="circle__hero-exam">
-            <img src={done} alt="done icon" />
+            <img src={done} alt="done icon" width={63} height={63} />
           </div>
           <div className="men-img__hero-exam">
-            <img src={playIcon} onClick={() => setOpen(true)} alt="playIcon" />
+            <img
+              src={playIcon}
+              onClick={() => setOpen(true)}
+              width={80}
+              height={80}
+              alt="playIcon"
+            />
           </div>
         </div>
       </div>

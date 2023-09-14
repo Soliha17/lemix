@@ -7,7 +7,7 @@ const AdvantagesCard = ({ title, text, img }) => {
     <div className="flex flex-col gap-6 rounded-2xl bg-neo-75 p-6 lg:p-12">
       {img && (
         <div>
-          <img src={img} alt="img" />
+          <img src={img} alt="img" width={512} height={281} />
         </div>
       )}
       <h3 className="text-xl font-semibold text-black-100 sm:text-3xl lg:text-4xl">{t(title)}</h3>

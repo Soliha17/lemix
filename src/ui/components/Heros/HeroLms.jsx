@@ -28,9 +28,9 @@ const HeroLms = () => {
         </div>
         <div className="card__hero-lms">
           <div className="circle__hero-lms -mb-16 -ml-3 sm:-mb-20 sm:-ml-10">
-            <img src={done} alt="done icon" />
+            <img src={done} alt="done icon" width={63} height={63} />
           </div>
-          <img src={heroImg} onClick={() => setOpen(true)} alt="heroImg" />
+          <img src={heroImg} onClick={() => setOpen(true)} width={608} height={482} alt="heroImg" />
         </div>
       </div>
       <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />

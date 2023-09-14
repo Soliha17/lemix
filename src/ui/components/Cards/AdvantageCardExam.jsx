@@ -14,7 +14,7 @@ const AdvantageCardExam = () => {
         <p className="text-base leading-6 text-black-75">{t('lmsDesc')}</p>
       </div>
       <div className="w-full sm:w-1/2">
-        <img src={table} alt="table" />
+        <img src={table} alt="table" width={502} height={322} />
       </div>
     </div>
   );

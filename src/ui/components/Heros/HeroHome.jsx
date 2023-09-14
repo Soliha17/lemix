@@ -20,7 +20,13 @@ const HeroHome = () => {
         <HeroImg classname="img-card--first" img={student} title="educationalCenters" />
         <HeroImg classname="img-card--second" img={students} title="schools" />
       </div>
-      <img src={dashboard} alt="dashboard" className="dashboard-img__hero-home" />
+      <img
+        src={dashboard}
+        alt="dashboard"
+        width={681}
+        height={427}
+        className="dashboard-img__hero-home"
+      />
       <div className="info-col__hero-home flex flex-col gap-12 sm:gap-28">
         <div className="title-group__hero-home">
           <h1 className="whitespace-pre-line text-4xl font-semibold text-white-main lg:text-6xl">
@@ -33,7 +39,7 @@ const HeroHome = () => {
             onClick={() => setOpenContactModal(!openContactModal)}
             className="demo-btn__hero-home flex gap-4 rounded-2xl bg-white-main px-9 py-4 text-primary-100 hover:bg-neo-100"
           >
-            {t('demoUsage')} <img src={rightArrow} alt="right arrow" />
+            {t('demoUsage')} <img src={rightArrow} width={24} height={24} alt="right arrow" />
           </button>
           <p className="p1 mt-2 whitespace-pre-line leading-6 text-white-main">
             {t('tryTheDemoVersionForFree')}

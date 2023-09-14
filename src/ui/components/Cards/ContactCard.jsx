@@ -23,17 +23,17 @@ const ContactCard = () => {
     >
       <div className="relative ml-0 flex flex-col items-start lg:ml-8">
         <div className="circle__contact-card z-10 -mb-16 -mr-7 self-end">
-          <img src={done} alt="done" />
+          <img src={done} alt="done" width={63} height={63} />
         </div>
         <p className="p__contact-card p__contact-card--top whitespace-pre-line rounded-2xl p-2 text-base text-white-main md:p-4">
           {t('contactCardTitle')}
         </p>
-        <img src={dashboardImg} alt="dashboardImg" />
+        <img src={dashboardImg} alt="dashboardImg" width={499} height={358} />
         <p className="p__contact-card p__contact-card--bottom rounded-2xl p-2 text-base text-white-main md:p-4">
           {t('contactCardSubTitle')}
         </p>
         <div className="circle__contact-card z-10 -ml-7 -mt-20">
-          <img src={goodFilled} alt="goodFilled" />
+          <img src={goodFilled} alt="goodFilled" width={63} height={63} />
         </div>
       </div>
       <div className="flex flex-col gap-5">
@@ -91,7 +91,7 @@ const ContactCard = () => {
               name="centerName"
               type="text"
               className="w-full"
-              placeholder={t("centerName")}
+              placeholder={t('centerName')}
               {...register('centerName', { required: false })}
             />
             {errors.centerName && (
