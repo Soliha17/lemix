@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import OpportunityCardErp from 'src/ui/components/Cards/OpportunityCardErp';
@@ -21,11 +22,53 @@ const responsive = {
 };
 
 const OpportunityErp = () => {
+  const carouselRefErp = useRef(null);
+
+  // Function to scroll to the next slide
+  const scrollNextSlide = () => {
+    if (carouselRefErp.current) {
+      carouselRefErp.current.next();
+    }
+  };
+
+  // Function to scroll to the previous slide
+  const scrollPreviousSlide = () => {
+    if (carouselRefErp.current) {
+      carouselRefErp.current.previous();
+    }
+  };
+
+  function onWheelFn(e) {
+    const currentSlide = carouselRefErp.current.state.currentSlide;
+    const screenWidth = window.innerWidth;
+
+    console.log(e);
+    if (screenWidth >= 1400) {
+      if (currentSlide != 7 && e.deltaY > 0 && e.pageY > 1300) {
+        // Scroll down
+        scrollNextSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 1550) {
+        // Scroll up
+        scrollPreviousSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if ((currentSlide === 2 && e.pageY < 1550) || (currentSlide === 7 && e.pageY > 1300)) {
+        console.log('else');
+        document.body.style.overflowY = 'scroll';
+
+        // document.body.classList.remove('stop-scrolling');
+      }
+    }
+  }
+
   return (
-    <div id="opportunities" className="mt-16 md:mt-24 lg:mt-20">
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+    <div id="opportunities" className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
+      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
         <Carousel
-          swipeable={false}
+          ref={carouselRefErp}
+          swipeable={true}
           draggable={true}
           showDots={true}
           arrows={false}

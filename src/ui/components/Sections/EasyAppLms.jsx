@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -27,11 +27,53 @@ const responsive = {
 const EasyAppLms = () => {
   const [openContactModal, setOpenContactModal] = useState(false);
 
+  const carouselRefLms = useRef(null);
+
+  // Function to scroll to the next slide
+  const scrollNextSlide = () => {
+    if (carouselRefLms.current) {
+      carouselRefLms.current.next();
+    }
+  };
+
+  // Function to scroll to the previous slide
+  const scrollPreviousSlide = () => {
+    if (carouselRefLms.current) {
+      carouselRefLms.current.previous();
+    }
+  };
+
+  function onWheelFn(e) {
+    const currentSlide = carouselRefLms.current.state.currentSlide;
+    const screenWidth = window.innerWidth;
+
+    console.log(e);
+    if (screenWidth >= 1400) {
+      if (currentSlide != 7 && e.deltaY > 0 && e.pageY > 4900) {
+        // Scroll down
+        scrollNextSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 5130) {
+        // Scroll up
+        scrollPreviousSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if ((currentSlide === 2 && e.pageY < 5130) || (currentSlide === 7 && e.pageY > 4900)) {
+        console.log('else');
+        document.body.style.overflowY = 'scroll';
+
+        // document.body.classList.remove('stop-scrolling');
+      }
+    }
+  }
+
   return (
-    <div className="mt-16 md:mt-24 lg:mt-20">
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+    <div className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
+      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
         <Carousel
-          swipeable={false}
+          ref={carouselRefLms}
+          swipeable={true}
           draggable={true}
           showDots={true}
           arrows={false}

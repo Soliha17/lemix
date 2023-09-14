@@ -3,6 +3,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 import SectionName from 'src/ui/components/atoms/SectionName';
 import AdvantageCardExam from '../Cards/AdvantageCardExam';
+import { useRef } from 'react';
 
 const responsive = {
   desktop: {
@@ -23,11 +24,52 @@ const responsive = {
 };
 
 const AdvantagesExam = () => {
+  const carouselRefExam = useRef(null);
+
+  // Function to scroll to the next slide
+  const scrollNextSlide = () => {
+    if (carouselRefExam.current) {
+      carouselRefExam.current.next();
+    }
+  };
+
+  // Function to scroll to the previous slide
+  const scrollPreviousSlide = () => {
+    if (carouselRefExam.current) {
+      carouselRefExam.current.previous();
+    }
+  };
+
+  function onWheelFn(e) {
+    const currentSlide = carouselRefExam.current.state.currentSlide;
+    const screenWidth = window.innerWidth;
+
+    console.log(e);
+    if (screenWidth >= 1400) {
+      if (currentSlide != 7 && e.deltaY > 0 && e.pageY > 1300) {
+        // Scroll down
+        scrollNextSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 2680) {
+        // Scroll up
+        scrollPreviousSlide();
+
+        document.body.style.overflowY = 'hidden';
+      } else if ((currentSlide === 2 && e.pageY < 2680) || (currentSlide === 7 && e.pageY > 1300)) {
+        console.log('else');
+        document.body.style.overflowY = 'scroll';
+
+        // document.body.classList.remove('stop-scrolling');
+      }
+    }
+  }
   return (
-    <div id="advantages" className="mt-16 md:mt-24 lg:mt-20">
+    <div id="advantages" className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
       <SectionName name="advantages" />
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
         <Carousel
+          ref={carouselRefExam}
           swipeable={false}
           draggable={false}
           showDots={true}

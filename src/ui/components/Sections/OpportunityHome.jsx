@@ -53,12 +53,12 @@ const OpportunityHome = () => {
         scrollNextSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 2650) {
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 2750) {
         // Scroll up
         scrollPreviousSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if ((currentSlide === 2 && e.pageY < 2650) || (currentSlide === 7 && e.pageY > 2440)) {
+      } else if ((currentSlide === 2 && e.pageY < 2750) || (currentSlide === 7 && e.pageY > 2440)) {
         console.log('else');
         document.body.style.overflowY = 'scroll';
 
