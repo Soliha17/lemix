@@ -6,7 +6,7 @@ import WhiteButton from 'src/ui/components/atoms/WhiteButton';
 import VideoModal from '../atoms/VideoModal';
 import ContactModal from '../atoms/ContactModal';
 
-import aboutVideo from 'src/assets/images/about-video.png';
+import aboutVideo from 'src/assets/images/about-card-img.svg';
 
 const AboutCard = () => {
   const { t } = useTranslation();
