@@ -24,7 +24,7 @@ const Footer = () => {
             <h6 className="mb-3 text-base font-bold text-white-main">{t('contact')}</h6>
             <ul className="flex cursor-pointer flex-col gap-3 text-sm text-neo-100">
               <li className="hover:underline">+998 78 113-77-50</li>
-              <li className="hover:underline">Lemix@gmail.com</li>
+              <li className="hover:underline">lemix.org@gmail.com</li>
             </ul>
           </div>
           <div>
