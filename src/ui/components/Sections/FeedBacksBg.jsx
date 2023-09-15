@@ -4,7 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import RightArrow from 'src/assets/images/right-arrow-carousel.svg';
-import Person from 'src/assets/images/xalilbek.png';
+import Person from 'src/assets/images/profile-icon-dashboard.svg';
 
 import SectionName from 'src/ui/components/atoms/SectionName';
 import FeedBackCard from 'src/ui/components/Cards/FeedBackCard';
@@ -13,37 +13,72 @@ const feedBackDatas = [
   {
     id: 1,
     img: Person,
-    name: 'Halilbek Safarov',
-    position: 'Toko LC rahbari',
-    text: 'feedbackText',
+    name: 'John Doe',
+    position: 'IT Academy',
+    text: 'feedbackText1',
   },
   {
     id: 2,
     img: Person,
-    name: 'Odilbek Zokirov',
-    position: 'Manama prizidenti',
-    text: 'feedbackText',
+    name: 'Jane Smith',
+    position: 'Language School',
+    text: 'feedbackText2',
   },
   {
     id: 3,
     img: Person,
-    name: 'Someone Alibekov',
-    position: 'Senior developer in Google',
-    text: 'feedbackText',
+    name: 'Bob Johnson',
+    position: 'Business College',
+    text: 'feedbackText3',
   },
   {
     id: 4,
     img: Person,
-    name: 'Rahmbek Jamilova',
-    position: 'Epamer',
-    text: 'feedbackText',
+    name: 'Maria Rodriguez',
+    position: 'Medical School',
+    text: 'feedbackText4',
   },
   {
     id: 5,
     img: Person,
-    name: 'Fotima Qahhorova',
-    position: 'Epamer',
-    text: 'feedbackText',
+    name: 'William Lee',
+    position: 'Art School',
+    text: 'feedbackText5',
+  },
+  {
+    id: 6,
+    img: Person,
+    name: 'Sarah Kim',
+    position: 'Music Academy',
+    text: 'feedbackText6',
+  },
+  {
+    id: 7,
+    img: Person,
+    name: 'Ahmed Hassan',
+    position: 'Engineering School',
+    text: 'feedbackText7',
+  },
+  {
+    id: 8,
+    img: Person,
+    name: 'Fatima Ali',
+    position: 'Law School',
+    text: 'feedbackText8',
+  },
+  {
+    id: 9,
+    img: Person,
+    name: 'Carlos Hernandez',
+    position: 'Culinary School',
+    text: 'feedbackText9',
+  },
+  {
+    id: 10,
+    img: Person,
+    name: 'Anna Ivanova',
+    position: 'Dance School',
+    text: 'feedbackText10',
   },
 ];
 

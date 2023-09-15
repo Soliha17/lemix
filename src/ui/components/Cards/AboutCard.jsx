@@ -22,7 +22,7 @@ const AboutCard = () => {
             <h2 className="mb-4 text-2xl font-semibold md:text-3xl lg:mb-6 lg:text-4xl">
               {t('aboutUs')}
             </h2>
-            <p className="text-sm lg:text-base">{t('lmsDesc')}</p>
+            <p className="text-sm lg:text-base">{t('aboutDesc')}</p>
           </div>
           <div className="flex flex-col gap-6 sm:gap-4 lg:flex-row">
             <WhiteButton setOpen={setOpenContactModal} text="freeToUse" />
