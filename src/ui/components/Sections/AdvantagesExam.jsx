@@ -44,19 +44,22 @@ const AdvantagesExam = () => {
     const currentSlide = carouselRefExam.current.state.currentSlide;
     const screenWidth = window.innerWidth;
 
-    console.log(e);
+    console.log(e.nativeEvent.offsetY);
     if (screenWidth >= 1400) {
-      if (currentSlide != 7 && e.deltaY > 0 && e.pageY > 1300) {
+      if (currentSlide != 7 && e.deltaY > 0 && e.nativeEvent.offsetY > 46) {
         // Scroll down
         scrollNextSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 2680) {
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.nativeEvent.offsetY < 270) {
         // Scroll up
         scrollPreviousSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if ((currentSlide === 2 && e.pageY < 2680) || (currentSlide === 7 && e.pageY > 1300)) {
+      } else if (
+        (currentSlide === 2 && e.nativeEvent.offsetY < 270) ||
+        (currentSlide === 7 && e.nativeEvent.offsetY > 46)
+      ) {
         console.log('else');
         document.body.style.overflowY = 'scroll';
 
@@ -67,7 +70,7 @@ const AdvantagesExam = () => {
   return (
     <div id="advantages" className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
       <SectionName name="advantages" />
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
         <Carousel
           ref={carouselRefExam}
           swipeable={false}

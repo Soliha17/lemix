@@ -47,19 +47,22 @@ const EasyAppLms = () => {
     const currentSlide = carouselRefLms.current.state.currentSlide;
     const screenWidth = window.innerWidth;
 
-    console.log(e);
+    console.log(e.nativeEvent.offsetY);
     if (screenWidth >= 1400) {
-      if (currentSlide != 7 && e.deltaY > 0 && e.pageY > 4900) {
+      if (currentSlide != 7 && e.deltaY > 0 && e.nativeEvent.offsetY > 30) {
         // Scroll down
         scrollNextSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if (currentSlide != 2 && e.deltaY < 0 && e.pageY < 5130) {
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.nativeEvent.offsetY < 330) {
         // Scroll up
         scrollPreviousSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if ((currentSlide === 2 && e.pageY < 5130) || (currentSlide === 7 && e.pageY > 4900)) {
+      } else if (
+        (currentSlide === 2 && e.nativeEvent.offsetY < 330) ||
+        (currentSlide === 7 && e.nativeEvent.offsetY > 30)
+      ) {
         console.log('else');
         document.body.style.overflowY = 'scroll';
 
@@ -70,7 +73,7 @@ const EasyAppLms = () => {
 
   return (
     <div className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
-      <div className="relative mt-6 md:mt-8 lg:mt-10">
+      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
         <Carousel
           ref={carouselRefLms}
           swipeable={true}
