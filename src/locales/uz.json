@@ -82,5 +82,30 @@
   "convenientMobileApp": "Qulay mobil ulova",
   "lemixExamForWho": "Lemix Exam Kimlar uchun",
   "weStrengthenTheKnowledgeOfYourStudentsWithTests": "O'quvchilaringiz bilimlarini testlar bilan mustahkamlaymiz",
-  "abilityToCreateATest": "Test yarata olish"
+  "abilityToCreateATest": "Test yarata olish",
+
+  "lemixErpTabTitle": "Lemix ERP bilan \n barchasi bitta platformada",
+  "lemixLmsTabTitle": "Avtomatlashtirilgan \n o'qitish tizimi",
+  "lemixExamTabTitle": "Imtihonlarni tez va \n oson boshqaring",
+  "lemixCoachingTabTitle": "Xodimlaringizni o'qitishni \ntizimli yo'lga qoying",
+  "lemixErpTabText": "Ta'lim muassasangizni(o'quvmarkaz, xususiy maktab, coaching va boshqalar) tez, qulay va oson boshqarish imkoniyatini beradi. Siz ushbu tizim orqali moliya bo'limi, o'quv bo'limi, sotuv bo'limi, marketing, xodimlar bilan ishlash bo'limlarini avtomatlashtirasiz.",
+  "lemixLmsTabText": "Bizning tizim yordamida yordamida siz talabalarni gibrid&online o'qitishingiz, o'quv materiallarini platformaga joylashingiz va vazifalar berishib, ularni baholash imkoniyatini beradi. Shuningdek o'quvchilarlarning ota-onalari farzandlarining natijalarini monitoring qilishlari mumkin.",
+  "lemixExamTabText": "Ushbu tizim szga online yoki offline(qog'oz) shaklda imtihonlar, testlar, olimpiadalarni olishning tezkor va innovatsion yechimini taqdim etadi. O'qituvchilar testlarni kiritishlari, o'quvchilar esa shaxsiy kabinetlardan qog'oz shaklda yechgan testlarni natijalarni ko'rishlari yoki online testlarni kabinetni o'zida yechishlari mumkin. Qog'ozdagi testlarni tizimni o'zi avtomatik teshiradi va bazaga qayd etib boradi.",
+  "lemixCoachingTabText": "O'zingiz va xodimlaringizni rivojlantirishni uchun bizning hamjamiyatimizga qo'shiling. O'quv bo'limi, sotuv bo'limi, boshqaruv, HR va moliya bo'limlari uchun xodimlarni o'qitishni tizimli yo'lga qo'yuvchi platformamizni taqdim etamiz. Bu platforma orqali sizning xodimlaringizni amaliy va nazariy bilimlarga ega bo'ladi.",
+
+  "users": "Foydalanuvchilar",
+  "launchedRegions": "Ishga tushirilgan hududlar",
+  "systemOptions": "Tizim imkoniyatlari",
+  "customers": "Mijozlar",
+
+  "feedbackText1": "Lemix tizimi faqat talabalarni o'qitishga yo'l qo'ymaydi, balki ularning natijalariga ham nazar tashlaydi. Bu bizning tajribamizda ko'rgan eng yaxshi LMS tizimi.",
+  "feedbackText2": "Men Lemix tizimini ishlatib ko'rganman va u juda oson va qulay. O'quvchilarga vazifalar va testlar berish, natijalarni baholash, va talabalarning natijalarini hal qilishni osonlashtirish imkoniyatlarini taqdim etadi.",
+  "feedbackText3": "Lemix tizimi bizning biznes maktabimizda o'qitishni osonlashtirdi. Bu tizim orqali biz o'quvchilarga online darslar va vazifalar berish imkoniyatini taqdim etdik va ularning natijalari yaxshi bo'ldi.",
+  "feedbackText4": "Lemix tizimi qulay va osonlik bilan ishlashni ta'minlaydi. O'quvchilar bizning ko'nikmalarimizga, sinovlarga va testlarga osonlik bilan kirishadi va natijalarni ko'rish oson.",
+  "feedbackText5": "Lemix tizimi bizning o'qituvchilarimizga foydali yordam berdi. Ular online darslar va vazifalar berishni osonlashtirdi va bizning talabalarimiz esa eng yaxshi natijalarni olishdi",
+  "feedbackText6": "Lemix tizimi bizning musiqa akademiyamiz uchun yaxshi erishim bo'lib chiqdi. Biz o'quvchilarga sinovlar, testlar va vazifalar berish imkoniyatini taqdim etdik va ular eng yaxshi natijalarni olishdi",
+  "feedbackText7": "Lemix tizimi bizning inshootlar maktabimizda juda yaxshi ishlaydi. U juda oson va qulay va bizning talabalarimiz eng yaxshi natijalarni olishdi.",
+  "feedbackText8": "Lemix tizimi bizning huquq maktabimizda foydali yordam berdi. U bizning o'quvchilarimizga testlar berishni osonlashtirdi va ularning natijalari yaxshi bo'ldi.",
+  "feedbackText9": "Lemix tizimi bizning kulinar maktabimizda ishlatiladi va u bizning o'quvchilarimizni o'qitishni osonlashtirdi. Ular online darslar va vazifalar berishga to'g'ri keladi va natijalari yaxshi bo'ldi.",
+  "feedbackText10": "Lemix tizimi bizning raqs maktabimizda ishlatiladi va u bizning talabalarimiz uchun yaxshi yechim berdi. Ular online darslar va testlar berishga oson kirishdi va natijalari yaxshi bo'ldi."
 }

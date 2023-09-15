@@ -82,5 +82,30 @@
   "convenientMobileApp": "Convenient Mobile App",
   "lemixExamForWho": "Lemix Exam For Whom",
   "weStrengthenTheKnowledgeOfYourStudentsWithTests": "We Strengthen the Knowledge of Your Students with Tests",
-  "abilityToCreateATest": "Ability to Create a Test"
+  "abilityToCreateATest": "Ability to Create a Test",
+
+  "lemixErpTabTitle": "Everything with Lemix ERP on one platform",
+  "lemixLmsTabTitle": "Automated Learning System",
+  "lemixExamTabTitle": "Manage Exams Quickly and Easily",
+  "lemixCoachingTabTitle": "Put Your Employee Training on a Systematic Path",
+  "lemixErpTabText": "Lemix ERP provides fast, convenient, and easy management capabilities for your educational institution (school, private academy, coaching, and others). Through this system, you can automate finance, education, sales, marketing, and employee departments.",
+  "lemixLmsTabText": "With our system, you can hybrid and online teach your students, upload teaching materials to the platform, and assign tasks, giving you the ability to evaluate them. Additionally, parents can monitor the progress of their children.",
+  "lemixExamTabText": "This system offers you an innovative solution for taking exams, tests, and Olympiads online or offline (paper-based). Teachers can input test questions, and students can either view the results of paper-based tests they've filled out in their personal cabinets or take online tests directly in their cabinets. The system automatically scores paper-based tests and records them in the database.",
+  "lemixCoachingTabText": "Join our community to develop yourself and your employees. We offer a systematic training platform for educational, sales, management, HR, and finance departments to train your employees. This platform will equip your employees with practical and theoretical knowledge.",
+
+  "users": "Users",
+  "launchedRegions": "Launched Regions",
+  "systemOptions": "System Options",
+  "customers": "Customers",
+
+  "feedbackText1": "The Lemix system not only facilitates teaching students but also pays attention to their results. It's the best LMS system we've seen in our experience.",
+  "feedbackText2": "I have used the Lemix system, and it is very easy and convenient. It provides the capability to assign tasks and tests to students, evaluate results, and simplify student performance management.",
+  "feedbackText3": "The Lemix system has made teaching at our business school easier. Through this system, we offered online lessons and assignments to our students, and their results improved significantly.",
+  "feedbackText4": "The Lemix system ensures convenience and ease of use. Students can easily access our materials, quizzes, and tests, and viewing results is straightforward.",
+  "feedbackText5": "The Lemix system has been a valuable resource for our educators. It streamlines the process of providing online classes and assignments, and our students achieve excellent results.",
+  "feedbackText6": "The Lemix system has been a great asset for our music academy. We were able to offer students exams, tests, and assignments, resulting in outstanding achievements.",
+  "feedbackText7": "The Lemix system works exceptionally well at our art school. It's incredibly user-friendly, and our students achieve the best results.",
+  "feedbackText8": "The Lemix system has been a helpful tool at our law school. It simplifies the process of giving tests to our students, and their results have been excellent.",
+  "feedbackText9": "The Lemix system is used at our culinary school and has made teaching our students easier. It's a perfect fit for online lessons and assignments, and the results have been great.",
+  "feedbackText10": "The Lemix system is used at our dance school and has provided a great solution for our students. It's easy to access online lessons and tests, resulting in excellent performance."
 }

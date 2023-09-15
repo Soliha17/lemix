@@ -7,23 +7,23 @@ import SectionName from 'src/ui/components/atoms/SectionName';
 const statisticDatas = [
   {
     id: 1,
-    count: '456 000+',
-    text: 'coverageOfOurUsers',
+    count: '1500+',
+    text: 'users',
   },
   {
     id: 2,
-    count: '56+',
-    text: 'areas',
+    count: '14+',
+    text: 'launchedRegions',
   },
   {
     id: 3,
-    count: '556+',
-    text: 'companies',
+    count: '80+',
+    text: 'systemOptions',
   },
   {
     id: 4,
-    count: '717+',
-    text: 'companies',
+    count: '120+',
+    text: 'customers',
   },
 ];
 

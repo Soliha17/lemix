@@ -70,7 +70,7 @@ const OpportunityHome = () => {
   return (
     <div className={`carousel-wrapper-scroll relative mt-16 md:mt-24 lg:mt-20`}>
       <SectionName name="featuresOfOurSystem" />
-      <div className={`mt-6 md:mt-8 lg:mt-10`} onWheel={onWheelFn}>
+      <div className={`mt-6 md:mt-8 lg:mt-10`}>
         <Carousel
           ref={carouselRef}
           swipeable={true}

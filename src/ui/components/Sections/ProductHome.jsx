@@ -60,24 +60,24 @@ const ProductHome = () => {
           <Tab label="Lemix LMS" {...a11yProps(1)} />
           <Tab label="Lemix Exam" {...a11yProps(2)} />
           <Tab label="Lemix Coaching" {...a11yProps(3)} />
-          <Tab label="Lemix Market" {...a11yProps(4)} />
+          {/* <Tab label="Lemix Market" {...a11yProps(4)} /> */}
         </Tabs>
       </div>
       <CustomTabPanel value={value} index={0}>
-        <ProductCard />
+        <ProductCard title="lemixErpTabTitle" text="lemixErpTabText" bgColor="#BFDDFE" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        <ProductCard />
+        <ProductCard title="lemixLmsTabTitle" text="lemixLmsTabText" bgColor="#7FBAFC" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        <ProductCard />
+        <ProductCard title="lemixExamTabTitle" text="lemixExamTabText" bgColor="#BFF3CE" />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-        <ProductCard />
+        <ProductCard title="lemixCoachingTabTitle" text="lemixCoachingTabText" bgColor="#C0B3FF" />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={4}>
+      {/* <CustomTabPanel value={value} index={4}>
         <ProductCard />
-      </CustomTabPanel>
+      </CustomTabPanel> */}
     </div>
   );
 };
