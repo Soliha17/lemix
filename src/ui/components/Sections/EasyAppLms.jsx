@@ -54,13 +54,13 @@ const EasyAppLms = () => {
         scrollNextSlide();
 
         document.body.style.overflowY = 'hidden';
-      } else if (currentSlide != 2 && e.deltaY < 0 && e.nativeEvent.offsetY < 330) {
+      } else if (currentSlide != 2 && e.deltaY < 0 && e.nativeEvent.offsetY < 270) {
         // Scroll up
         scrollPreviousSlide();
 
         document.body.style.overflowY = 'hidden';
       } else if (
-        (currentSlide === 2 && e.nativeEvent.offsetY < 330) ||
+        (currentSlide === 2 && e.nativeEvent.offsetY < 270) ||
         (currentSlide === 7 && e.nativeEvent.offsetY > 30)
       ) {
         console.log('else');

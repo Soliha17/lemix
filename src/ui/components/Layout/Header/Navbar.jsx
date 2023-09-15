@@ -31,9 +31,25 @@ const Navbar = () => {
       const section = document.getElementById(sections[i]);
       if (section) {
         const rect = section.getBoundingClientRect();
-        if (rect.bottom <= window.innerHeight / 0.9) {
-          setValue(i);
-        }
+        // console.log(section.getClientRects());
+        // console.log(section.id);
+        // console.log(document.getElementById(section.id));
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const visibleElementId = entry.target.id;
+            if (entry.isIntersecting && visibleElementId === section.id) {
+              // An element is in the viewport
+              console.log('The visible element on the screen is: ' + visibleElementId);
+              setValue(i);
+              // if (visibleElementId === section.id) {
+              // }
+            }
+          });
+        });
+
+        observer.observe(section);
       }
     }
 
