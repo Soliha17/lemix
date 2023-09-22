@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import rightArrow from 'src/assets/images/right-black-arrow.svg';
+// import rightArrow from 'src/assets/images/right-black-arrow.svg';
 
 const WhiteButton = ({ text, setOpen }) => {
   const { t } = useTranslation();

@@ -7,7 +7,7 @@ import ContactModal from '../atoms/ContactModal';
 import dashboard from 'src/assets/images/dashboard-img--hero-home.svg';
 import student from 'src/assets/images/student1.svg';
 import students from 'src/assets/images/students1.svg';
-import rightArrow from 'src/assets/images/right-blue-arrow.svg';
+// import rightArrow from 'src/assets/images/right-blue-arrow.svg';
 
 const HeroHome = () => {
   const { t } = useTranslation();
