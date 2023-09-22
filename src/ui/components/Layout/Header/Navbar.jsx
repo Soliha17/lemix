@@ -30,7 +30,7 @@ const Navbar = () => {
     for (let i = 0; i < sections.length; i++) {
       const section = document.getElementById(sections[i]);
       if (section) {
-        const rect = section.getBoundingClientRect();
+        // const rect = section.getBoundingClientRect();
         // console.log(section.getClientRects());
         // console.log(section.id);
         // console.log(document.getElementById(section.id));
