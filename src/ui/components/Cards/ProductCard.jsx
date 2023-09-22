@@ -34,7 +34,7 @@ const ProductCard = ({ title, text, bgColor }) => {
         </div>
       </div>
       <img
-        src={nft}
+        src="https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/nft-marketplace.png"
         alt="dashboard"
         width={660}
         height={516}
