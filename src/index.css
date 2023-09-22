@@ -7,7 +7,7 @@
   src: url('./assets/fonts/Inter-Bold.eot');
   src:
     url('./assets/fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/fonts/Inter-Bold.woff') format('woff'),
+    url('./assets/fonts/Inter-Bold.woff') format('woff'),
     url('./assets/fonts/Inter-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -19,7 +19,7 @@
   src: url('./assets/fonts/Inter-Light.eot');
   src:
     url('./assets/fonts/Inter-Light.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/fonts/Inter-Light.woff') format('woff'),
+    url('./assets/fonts/Inter-Light.woff') format('woff'),
     url('./assets/fonts/Inter-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
@@ -31,7 +31,7 @@
   src: url('./assets/fonts/Inter-Medium.eot');
   src:
     url('./assets/fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/fonts/Inter-Medium.woff') format('woff'),
+    url('./assets/fonts/Inter-Medium.woff') format('woff'),
     url('./assets/fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
@@ -43,7 +43,7 @@
   src: url('./assets/fonts/Inter-Regular.eot');
   src:
     url('./assets/fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/fonts/Inter-Regular.woff') format('woff'),
+    url('./assets/fonts/Inter-Regular.woff') format('woff'),
     url('./assets/fonts/Inter-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -55,7 +55,7 @@
   src: url('./assets/fonts/Inter-SemiBold.eot');
   src:
     url('./assets/fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/fonts/Inter-SemiBold.woff') format('woff'),
+    url('./assets/fonts/Inter-SemiBold.woff') format('woff'),
     url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
