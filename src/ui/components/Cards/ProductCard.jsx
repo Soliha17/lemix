@@ -33,7 +33,14 @@ const ProductCard = ({ title, text, bgColor }) => {
           <BlackOutlineBtn setOpen={setOpenContactModal} text="more" />
         </div>
       </div>
-      <img src={nft} alt="dashboard" width={660} height={516} className="nft-img__product-card" />
+      <img
+        src={nft}
+        alt="dashboard"
+        width={660}
+        height={516}
+        className="nft-img__product-card"
+        loading="lazy"
+      />
       <ContactModal open={openContactModal} setOpen={setOpenContactModal} />
     </div>
   );

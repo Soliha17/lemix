@@ -27,6 +27,7 @@ const OpportunityCardHome = ({ setOpen }) => {
         alt="opportunityTable"
         width={666}
         height={399}
+        loading="lazy"
       />
     </div>
   );

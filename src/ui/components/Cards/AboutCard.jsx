@@ -36,6 +36,7 @@ const AboutCard = () => {
           alt="about video"
           width={808}
           height={808}
+          loading="lazy"
         />
       </div>
       <VideoModal open={open} setOpen={setOpen} videoId={'Do4UdiGvivU'} />

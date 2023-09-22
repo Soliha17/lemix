@@ -117,13 +117,13 @@ const ButtonGroup = ({ goToSlide, bgColor, ...rest }) => {
         onClick={() => goToSlide(currentSlide - 1)}
         className={`${bgColor} flex h-10 w-10 items-center justify-center rounded-3xl`}
       >
-        <img src={RightArrow} className="rotate-180" alt="right arrow" />
+        <img src={RightArrow} className="rotate-180" alt="right arrow" loading="lazy" />
       </button>
       <button
         onClick={() => goToSlide(currentSlide + 1)}
         className={`${bgColor} flex h-10 w-10 items-center justify-center rounded-3xl`}
       >
-        <img src={RightArrow} alt="right arrow" />
+        <img src={RightArrow} alt="right arrow" loading="lazy" />
       </button>
     </div>
   );
