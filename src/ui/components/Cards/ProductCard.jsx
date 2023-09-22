@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import nft from 'src/assets/images/nft-marketplace.png';
+// import nft from 'src/assets/images/nft-marketplace.png';
 
 import ContactModal from '../atoms/ContactModal';
 import WhiteButton from 'src/ui/components/atoms/WhiteButton';

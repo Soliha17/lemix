@@ -41,7 +41,13 @@ const HeroHome = () => {
             className="demo-btn__hero-home flex gap-4 rounded-2xl bg-white-main px-9 py-4 text-primary-100 hover:bg-neo-100"
           >
             {t('demoUsage')}{' '}
-            <img src={rightArrow} width={24} height={24} alt="right arrow" loading="lazy" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/right-blue-arrow.svg"
+              width={24}
+              height={24}
+              alt="right arrow"
+              loading="lazy"
+            />
           </button>
           <p className="p1 mt-2 whitespace-pre-line leading-6 text-white-main">
             {t('tryTheDemoVersionForFree')}

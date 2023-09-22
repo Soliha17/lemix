@@ -204,34 +204,34 @@ h6 {
 /* CARDS WITH BG LINE IMAGES STYLES */
 
 .hero-home {
-  background-image: url('src/assets/images/top-line__home-hero.png'),
-    url('src/assets/images/bottom-line__home-hero.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/top-line__home-hero.png'),
+    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/bottom-line__home-hero.png');
   background-position:
     top right,
     bottom left;
 }
 
 .product-card {
-  background-image: url('src/assets/images/line-product-home.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line-product-home.png');
   background-position: top right;
 }
 
 .statistic-card {
-  background-image: url('src/assets/images/line__statistic-card.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__statistic-card.svg');
   background-position: top right;
 }
 
 .opportunity-card {
-  background-image: url('src/assets/images/top-line__product.png'),
-    url('src/assets/images/bottom-line__product.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/top-line__product.png'),
+    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/bottom-line__product.png');
   background-position:
     top right,
     bottom right;
 }
 
 .contact-card {
-  background-image: url('src/assets/images/top-line__contact-card.svg'),
-    url('src/assets/images/bottom-line__contact-card.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/top-line__contact-card.svg'),
+    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/bottom-line__contact-card.svg');
   background-position:
     top right,
     bottom left;
@@ -239,8 +239,8 @@ h6 {
 }
 
 .contact-modal {
-  background-image: url('src/assets/images/line__contact-modal.svg'),
-    url('src/assets/images/bottom-line__contact-modal.svg');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__contact-modal.svg'),
+    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/bottom-line__contact-modal.svg');
   background-position:
     top right,
     bottom left;
@@ -248,28 +248,28 @@ h6 {
 }
 
 .about-card {
-  background-image: url('src/assets/images/line__about-home.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__about-home.png');
   background-position: bottom right;
 }
 .advantage-card__lms {
-  background-image: url('src/assets/images/line__lms-ad-card.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__lms-ad-card.png');
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .advantage-second-card__lms {
-  background-image: url('src/assets/images/line-2__ad-card-lms.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line-2__ad-card-lms.png');
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .hero-erp {
-  background-image: url('src/assets/images/line__hero-erp.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-erp.png');
   background-position: bottom left;
 }
 
 .hero-exam {
-  background-image: url('src/assets/images/line__hero-exam.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-exam.png');
   background-position: bottom left;
 }
 
@@ -283,24 +283,24 @@ h6 {
   align-items: center;
   justify-content: center;
 
-  background-image: url('src/assets/images/man__hero-exam.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/man__hero-exam.png');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: bottom left; */
 }
 
 .easy-app-card__lms {
-  background-image: url('src/assets/images/line__easy-app-lms.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__easy-app-lms.png');
   background-position: bottom left;
 }
 
 .our-users-card {
-  background-image: url('src/assets/images/line__our-users.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__our-users.png');
   background-position: bottom left;
 }
 
 .footer {
-  background-image: url('src/assets/images/line__footer.png');
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line__footer.png');
   background-position: top right;
 }
 
