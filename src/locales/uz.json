@@ -109,5 +109,44 @@
   "feedbackText9": "Lemix tizimi bizning kulinar maktabimizda ishlatiladi va u bizning o'quvchilarimizni o'qitishni osonlashtirdi. Ular online darslar va vazifalar berishga to'g'ri keladi va natijalari yaxshi bo'ldi.",
   "feedbackText10": "Lemix tizimi bizning raqs maktabimizda ishlatiladi va u bizning talabalarimiz uchun yaxshi yechim berdi. Ular online darslar va testlar berishga oson kirishdi va natijalari yaxshi bo'ldi.",
 
-  "aboutDesc": "Biz ta'lim muassasalariga, o'qituvchilarga, talabalar va ularning ota-onalariga qulaylik, tezlik va osonlik taqdim etishni xohlaymiz. Lemixni o'rnatish orqali siz o'quv markazingizning faoliyatini avtomatlashtirish imkoniyatiga ega bo'lasiz. Bizning tizimimiz sizga o'quv, moliya, sotuv va marketing bo'limlarini faoliyatini boshqarishni va foydalanuvchilar o'rtasida muloqotni osonlashtiradi. "
+  "aboutDesc": "Biz ta'lim muassasalariga, o'qituvchilarga, talabalar va ularning ota-onalariga qulaylik, tezlik va osonlik taqdim etishni xohlaymiz. Lemixni o'rnatish orqali siz o'quv markazingizning faoliyatini avtomatlashtirish imkoniyatiga ega bo'lasiz. Bizning tizimimiz sizga o'quv, moliya, sotuv va marketing bo'limlarini faoliyatini boshqarishni va foydalanuvchilar o'rtasida muloqotni osonlashtiradi.",
+
+  "theMainCapabilitiesOfTheTrainingDepartment": "O'quv bo'limining asosiy imkoniyatlari",
+  "onlineAndHybridEducation": "Online and hybrid education",
+  "workWithGroupsAndIndividualStudents": "Guruhlar va individual o'quvchilar bilan ishlash",
+  "smartAttendanceSystem": "Smart davomat tizimi",
+  "assigningAndCheckingHomework": "Uyga vazifalarni berish va tekshirish",
+  "conductingTestsExams": "Testlar, imtihonlar o'tkazish",
+  "onlineInteractiveLibrary": "Online interaktiv kutubxona",
+
+  "theMainCapabilitiesOfTheSalesDepartment": "Sotuv bo'limining asosiy imkoniyatlari",
+  "maintainingADatabaseOfLeadsAndCustomers": "Lidlar va mijozlar bazasini yuritish",
+  "interactiveForms": "Interaktiv formalar",
+  "formingASalesFunnel": "Sotuv voronkasini shakllantirish",
+  "workWithDemoStudents": "Demo o'quvchilar bilan ishlash",
+
+  "theMainCapabilitiesOfTheFinanceDepartment": "Moliya bo'limining asosiy imkoniyatlari",
+  "monitoringOfFinancialTransactions": "Moliyaviy tranzaksiyalarni monitoring qilish",
+  "manageAccountsWithStudentsUsingAnOnlineWallet": "O'quvchilar bilan hisob-kitoblarni online hamyon yordamida boshqarish",
+  "automationOfFinancialReportingOfBranchesCoursesAndGroups": "Filiallar, kurs va guruhlarning moliyaviy hisobotini avtomatlashtirish",
+  "integrationWithLocalAndInternationalPaymentSystems": "Mahalliy va xalqaro to'lov tizimlari bilan integratsiya",
+  "automaticCalculationOfSalaries": "Maoshlarni avtomatik hisoblash",
+  "smartBillingOption": "Smart billing imkoniyati",
+
+  "theMainCapabilitiesOfTheMarketingDepartment": "Marketing bo'limining asosiy imkoniyatlari",
+  "sendingSMSMessages": "SMS xabarlar yuborish",
+  "analysisOfMarketingChannels": "Marketing kanallarini tahlil qilish",
+  "workingOnTheBasisOfSegments": "Segmentlar asosida ishlash",
+  "automationOfReports": "Hisobotlarni avtomatlashtirish",
+
+  "keyFeaturesOfTheMobileApplication": "Mobil ilovaning asosiy imkoniyatlari",
+  "inTheStudentPortalStudentsCanUseNotOnlyAWebBrowserButAlsoAMobileApplicationTheAppHasTheFollowingFeatures": "Talabalar portalida talabalar nafaqat veb-brauzer, balki mobil ilovadan ham foydalanishlari mumkin. Ilova quyidagi xususiyatlarga ega:",
+  "learningOnlineLessons": "Onlayn darslarni o'rganish",
+  "homeworkAndChecking": "Uy vazifasi va tekshirish",
+  "resultsAndRanking": "Natijalar va reyting",
+  "library": "Kutubxona",
+  "payments": "To'lovlar",
+  "exams": "Imtihonlar",
+  "news": "Yangiliklar",
+  "bonusesAndOtherOpportunities": "Bonuslar va boshqa imkoniyatlar"
 }

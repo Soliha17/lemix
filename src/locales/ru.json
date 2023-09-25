@@ -109,5 +109,73 @@
   "feedbackText9": "Система Lemix используется в нашей кулинарной школе и упростила процесс обучения студентов. Она идеально подходит для онлайн-уроков и заданий, и результаты были отличными.",
   "feedbackText10": "Система Lemix используется в нашей школе танцев и предоставила отличное решение для наших студентов. Легкий доступ к онлайн-урокам и тестам привел к отличной успеваемости.",
 
-  "aboutDesc": "Мы стремимся обеспечить удобство, скорость и простоту для образовательных учреждений, преподавателей, студентов и их родителей. Установив Lemix, вы получите возможность автоматизировать деятельность вашего образовательного центра. Наша система упрощает управление вашими образовательными, финансовыми, продажными и маркетинговыми отделами и облегчает коммуникацию между пользователями."
+  "aboutDesc": "Мы стремимся обеспечить удобство, скорость и простоту для образовательных учреждений, преподавателей, студентов и их родителей. Установив Lemix, вы получите возможность автоматизировать деятельность вашего образовательного центра. Наша система упрощает управление вашими образовательными, финансовыми, продажными и маркетинговыми отделами и облегчает коммуникацию между пользователями.",
+
+  "theMainCapabilitiesOfTheTrainingDepartment": "Основные возможности учебного отдела",
+
+  "onlineAndHybridEducation": "Онлайн и гибридное образование",
+
+  "workWithGroupsAndIndividualStudents": "Работа с группами и индивидуальными студентами",
+
+  "smartAttendanceSystem": "Система учета посещаемости",
+
+  "assigningAndCheckingHomework": "Назначение и проверка домашних заданий",
+
+  "conductingTestsExams": "Проведение тестов и экзаменов",
+
+  "onlineInteractiveLibrary": "Онлайн интерактивная библиотека",
+
+  "theMainCapabilitiesOfTheSalesDepartment": "Основные возможности отдела продаж",
+
+  "maintainingADatabaseOfLeadsAndCustomers": "Ведение базы лидов и клиентов",
+
+  "interactiveForms": "Интерактивные формы",
+
+  "formingASalesFunnel": "Формирование воронки продаж",
+
+  "workWithDemoStudents": "Работа с демонстрационными студентами",
+
+  "theMainCapabilitiesOfTheFinanceDepartment": "Основные возможности финансового отдела",
+
+  "monitoringOfFinancialTransactions": "Мониторинг финансовых транзакций",
+
+  "manageAccountsWithStudentsUsingAnOnlineWallet": "Управление счетами студентов с использованием онлайн-кошелька",
+
+  "automationOfFinancialReportingOfBranchesCoursesAndGroups": "Автоматизация финансовой отчетности филиалов, курсов и групп",
+
+  "integrationWithLocalAndInternationalPaymentSystems": "Интеграция с местными и международными платежными системами",
+
+  "automaticCalculationOfSalaries": "Автоматический расчет зарплат",
+
+  "smartBillingOption": "Умная опция выставления счетов",
+
+  "theMainCapabilitiesOfTheMarketingDepartment": "Основные возможности отдела маркетинга",
+
+  "sendingSMSMessages": "Отправка SMS-сообщений",
+
+  "analysisOfMarketingChannels": "Анализ маркетинговых каналов",
+
+  "workingOnTheBasisOfSegments": "Работа на основе сегментов",
+
+  "automationOfReports": "Автоматизация отчетов",
+
+  "keyFeaturesOfTheMobileApplication": "Основные функции мобильного приложения",
+
+  "inTheStudentPortalStudentsCanUseNotOnlyAWebBrowserButAlsoAMobileApplicationTheAppHasTheFollowingFeatures": "В студенческом портале студенты могут использовать не только веб-браузер, но и мобильное приложение. Приложение имеет следующие функции:",
+
+  "learningOnlineLessons": "Обучение онлайн-урокам",
+
+  "homeworkAndChecking": "Домашние задания и проверка",
+
+  "resultsAndRanking": "Результаты и рейтинг",
+
+  "library": "Библиотека",
+
+  "payments": "Платежи",
+
+  "exams": "Экзамены",
+
+  "news": "Новости",
+
+  "bonusesAndOtherOpportunities": "Бонусы и другие возможности"
 }

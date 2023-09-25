@@ -99,12 +99,54 @@ const OpportunityHome = () => {
           // dotListClass="custom-dot-list-style"
           // itemClass="carousel-item-padding-40-px"
         >
-          <OpportunityCardHome setOpen={setOpenContactModal} />
-          <OpportunityCardHome setOpen={setOpenContactModal} />
-          <OpportunityCardHome setOpen={setOpenContactModal} />
-          <OpportunityCardHome setOpen={setOpenContactModal} />
-          <OpportunityCardHome setOpen={setOpenContactModal} />
-          <OpportunityCardHome setOpen={setOpenContactModal} />
+          <OpportunityCardHome
+            setOpen={setOpenContactModal}
+            title="theMainCapabilitiesOfTheTrainingDepartment"
+            list1="onlineAndHybridEducation"
+            list2="workWithGroupsAndIndividualStudents"
+            list3="smartAttendanceSystem"
+            list4="assigningAndCheckingHomework"
+            list5="conductingTestsExams"
+            list6="onlineInteractiveLibrary"
+          />
+          <OpportunityCardHome
+            setOpen={setOpenContactModal}
+            title="theMainCapabilitiesOfTheSalesDepartment"
+            list1="maintainingADatabaseOfLeadsAndCustomers"
+            list2="interactiveForms"
+            list3="formingASalesFunnel"
+            list4="workWithDemoStudents"
+          />
+          <OpportunityCardHome
+            setOpen={setOpenContactModal}
+            title="theMainCapabilitiesOfTheFinanceDepartment"
+            list1="monitoringOfFinancialTransactions"
+            list2="manageAccountsWithStudentsUsingAnOnlineWallet"
+            list3="automationOfFinancialReportingOfBranchesCoursesAndGroups"
+            list4="integrationWithLocalAndInternationalPaymentSystems"
+            list5="smartBillingOption"
+          />
+          <OpportunityCardHome
+            setOpen={setOpenContactModal}
+            title="theMainCapabilitiesOfTheMarketingDepartment"
+            list1="sendingSMSMessages"
+            list2="analysisOfMarketingChannels"
+            list3="workingOnTheBasisOfSegments"
+            list4="automationOfReports"
+          />
+          <OpportunityCardHome
+            setOpen={setOpenContactModal}
+            title="keyFeaturesOfTheMobileApplication"
+            list1="learningOnlineLessons"
+            list2="homeworkAndChecking"
+            list3="resultsAndRanking"
+            list4="library"
+            list5="payments"
+            list6="exams"
+            list7="news"
+            list8="news"
+            desc="inTheStudentPortalStudentsCanUseNotOnlyAWebBrowserButAlsoAMobileApplicationTheAppHasTheFollowingFeatures"
+          />
         </Carousel>
       </div>
       <ContactModal open={openContactModal} setOpen={setOpenContactModal} />

@@ -109,5 +109,73 @@
   "feedbackText9": "The Lemix system is used at our culinary school and has made teaching our students easier. It's a perfect fit for online lessons and assignments, and the results have been great.",
   "feedbackText10": "The Lemix system is used at our dance school and has provided a great solution for our students. It's easy to access online lessons and tests, resulting in excellent performance.",
 
-  "aboutDesc": "We aim to provide convenience, speed, and ease to educational institutions, teachers, students, and their parents. By installing Lemix, you will have the opportunity to automate the activities of your educational center. Our system simplifies the management of your education, finance, sales, and marketing departments and facilitates communication among users."
+  "aboutDesc": "We aim to provide convenience, speed, and ease to educational institutions, teachers, students, and their parents. By installing Lemix, you will have the opportunity to automate the activities of your educational center. Our system simplifies the management of your education, finance, sales, and marketing departments and facilitates communication among users.",
+
+  "theMainCapabilitiesOfTheTrainingDepartment": "The main capabilities of the training department",
+
+  "onlineAndHybridEducation": "Online and hybrid education",
+
+  "workWithGroupsAndIndividualStudents": "Work with groups and individual students",
+
+  "smartAttendanceSystem": "Smart attendance system",
+
+  "assigningAndCheckingHomework": "Assigning and checking homework",
+
+  "conductingTestsExams": "Conducting tests and exams",
+
+  "onlineInteractiveLibrary": "Online interactive library",
+
+  "theMainCapabilitiesOfTheSalesDepartment": "The main capabilities of the sales department",
+
+  "maintainingADatabaseOfLeadsAndCustomers": "Maintaining a database of leads and customers",
+
+  "interactiveForms": "Interactive forms",
+
+  "formingASalesFunnel": "Forming a sales funnel",
+
+  "workWithDemoStudents": "Work with demo students",
+
+  "theMainCapabilitiesOfTheFinanceDepartment": "The main capabilities of the finance department",
+
+  "monitoringOfFinancialTransactions": "Monitoring of financial transactions",
+
+  "manageAccountsWithStudentsUsingAnOnlineWallet": "Manage accounts with students using an online wallet",
+
+  "automationOfFinancialReportingOfBranchesCoursesAndGroups": "Automation of financial reporting of branches, courses, and groups",
+
+  "integrationWithLocalAndInternationalPaymentSystems": "Integration with local and international payment systems",
+
+  "automaticCalculationOfSalaries": "Automatic calculation of salaries",
+
+  "smartBillingOption": "Smart billing option",
+
+  "theMainCapabilitiesOfTheMarketingDepartment": "The main capabilities of the marketing department",
+
+  "sendingSMSMessages": "Sending SMS messages",
+
+  "analysisOfMarketingChannels": "Analysis of marketing channels",
+
+  "workingOnTheBasisOfSegments": "Working on the basis of segments",
+
+  "automationOfReports": "Automation of reports",
+
+  "keyFeaturesOfTheMobileApplication": "Key features of the mobile application",
+
+  "inTheStudentPortalStudentsCanUseNotOnlyAWebBrowserButAlsoAMobileApplicationTheAppHasTheFollowingFeatures": "In the student portal, students can use not only a web browser but also a mobile application. The app has the following features:",
+
+  "learningOnlineLessons": "Learning online lessons",
+
+  "homeworkAndChecking": "Homework and checking",
+
+  "resultsAndRanking": "Results and ranking",
+
+  "library": "Library",
+
+  "payments": "Payments",
+
+  "exams": "Exams",
+
+  "news": "News",
+
+  "bonusesAndOtherOpportunities": "Bonuses and other opportunities"
 }

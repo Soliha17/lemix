@@ -137,9 +137,9 @@ h6 {
   overflow: hidden;
 }
 
-.carousel-wrapper-scroll {
+/* .carousel-wrapper-scroll {
   height: 700px;
-}
+} */
 
 .phone-img__easy-app img {
   width: 800px;
@@ -358,6 +358,14 @@ h6 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+.list__opportunity-card{
+  margin-left: 15px;
+}
+
+.list__opportunity-card li {
+  line-height: 28px;
 }
 
 @media (max-width: 824px) {
@@ -757,10 +765,10 @@ h6 {
     max-width: 470px;
   }
 
-  .carousel-wrapper-scroll {
+  /* .carousel-wrapper-scroll {
     height: auto;
     margin-bottom: 100px;
-  }
+  } */
 
   .card-group__hero-home {
     top: 50px;
