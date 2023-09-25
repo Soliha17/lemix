@@ -70,7 +70,7 @@ const AdvantagesExam = () => {
   return (
     <div id="advantages" className="carousel-wrapper-scroll mt-16 md:mt-24 lg:mt-20">
       <SectionName name="advantages" />
-      <div className="relative mt-6 md:mt-8 lg:mt-10" onWheel={onWheelFn}>
+      <div className="relative mt-6 md:mt-8 lg:mt-10">
         <Carousel
           ref={carouselRefExam}
           swipeable={false}
