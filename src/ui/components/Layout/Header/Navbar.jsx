@@ -41,7 +41,7 @@ const Navbar = () => {
             const visibleElementId = entry.target.id;
             if (entry.isIntersecting && visibleElementId === section.id) {
               // An element is in the viewport
-              console.log('The visible element on the screen is: ' + visibleElementId);
+              // console.log('The visible element on the screen is: ' + visibleElementId);
               setValue(i);
               // if (visibleElementId === section.id) {
               // }
