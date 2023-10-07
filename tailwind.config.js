@@ -1,4 +1,4 @@
-import { black, neo, primary, success, warning, white } from './src/styles/colors';
+import { black, neo, primary, success, warning, white,violet } from './src/styles/colors';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,6 +12,7 @@ export default {
         black: black,
         neo: neo,
         white: white,
+        violet: violet,
       },
     },
   },

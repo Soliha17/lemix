@@ -39,3 +39,7 @@ export const neo = {
 export const white = {
   main: '#FFFFFF',
 };
+
+export const violet = {
+  main: '#7B61FF',
+};

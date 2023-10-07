@@ -211,6 +211,24 @@ h6 {
     bottom left;
 }
 
+.hero-erp {
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-erp.png');
+  background-position: bottom left;
+}
+
+.hero-exam {
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-exam.png');
+  background-position: bottom left;
+}
+
+.hero-coaching {
+  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/top-line__home-hero.png'),
+    url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/bottom-line__home-hero.png');
+  background-position:
+    top right,
+    bottom left;
+}
+
 .product-card {
   background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images/line-product-home.png');
   background-position: top right;
@@ -263,16 +281,6 @@ h6 {
   background-repeat: no-repeat;
 }
 
-.hero-erp {
-  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-erp.png');
-  background-position: bottom left;
-}
-
-.hero-exam {
-  background-image: url('https://cdn.jsdelivr.net/gh/Soliha17/lemix/src/assets/images//line__hero-exam.png');
-  background-position: bottom left;
-}
-
 .men-img__hero-exam {
   position: absolute;
   right: 0;
@@ -308,6 +316,33 @@ h6 {
 .p__opp-lms {
   background: rgba(65, 153, 252, 0.24);
   backdrop-filter: blur(3px);
+}
+
+.img-group__hero-coaching {
+  display: flex;
+}
+
+.img-group__hero-coaching img:nth-child(1) {
+  z-index: 4;
+}
+
+.img-group__hero-coaching img:nth-child(2) {
+  margin-left: -37px;
+  z-index: 3;
+}
+
+.img-group__hero-coaching img:nth-child(3) {
+  margin-left: -30px;
+  z-index: 2;
+}
+
+.img-group__hero-coaching img:nth-child(4) {
+  margin-left: -30px;
+  z-index: 1;
+}
+
+.img-group__hero-coaching img:nth-child(5) {
+  margin-left: -30px;
 }
 
 /* CONTACT CARD */
@@ -360,7 +395,7 @@ h6 {
   border-radius: 50%;
 }
 
-.list__opportunity-card{
+.list__opportunity-card {
   margin-left: 15px;
 }
 
@@ -435,10 +470,20 @@ h6 {
   line-height: 24px; /* 150% */
 }
 
-.form__contact-card button {
+.form__contact-card .btn__contact-card {
   padding: 10px 0;
   border-radius: 12px;
   background: #40dd6c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.form__coaching-card .btn__hero-coaching {
+  padding: 10px 0;
+  border-radius: 12px;
+  background: #7b61ff;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -449,7 +494,7 @@ h6 {
   background: #0177fb;
 }
 
-.form__contact-card button:hover {
+.form__contact-card .btn__contact-card:hover {
   opacity: 0.9;
 }
 

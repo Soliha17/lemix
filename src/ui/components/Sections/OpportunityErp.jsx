@@ -43,7 +43,7 @@ const OpportunityErp = () => {
     const screenWidth = window.innerWidth;
 
     // console.log(e);
-    console.log(e.nativeEvent.offsetY);
+    // console.log(e.nativeEvent.offsetY);
 
     if (screenWidth >= 1400) {
       if (currentSlide != 7 && e.deltaY > 0 && e.nativeEvent.offsetY > 9) {
@@ -60,7 +60,6 @@ const OpportunityErp = () => {
         (currentSlide === 2 && e.nativeEvent.offsetY < 210) ||
         (currentSlide === 7 && e.nativeEvent.offsetY > 9)
       ) {
-        console.log('else');
         document.body.style.overflowY = 'scroll';
 
         // document.body.classList.remove('stop-scrolling');

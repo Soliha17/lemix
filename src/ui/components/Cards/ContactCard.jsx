@@ -101,7 +101,9 @@ const ContactCard = () => {
             )}
           </div>
 
-          <button onClick={handleSubmit}>{t('send')}</button>
+          <button onClick={handleSubmit} className="btn__contact-card">
+            {t('send')}
+          </button>
         </form>
       </div>
     </div>

@@ -60,7 +60,6 @@ const AdvantagesExam = () => {
         (currentSlide === 2 && e.nativeEvent.offsetY < 270) ||
         (currentSlide === 7 && e.nativeEvent.offsetY > 0)
       ) {
-        console.log('else');
         document.body.style.overflowY = 'scroll';
 
         // document.body.classList.remove('stop-scrolling');
