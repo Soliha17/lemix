@@ -17,7 +17,7 @@ const ContactModal = ({ open, setOpen }) => {
 
   const onSubmit = (data) => {
     setOpen(false);
-    console.log(data);
+    // console.log(data);
   };
 
   return (

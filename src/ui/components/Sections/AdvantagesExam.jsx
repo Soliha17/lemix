@@ -44,7 +44,7 @@ const AdvantagesExam = () => {
     const currentSlide = carouselRefExam.current.state.currentSlide;
     const screenWidth = window.innerWidth;
 
-    console.log(e.nativeEvent.offsetY);
+    // console.log(e.nativeEvent.offsetY);
     if (screenWidth >= 1400) {
       if (currentSlide != 7 && e.deltaY > 0 && e.nativeEvent.offsetY > 46) {
         // Scroll down

@@ -12,9 +12,9 @@ import wrongIcon from 'src/assets/images/white-wrong-icon.svg';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ bgColor }) => ({
+))(({ bgcolor }) => ({
   borderRadius: '16px',
-  background: bgColor,
+  background: bgcolor,
   margin: '16px 0',
   '&:before': {
     display: 'none',
@@ -56,7 +56,7 @@ export default function CustomizedAccordions({ bgColor }) {
 
   return (
     <div>
-      <Accordion bgColor={bgColor}>
+      <Accordion bgcolor={bgColor}>
         <AccordionSummary
           expandIcon={
             bgColor === '#E0F9E7' ? (
@@ -169,7 +169,7 @@ export default function CustomizedAccordions({ bgColor }) {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Accordion bgColor={bgColor}>
+      <Accordion bgcolor={bgColor}>
         <AccordionSummary
           expandIcon={
             bgColor === '#E0F9E7' ? (
@@ -282,7 +282,7 @@ export default function CustomizedAccordions({ bgColor }) {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Accordion bgColor={bgColor}>
+      <Accordion bgcolor={bgColor}>
         <AccordionSummary
           expandIcon={
             bgColor === '#E0F9E7' ? (
@@ -395,7 +395,7 @@ export default function CustomizedAccordions({ bgColor }) {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Accordion bgColor={bgColor}>
+      <Accordion bgcolor={bgColor}>
         <AccordionSummary
           expandIcon={
             bgColor === '#E0F9E7' ? (
