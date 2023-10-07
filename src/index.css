@@ -871,6 +871,10 @@ h6 {
   .info-col__hero-home {
     left: 20px;
   }
+
+  .nft-img__product-card {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -881,6 +885,10 @@ h6 {
 
   .img-card--first {
     z-index: 2;
+  }
+
+  .nft-img__product-card {
+    max-width: 370px;
   }
 }
 
@@ -900,7 +908,11 @@ h6 {
   }
 
   .opportunity-dots {
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
+  }
+
+  .nft-img__product-card {
+    max-width: 300px;
   }
 }
 

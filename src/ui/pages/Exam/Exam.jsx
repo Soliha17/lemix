@@ -28,8 +28,8 @@ const Exam = () => {
         <OurUsers bgColor="bg-success-12" />
       </div>
       <FeedBacksBg bgColor="bg-success-12" />
+      <Pricing bgColor="bg-success-100" borderColor="border-success-100" />
       <div className="mx-auto max-w-7xl px-5 md:px-10">
-        <Pricing bgColor="bg-success-100" borderColor="border-success-100" />
         <PriceComparison bgColor="#E0F9E7" />
         <ContactCard />
       </div>

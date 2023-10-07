@@ -45,8 +45,8 @@ const ContactModal = ({ open, setOpen }) => {
                   >
                     <CloseIcon fontSize="medium" />
                   </button>
-                  <div className="contact-modal flex flex-col items-center gap-6 rounded-3xl bg-primary-25 p-6 sm:p-9 md:gap-12 lg:flex-row xl:gap-20 xl:p-16 xl:pt-8">
-                    <div className="relative ml-0 mt-10 flex flex-col items-start md:mt-0 lg:ml-2">
+                  <div className="contact-modal flex flex-col items-center gap-6 rounded-3xl bg-primary-25 p-6 sm:p-9 md:flex-row md:gap-12 xl:gap-20 xl:p-16 xl:pt-8">
+                    <div className="relative ml-0 mt-5 flex w-full flex-col items-start md:mt-0 md:w-1/2 lg:ml-2">
                       <div className="circle__contact-card circle__contact-modal z-10 -mb-16 -mr-7 self-end">
                         <img src={done} alt="done" />
                       </div>
@@ -61,7 +61,7 @@ const ContactModal = ({ open, setOpen }) => {
                         <img src={goodFilled} alt="goodFilled" />
                       </div>
                     </div>
-                    <div className="mt-6 flex flex-col gap-8">
+                    <div className="mt-0 flex w-full flex-col gap-8 sm:mt-6 md:w-1/2">
                       <div>
                         <p className="whitespace-pre-line text-base text-black-100">
                           {t('contactCardText')}

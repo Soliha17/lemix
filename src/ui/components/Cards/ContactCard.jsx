@@ -19,11 +19,11 @@ const ContactCard = () => {
   return (
     <div
       id="contact"
-      className="contact-card mt-16 flex flex-col items-center gap-6 rounded-3xl bg-primary-100 p-6 sm:p-9 md:mt-24 md:gap-12 lg:mt-20 lg:flex-row xl:gap-20 xl:p-16 xl:pt-8"
+      className="contact-card mt-16 flex flex-col items-center gap-6 rounded-3xl bg-primary-100 p-6 sm:p-9 md:mt-24 md:flex-row md:gap-12 lg:mt-20 xl:gap-20 xl:p-16 xl:pt-8"
     >
-      <div className="relative ml-0 flex flex-col items-start lg:ml-8">
+      <div className="relative ml-0 flex w-full flex-col items-start md:w-1/2 lg:ml-8">
         <div className="circle__contact-card z-10 -mb-16 -mr-7 self-end">
-          <img src={done} alt="done" width={63} height={63} />
+          <img src={done} alt="done" className="w-full" width={63} height={63} />
         </div>
         <p className="p__contact-card p__contact-card--top whitespace-pre-line rounded-2xl p-2 text-base text-white-main md:p-4">
           {t('contactCardTitle')}
@@ -36,7 +36,7 @@ const ContactCard = () => {
           <img src={goodFilled} alt="goodFilled" width={63} height={63} />
         </div>
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex w-full flex-col gap-5 md:w-1/2">
         <div>
           <p className="whitespace-pre-line text-base text-white-main">{t('contactCardText')}</p>
         </div>
